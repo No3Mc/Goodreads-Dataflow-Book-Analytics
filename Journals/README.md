@@ -1,14 +1,14 @@
-LAB 01 - INTRODUCTION TO MONGODB
+**LAB 01 - INTRODUCTION TO MONGODB**
 
 
-OPERATIONAL DETAILS
+**OPERATIONAL DETAILS**
 
 
 Try out all examples and exercises. It is a good idea to keep a copy of your solutions in a text file using a text
 editor so you can reuse them for future exercises and revision.
 
 
-STARTING MONGODB COMPASS
+**STARTING MONGODB COMPASS**
 
 
 
@@ -17,7 +17,7 @@ Launch MongoDB Compass from the start menu and click on CONNECT.
 
 Click on MongoSH Beta, the MongoDB inbuilt command shell
 
-CREATE A DATABASE
+**CREATE A DATABASE**
 
 The default database is called test, but we will create a new one of our own. Type the following into the
 
@@ -27,7 +27,7 @@ MongoDB will switch to a database called mod (short for movies on demand). The c
 database if it does not exist, otherwise it will return the existing database.
 
 
-CREATE A COLLECTION
+**CREATE A COLLECTION**
 
 
 Create a new collection by typing the following into the MongoDB Client Shell:
@@ -35,7 +35,7 @@ Create a new collection by typing the following into the MongoDB Client Shell:
 
 The command is case sensitive.
 
-INSERT DOCUMENTS
+**INSERT DOCUMENTS**
 
 Populate the movies collection with the following movie using a ‘YYYY-MM- DD’ date format.
 
@@ -45,7 +45,7 @@ The insert will create a MongoDB document which is also known as a JSON object.
 
 We can see a deprecation warning saying the insert() method is discontinued, but still supported. For the exercises, use insertOne() to insert one record, or insertMany() to insert multiple records
 
-VIEWING DOCUMENTS IN COLLECTION
+**VIEWING DOCUMENTS IN COLLECTION**
 
 On the MongoSH, enter the following
 
@@ -62,7 +62,9 @@ d. view the same movie documents in its different modes.
 
 e. Which view mode is the best for you?
 
-EXERCISE 1
+**EXERCISE 1**
+
+
 1. Insert the following movies into the collection using the following details:
 
 - title = The Martian, directors = Scott, releaseDate = 2 October 2015, runtime = 144
@@ -89,7 +91,7 @@ MongoDB documents more examples of regular expressions:
 https://docs.mongodb.com/manual/reference/operator/query/regex/
 
 
-EXERCISE 2
+**EXERCISE 2**
 
 1. Find the movie called The Martian.
 
@@ -112,7 +114,7 @@ Or if you prefer:
 
 So you can include or exclude one or more fields explicitly, but inclusion and exclusion cannot be mixed except for _id.
 
-EXERCISE 3
+**EXERCISE 3**
 
 1. List only the title and runtime of all movies.
 
@@ -127,7 +129,7 @@ The parameter for sort is a JSON object ({runtime:1}) where 1 is for ascending o
 
 So this finds the movie with shortest runtime (notice the time is in ascending order and limited to a single result).
 
-EXERCISE 4
+**EXERCISE 4**
 
 1. List and order the movies by title from A to Z.
 
@@ -154,7 +156,7 @@ for example:
 This returns any movie that is directed by howard or bush.
 To match a single director, the $in operator is not required:
 
-EXERCISE 5
+**EXERCISE 5**
 
 1. List all movies with a runtime of less than 2 hours.
 
@@ -180,7 +182,7 @@ For example, update The Martian movie so its release date is for the USA and rep
 
 
 
-EXERCISE 6
+**EXERCISE 6**
 
 1. Update Zootropolis so its release date is for the UK and is also represented in unix time.
 
@@ -189,7 +191,7 @@ EXERCISE 6
 3. For example, to find all the movies with a USA release date, write the
 following:
 
-EXERCISE 7
+**EXERCISE 7**
 
 1. List and order the movies in chronological order of release
 (hint: sort on unix time)
@@ -211,7 +213,7 @@ https://docs.mongodb.com/manual/reference/operator/update-array/
 
 for more update operators.
 
-EXERCISE 8
+**EXERCISE 8**
 
 1. Update the Zootropolis movie so that it has one UK release date and one USA release date (4 March 2016).
 
@@ -223,7 +225,7 @@ However this shows the release dates for all the countries. To retrieve just the
 
 https://docs.mongodb.com/manual/reference/operator/projection/positional/
 
-EXERCISE 9
+**EXERCISE 9**
 
 1. Write a query to return only the USA release date of the Zootropolis movie.
 We can easily add a new field to a movie by updating it:
