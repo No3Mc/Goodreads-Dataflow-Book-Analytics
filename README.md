@@ -123,22 +123,86 @@ created. Compare and discuss the execution plans to support your choice and summ
 findings. [8 marks]
 
 7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING [20 marks]
+
 Write code in MongoDB to automatically embed the details of authors from authors collection and genres
 from genres collection with their corresponding book in the books collection. This is an aggregate data
 modelling (ADM) question.
 Therefore, the books collection will contain the book data, authors data and genre data in a single
 collection of books. This requires the following tasks:
+
 1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. [1 mark]
+
 2. Embed all the authors and genres of books into their corresponding book using the new
 pxxxxxx_books_adm collection. [6 marks]
+
 3. To verify that the changes to the new products collection were successful, display the title,
 authors, and genre of the book with highest number of pages. [1 mark]
+
 4. Note that there is no longer need to reference the book_id inside each genre or author_id inside
 each book now that they are part of the book in pxxxxxx_books_adm collection. Show that these
 are removed. [2 marks]
+
 5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
 genres using pxxxxxxx_books collection. Track the speed of the query. [3 marks]
+
 6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
 of the query. [3 marks]
+
 7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
 results. [4 marks]
+
+
+All tasks must each be fully automated by writing code. Note that some tasks may take many seconds or
+minutes to execute depending on the machine.
+
+8.0 WEEKLY JOURNALS [10 marks]
+
+Report all your journal submissions by completing the table below:
+Week No Status/Reason
+1 For example (Submitted on time)
+2 For example (Late submission due to xyz)
+3 For example (No submission due to abc)
+4
+5
+
+
+9.0 DELIVERABLES
+
+1. You are required to upload your answers to the questions into Turnitin on Blackboard as one
+PDF file. Do NOT submit any JSON file.
+
+2. Add your P number to your filename.
+
+3. Your file must be in a readable format so the NoSQL code in plain text can be copied and executed
+from it.
+
+4. In Turnitin, press both the Upload button and the Confirm button to submit your file and receive
+a receipt.
+
+10.0 CLOSING COMMENTS
+
+1. This is an individual assignment. Do not negotiate with others to clarify what is required. By
+uploading your work to Turnitin in Blackboard you will be declaring that the work you submit is
+your own and not plagiarised in any way.
+
+2. Tutors are prepared to offer help with the part of the assignment where there is clear evidence
+that you have made a substantial attempt but have become stuck.
+
+3. Mark totals are shown alongside each question. Your tutor will need to able to execute your NoSQL
+code in MongoSH to check for correctness. Marks will be awarded for correctness and
+presentation.
+
+4. Marks will typically be deducted if information is erroneous, missing, irrelevant or difficult to
+ascertain. Marks can also be deducted if the answer is particularly inefficient. Therefore, partial
+marks are available if an answer is partially correct or partially presented.
+
+5. There is often more than one way to answer a question and so it is possible to gain full marks for
+an answer even if it is different from the markers' specimen set of answers. However, if these
+answers do not follow the examples and exercises taught on the module, they may be inferior in some way and so consequently marks may be deducted. Note that some questions hint at the most appropriate method to use.
+
+
+REFERENCES
+R. He, J. McAuley. "Modeling the visual evolution of fashion trends with one-class collaborative filtering".
+WWW, 2016.
+J. McAuley, C. Targett, J. Shi, "A. van den Hengel. Image-based recommendations on styles and substitutes".
+SIGIR, 2015.
