@@ -87,3 +87,5 @@ your local MongoDB. For each query, submit the MongoDB command in plain text, AN
 results as a screenshot showing the command and the documents returned. For example:
 //Q1001. Find the details of the product identified as " B001KTEBOG ".
 db.p77342060_softwares.find({asin:"B001KTEBOG"})
+
+
