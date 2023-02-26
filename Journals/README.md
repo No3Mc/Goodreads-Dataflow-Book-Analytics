@@ -273,7 +273,7 @@ an array entry in his document.
 4. Query the document to make sure that you entered it correctly.
 
 
-EXERCISE 10
+**EXERCISE 10**
 
 1. Find everyone who played in ‘Good Will Hunting’.
 
@@ -298,6 +298,6 @@ body of the JavaScript rather than executing the command:
 
 Use JavaScript to print out the movies:
 
-Reference
+**Reference**
 
 The MongoDB Manual: https://docs.mongodb.com/manual/
