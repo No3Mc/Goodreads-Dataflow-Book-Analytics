@@ -86,41 +86,69 @@ Do the same for clothing.txt
 **EXERCISE 2**
 
 1. Write the following basic MongoDB queries against the new collection:
+
 a. Retrieve all the Motor Cars for sale.
+
 b. Retrieve all the Motor Cars with prices under £1500.
+
 c. Retrieve only the prices of all the Red Fiats.
-1. Aggregate data from the Collection
+
+2. Aggregate data from the Collection
 We can use single purpose aggregation functions to count the number of documents in a
 collection or remove duplicates from a result.
+
 a. Let’s count the total number of classifieds in the collection:
+
 b. Next retrieve the set of all models of motor cars, but making sure that each model appears
 only once in the result:
-Exercise 3
+
+**Exercise 3**
+
 1. How many motor car classifications are there?
+
 2. Retrieve the set of all Classifications. Make sure each classification appears only once in the
 result.
-1. Say we wanted to find the lowest mileage of all the motor cars. It is possible to do this in three
+
+3. Say we wanted to find the lowest mileage of all the motor cars. It is possible to do this in three
 ways:
+
 a. We could find the mileage by sorting and limiting the returned results to one
 document:
+
 b. The second method uses an aggregation pipeline to match motor cars and then group
 them by classification to calculate the minimum mileage:
-Exercise 4
+
+**Exercise 4**
+
 Using the two different methods (if possible)
+
 1. Find the most expensive item of clothing.
+
 2. The data does not tell us whether an object has been sold or not. Write a query to update the
 database so that the Red Shirt with a price of 20.31 has been sold [hint: create a new field].
-1. Now write a query to find out how many items of Clothing have not been sold [hint: $ne].
+
+3. Now write a query to find out how many items of Clothing have not been sold [hint: $ne].
+
 https://docs.mongodb.com/manual/reference/operator/query/ne/
-Exercise 5
+
+**Exercise 5**
+
 The company wants to invest in a new Digital billboard that views Red coloured ads efficiently.
+
 1. Find how many ads are Red in colour to assist them in making the decision
+
 2. What is the percentage of Red ads in the entire collection
+
 3. How much revenue could the company get for every Clothing type?
-Exercise 6
+
+**Exercise 6**
+
 As a new regulation and in line with best practices, Cars with high Mileage will be more expensive to
 advertise.
+
 1. How many Cars have Mileage above 50,000?
+
 2. Create a new field "UpdatedPrice" that has 5% extra price to all cars with mileage above
 50,000.
+
 1. Verify that the update is done successfully
