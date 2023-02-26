@@ -151,4 +151,4 @@ advertise.
 2. Create a new field "UpdatedPrice" that has 5% extra price to all cars with mileage above
 50,000.
 
-1. Verify that the update is done successfully
+3. Verify that the update is done successfully
