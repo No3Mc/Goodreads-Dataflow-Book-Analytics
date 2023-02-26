@@ -88,4 +88,57 @@ results as a screenshot showing the command and the documents returned. For exam
 //Q1001. Find the details of the product identified as " B001KTEBOG ".
 db.p77342060_softwares.find({asin:"B001KTEBOG"})
 
+#1 
 
+If a lot of documents are returned, show the first set of documents that are displayed. Ensure that what is
+displayed answers the requirements and demonstrates that the query is correct. You must do this to gain
+all the marks available for a question.
+
+
+Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title,
+price, and average rating. [5 marks]
+
+Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number of
+5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total
+n_comments and total number of reviews written by this reviewer. [6 marks]
+
+Q3. Update the most famous reviewer from Q2 by adding a new field named most_famous and set its
+value to true. [4 mark]
+
+Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by
+the most famous reviewer. No other product details are required. [5 marks]
+
+
+
+6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE [15 marks]
+
+1. Identify the chosen query from Section 5 and explain/justify your choice of index. Why do you think
+indexing could improve the query. [5 marks]
+
+2. Implement one index that would improve the querying of the database based on one of the queries
+(Q1-Q4). [2 marks]
+
+3. Present the execution plan of the selected query before the index and after the index has been
+created. Compare and discuss the execution plans to support your choice and summarise your
+findings. [8 marks]
+
+7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING [20 marks]
+Write code in MongoDB to automatically embed the details of authors from authors collection and genres
+from genres collection with their corresponding book in the books collection. This is an aggregate data
+modelling (ADM) question.
+Therefore, the books collection will contain the book data, authors data and genre data in a single
+collection of books. This requires the following tasks:
+1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. [1 mark]
+2. Embed all the authors and genres of books into their corresponding book using the new
+pxxxxxx_books_adm collection. [6 marks]
+3. To verify that the changes to the new products collection were successful, display the title,
+authors, and genre of the book with highest number of pages. [1 mark]
+4. Note that there is no longer need to reference the book_id inside each genre or author_id inside
+each book now that they are part of the book in pxxxxxx_books_adm collection. Show that these
+are removed. [2 marks]
+5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
+genres using pxxxxxxx_books collection. Track the speed of the query. [3 marks]
+6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
+of the query. [3 marks]
+7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
+results. [4 marks]
