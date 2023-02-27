@@ -198,56 +198,77 @@ contain identical values for city, state and pop. The latitude and longitude
 fields are added together because the value is null from the document where
 they are absent which could be the first or last document. A pair of documents
 should now be grouped into one. For example:
-{ "_id" : "01007",
-"city" : "BELCHERTOWN",
-"state" : "MA",
-"pop" : 10579,
-"latitude" : 42.275103,
-"longitude" : -72.410953 }
-IMAT3104 Database Management and Programming Aggregation Methods
+
+
+    { "_id" : "01007",
+    "city" : "BELCHERTOWN",
+    "state" : "MA",
+    "pop" : 10579,
+    "latitude" : 42.275103,
+    "longitude" : -72.410953 }
+
+
 We could now finish by applying the $out stage to output the results to a new
 collection, but instead let’s use the new documents to calculate the minimum
 and maximum longitude and latitude for all zip codes:
-Notice that this last aggregation pipeline stage specifies a group _id of null, to
-perform the calculations on all documents in the collection. The results are:
-{ "_id" : null,
-"min_latitude" : 19.066844,
-"min_longitude" : -171.701685,
-"max_latitude" : 71.234637,
-"max_longitude" : -67.00739 }
+
+
+Notice that this last aggregation pipeline stage specifies a group _id of null, to perform the calculations on all documents in the collection. The results are:
+
+    { "_id" : null,
+    "min_latitude" : 19.066844,
+    "min_longitude" : -171.701685,
+    "max_latitude" : 71.234637,
+    "max_longitude" : -67.00739 }
+
 These range of latitudes and longitudes cover almost all of the USA.
 For further information about different stages of an aggregate pipeline read:
-https://docs.mongodb.com/manual/reference/operator/aggregation-
-pipeline/#aggregation-pipeline-operator-reference
-IMAT3104 Database Management and Programming Aggregation Methods
-Exercises
-Write the following MongoDB queries against the zip codes collection. You will
-need to use the count, distinct or aggregate methods to answer them.
+
+https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#aggregation-pipeline-operator-reference
+
+**Exercises**
+
+Write the following MongoDB queries against the zip codes collection. You will need to use the count, distinct or aggregate methods to answer them.
+
 1. What is the total population of the city of CHICOPEE? There is more than
 one zip code for CHICOPEE.
-1. What is the total population of the state of SC?
-2. How many different zip codes are there in the state of SC?
-3. List all of the distinct states.
-4. List all the cities in the state “NJ”. Create two solutions: one using
+
+2. What is the total population of the state of SC?
+
+3. How many different zip codes are there in the state of SC?
+
+4. List all of the distinct states.
+
+5. List all the cities in the state “NJ”. Create two solutions: one using
 distinct and a second using aggregate.
-1. List all the cities with a population between one and nine inclusive and
+
+6. List all the cities with a population between one and nine inclusive and
 their population. Note that there may be cities with the same name in
 different states.
-1. List all the cities in the state “NJ” with a population of less than fifty.
+
+7. List all the cities in the state “NJ” with a population of less than fifty.
+
 2. What is the size of the largest city by population in each state?
+
 3. List the distinct states that contain a city with a population of more than
 three hundred and thirty thousand.
+
 1.  What is the name of the largest city by population in each state? Hint: use
 the $first or $last operator with the $group and $sort pipeline stages.
+
 1.  List all the states and the number of cities they contain. Use an
 aggregation pipeline, and note that {$sum:1} can be used to count the
 number of documents in a group.
+
 1.  List all the states that contain fewer than two hundred cities – extend your
 pipeline from above.
+
 1.  How many cities does state TX have? Create two solutions: one using
 distinct and a second using aggregate.
+
 1.  Which cities within the same state appear more than forty five times in the
 collection (i.e. they have more than forty-five zip codes)?
+
 1.  List all the city names that appear in more than twenty different states,
 along with their states. (To list the states to which the cities belong, you
 need to maintain a set of state names for each city. Use $addToSet for
