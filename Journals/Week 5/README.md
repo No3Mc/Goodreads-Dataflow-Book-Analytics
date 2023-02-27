@@ -68,4 +68,7 @@ Have a look at https://docs.mongodb.com/manual/tutorial/query-a-2d-index/ and th
 
 ```db.collection.find({location: {$geoWithin: {$center: [[-103.459067, 43.879102], 20 / 69]}}})```
 
+3.There is only one point in America where four states meet. This is at approximately (-109 longitude, 37 latitude). Use a distinct query to list the four states. [Hint: use $near and its $maxDistance property].
+
+```db.collection.distinct("state", {location: {$near: [-109, 37], $maxDistance: 0.1}})```
 
