@@ -1,0 +1,89 @@
+Example::
+use mod
+db.createCollection("movies")
+db.movies.insert({title: "zootropolis", director: ["howard", "more", "bush"], releaseDate: "2016-02-11", runtime:108})
+db.movies.find()
+
+Exercise 1:
+
+db.movies.insertMany([{title: "The Martian", directors: ["Scott"], releaseDate: "2015-10-02", runtime:144}, {title: "Amazing Spider-Man", directors: ["Marc", "Webb"], releaseDate: "2012-06-15", runtime:136}, {title: "Spider-Man: No way home", directors: ["Jon", "Watts"], releaseDate:"2021-12-23", runtime:148}])
+db.movies.find({title: "zootropolis"})
+db.movies.find({title: /zoo/})
+db.movies.find({title: /Zoo/i})
+
+Exercise 2:
+
+db.movies.find({title: "The Martian"})
+db.movies.find({title: /tr/i})
+db.movies.find({}, {title: 1})
+db.movies.find({}, {title: 1, _id: 0})
+db.movies.find({}, {title: 1, _id: false})
+
+Exercise 3:
+
+db.movies.find({}, {title: 1, _id: false, runtime: true})
+db.movies.find({title : "The Martian"}, {title: 1, _id: false, directors: true})
+db.movies.find().sort({runtime:1})
+db.movies.find().sort({runtime:1}).limit(1)
+
+Exercise 4:
+
+db.movies.find().sort({title: 1})
+db.movies.find({}, {title:1, _id: 0, runtime: 1}).sort({runtime: -1}).limit(1)
+db.movies.find({runtime: {$gte : 130 }})
+db.movies.find({directors: {$in : ["howard", "bush"] }})
+
+Exercise 5:
+
+db.movies.find({runtime: {$lt : 120 }}
+db.movies.find({directors: "more" })
+db.movies.updateOne({title: "zootropolis"}, {$set: {releaseDate: "2016-03-25"}})
+
+Exercise 6:
+
+db.movies.updateOne({"title": "zootropolis"}, {$set: {releaseDate: {ISOReleaseData: "2015-10-02", unixReleaseTime: unixTime, country: "UK"}}})
+db.movies.findOne({"releaseDate.country" : "USA"})
+
+Exercise 7:
+
+db.movies.find({}, {_id: 0, runtime: 0, directors: 0}).sort({unixReleaseTime:1})
+var unixTime = ISODate("2015-10-02").getTime()/1000;
+db.movies.updateOne({"title": "The Martians"}), {$set: [{ISOReleaseData: "2015-10-02", unixReleaseTime: unixTime, country: "USA"}]
+var unixTime = ISODate("2015-09-30").getTime()/1000;
+db.movies.updateOne({"title": "The Martian"}, {$addToSet : {releaseDate : { ISOReleaseData: "2015-09-30", unixReleaseTime: unixTime, country: "UK"}}})
+
+Exercise 8:
+
+var unixTime = ISODate("2016-02-11").getTime()/1000;
+db.movies.updateOne({"title": "zootropolis"}, {$set : {releaseDate: [{ISOReleaseData: "2016-02-11", unixReleaseTime: unixTime, country: "UK"}]}})
+var unixTime = ISODate("2016-03-04").getTime()/1000;
+db.movies.updateOne({"title": "zootropolis"}, {$addToSet : {releaseDate : { ISOReleaseData: "2016-03-04", unixReleaseTime: unixTime, country: "USA"}}})
+db.movies.find({title: "The Martian", "releaseDate.country": "UK"}, {"releaseDate.$" : 1})
+
+Exercise 9:
+
+db.movies.find({title: "zootropolis", "releaseDate.country": "USA"}, {"releaseDate.$" : 1})
+db.movies.updateOne({title: "The Martian"}, {$set : {genre : ["Adventure", "Drama", "Sci-Fi"]}})
+db.movies.findOne({genre: {$exists: true}}, {title: 1})
+db.movies.insertOne({title: "Jurassic Shark", director: "O' Donnel", releaseDate: "2000-11-05", runtime: 60})
+db.movies.insertOne({title: "Good Will Hunting", director: "Van Sant", releaseDate: "1998-03-06", runtime: 126})
+
+var unixTime = ISODate("1998-03-06").getTime()/1000;
+db.movies.updateOne({"title": "Good Will Hunting"}, {$set : {releaseDate: [{ISOReleaseData: "1998-03-06", unixReleaseTime: unixTime, country: "UK"}]}})
+var unixTime = ISODate("1997-01-09").getTime()/1000;
+db.movies.updateOne({"title": "Good Will Hunting"}, {$addToSet : {releaseDate : { ISOReleaseData: "1997-01-09", unixReleaseTime: unixTime, country: "USA"}}})
+
+
+db.createCollection("actors")
+db.actors.insertOne({Name: "Matt Damon", Movies: ["The Martian", "Good Will Hunting"]})
+db.actors.find()
+
+
+Exercise 10:
+
+db.actors.find({Movies: "Good Will Hunting" }, {_id: 0, Movies: 0})
+db.actors.find({"Movies": {"$in": ["Good Will Hunting"]}})
+db.actors.find({"$and": [{"Movies": {"$all": ["Good Will Hunting"]}},{"Movies": {"$all": ["The Martian"]}}]})
+db.actors.find({"$or": [{"Movies": {"$in": ["Good Will Hunting"]}},{"Movies": {"$in": ["The Martian"]}}]})
+
+print(movies);
