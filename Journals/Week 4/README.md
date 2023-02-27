@@ -73,50 +73,80 @@ Here is description of some fields from the collections
 
 1. Using aggregation pipeline, extract your assigned products data.
 a. Hint (using $match and $in operators).
-db.products.aggregate([
-{$match: {assignedGroup: {$in:["A", "B", "C"]}}}
-])
+
+    db.products.aggregate([
+    {$match: {assignedGroup: {$in:["A", "B", "C"]}}}
+    ])
+
 1. Write out your assigned data to a new collection to a new collection named
 pXXXXXXX_products
 a. Hint (using $out operator)
-db.products.aggregate([
-{$match: {assignedGroup: {$in:["A", "B", "C"]}}},
-{$out: "pxxxxxx_products"}
-])
+
+    db.products.aggregate([
+    {$match: {assignedGroup: {$in:["A", "B", "C"]}}},
+    {$out: "pxxxxxx_products"}
+    ])
+
 1. Refresh the connection to see the new collection
+
 2. Export this to your local computer
-a. Ensure that you have selected your new collection
-b. Go to the menu bar
-c. Click on collections
-d. Click on export collection
-e. Select Export Full Collection
+
+    a. Ensure that you have selected your new collection
+    
+    b. Go to the menu bar
+    
+    c. Click on collections
+
+    d. Click on export collection
+
+    e. Select Export Full Collection
+
 1. A JSON file will be downloaded
-Exercise 2
+
+**Exercise 2**
+
 1. Extract your set of reviews that matches the products in your
 pXXXXXXX_products collection. There are some hints on how to do this
-a. Get all products IDs from pXXXXXXX_products collection
-var myasins = db.pxxxxxx_products.distinct("asin")
-b. Get all reviews that are written for those products
-var myasins = db.pxxxxxx_products.distinct("asin")
-db.reviews.aggregate([
-{$match: {asin: {$in: myasins}}},
-{$out: "pxxxxxx_reviews"}
-])
+
+
+    a. Get all products IDs from pXXXXXXX_products collection
+
+        var myasins = db.pxxxxxx_products.distinct("asin")
+
+    b. Get all reviews that are written for those products
+
+        var myasins = db.pxxxxxx_products.distinct("asin")
+        db.reviews.aggregate([
+        {$match: {asin: {$in: myasins}}},
+        {$out: "pxxxxxx_reviews"}
+        ])
+
 1. Export this to your local computer
-a. Ensure that you have selected your new collection
-b. Go to the menu bar
-c. Click on collections
-d. Click on export collection
-e. Select Export Full Collection
+
+    a. Ensure that you have selected your new collection
+
+    b. Go to the menu bar
+
+    c. Click on collections
+
+    d. Click on export collection
+
+    e. Select Export Full Collection
+
 1. A JSON file will be downloaded (takes a moment depending on the size of
 your collection)
-At this point, if you intend to stop using University machines and move back to
-your PC, copy the two downloaded JSON files to your PC and continue Exercise 3
-Exercise 3
+
+At this point, if you intend to stop using University machines and move back to your PC, copy the two downloaded JSON files to your PC and continue Exercise 3
+
+**Exercise 3**
+
 1. Delete the newly created collections with your pnumbers only. Avoid
 deleting other student’s collection or products and reviews collections.
+
 1. Disconnect from LabUser connection
+
 2. Connect to MongoDB localhost
+
 3. Create a DB named AmazonProducts. Connect to this DB.
 4. Import both JSON files exported from Exercise 2
 a. Pxxxxxxx_products.json into Pxxxxxxx_products collection
