@@ -88,7 +88,7 @@ results as a screenshot showing the command and the documents returned. For exam
 //Q1001. Find the details of the product identified as " B001KTEBOG ".
 db.p77342060_softwares.find({asin:"B001KTEBOG"})
 
-[Pic](https://camo.githubusercontent.com/834eb22050a87af1d63fd37a583fe85ad48c93174e813f9651829b57e06c4a5a/68747470733a2f2f7777772e617765736f6d6573637265656e73686f742e636f6d2f6170692f76312f64657374696e6174696f6e2f696d6167652f73686f773f496d6167654b65793d746d2d31303131372d33373134392d6130636538616332653330656539633966386635313066633538616363326139)
+![image](https://user-images.githubusercontent.com/41834061/221639935-5b74f24d-c3d2-48dc-a8f1-a7c49569350f.png)
 
 If a lot of documents are returned, show the first set of documents that are displayed. Ensure that what is
 displayed answers the requirements and demonstrates that the query is correct. You must do this to gain
