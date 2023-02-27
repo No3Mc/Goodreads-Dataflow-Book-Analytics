@@ -202,3 +202,80 @@ ids of the roles for that film and in role_f the filmId reference has been
 removed. This is an example of Multiple Association Referencing.
 
 
+Evaluation of Multiple Association Referencing
+----------------------------------------------
+
+Multiple Association Referencing is good when there are hundreds of
+occurrences of an association because it will not exceed the size limit of a
+document which it might if all of the data it is referencing was embedded. A
+film would not normally have a cast list of more than one hundred roles played
+by actors so each film references its roles.
+This is an excellent structure to keep roles independent of films. Roles can be
+queried and inserted without any regard for their films.
+However, the independence that referencing provides can prove to be a
+disadvantage in that both collections will need to be queried to retrieve
+associated information.
+
+Exercise 4
+----------
+
+Find the details of roles played in the film uniquely identified as filmID 1. This
+will require the two collections to be “joined” or queried separately.
+Another problem is that the references must be maintained. If the identifier of
+a role was updated in its role document then it would need to be updated in
+the film that referenced it, and similarly, if a role document was deleted then
+any reference to it must also be deleted. These operations can be automated
+in relational databases using the in-built mechanism of referential integrity, but
+MongoDB does not have these features so the programmer must implement
+them.
+
+Exercise 5
+----------
+
+Delete the role whose character name is "Nick Fury" and any reference to it in
+the film collection, then reinsert it and any references.
+
+Single Association Referencing
+------------------------------
+
+The other form of referencing is simply to reference a single document in
+another collection. Each role is played by exactly one actor. For example, the
+character Saroo Brierley in the film Lion is played by Dev Patel etc. Each role
+needs to reference the actor that plays that role.
+This type of referencing is closest to the relational representation where a
+foreign key references it primary key. In fact, there is nothing to do for the
+VoD collections because they were derived from a relational database design.
+
+Evaluation of the Referencing design method
+-------------------------------------------
+
+Single Association Referencing is good when there are thousands or millions
+of instances of an association so as to limit the size of documents. For
+example, if there was a concern that actors could play thousands of roles in
+their lifetime then an actor could play in enough roles to overflow the 16 MB
+document limit in MongoDB even if only the role ids were referenced.
+Therefore, a solution is for each role to reference its actor.
+
+Generally, referencing between different collections allows the collections to
+be independent. In the last example, actors are independent of roles. Actors
+can be queried and inserted without any impact on roles. However, finding
+details about both actors and their roles is more complicated because both
+collections need to be queried, and the actorId reference needs to be kept up
+to date across collections if it changed.
+
+Exercise 5
+----------
+
+1. Find the date of birth of the actress "Halle Berry". This should be easy.
+
+2. Insert the details of Ziyi Zhang into the actor collection. She is an actress
+and model, born on the 9th February 1979 in Beijing, China. This insert should
+be straight forward.
+
+3. Find the details of actors playing the role of the character "Minn-Erva". This
+will require the two collections to be “joined” or queried separately.
+
+4. Change the actorId of "Halle Berry" to number 10 and ensure that it is
+consistent across the actor and role collections. Then change it back to its
+original number. This will require several operations across several
+collections.
