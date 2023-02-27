@@ -1,0 +1,73 @@
+EX 1:
+
+1. db.zip.find({state: "CA"}).explain()
+
+2. db.zip.createIndex({state: 1})
+   db.zip.find({state: "CA"}).explain()
+
+3. db.zip.find({city: "Pasadena", state: "CA"}).explain()
+
+4. db.zip.createIndex({city: 1, state: 1})
+   db.zip.find({city: "Pasadena", state: "CA"}).explain()
+
+EX 2:
+
+1. db.zip.find({loc: {$geoWithin: { $box: [[-100, -100], [30, 30]]}}})
+
+2. db.zip.find({loc: {$geoWithin: { $center: [[-103.459067, 43.879102], 20 / 69 ]}}})
+
+3. db.zip.aggregate([{ $geoNear: { near: { type: "Point", coordinates: [-109, 37] }, distanceField: "distance", maxDistance: 100000, spherical: true, query: { state: { $exists: true } } } }, { $group: { _id: "$state" } }, { $limit: 4 }])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
