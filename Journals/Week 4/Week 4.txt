@@ -1,0 +1,151 @@
+Exercise 1: 
+
+  
+
+1- db.products.aggregate([ {$match: {assignedGroup: {$in:[1, 6, 4, 7, 8]}}}]) 
+
+  
+
+2- db.products.aggregate([ 
+
+    {$match: {assignedGroup: {$in:[1, 6, 4, 7, 8]}}}, 
+
+    {$out: "p2652259_products"} 
+
+    ]) 
+
+  
+
+Exercise 2: 
+
+  
+
+1a- var myasins = db.p2652259_products.distinct("asin") 
+
+  
+
+1b- var myasins = db.p2652259_products.distinct("asin") 
+
+db.reviews.aggregate([ 
+
+{$match: {asin: {$in: myasins}}}, 
+
+{$out: "p2652259_reviews"} 
+
+]) 
+
+   
+
+Exercise 4: 
+
+  
+
+1.  
+
+  
+
+db.p_collection.aggregate([  {    $group: {      _id: "$assignedGroup",      count: { $sum: 1 }    }  },  {    $group: {      _id: null,      assignedGroups: { $push: "$_id" },      productsPerGroup: { $push: { _id: "$_id", count: "$count" } },      totalProducts: { $sum: "$count" }    }  },  {    $project: {      _id: 0,      assignedGroups: 1,      totalProducts: 1,      productsPerGroup: 1    }  }]) 
+
+  
+
+db.r_collection.aggregate([  {    $group: {      _id: "$productId",      count: { $sum: 1 }    }  },  {    $group: {      _id: null,      totalReviews: { $sum: "$count" }    }  },  {    $project: {      _id: 0,      totalReviews: 1    }  }]) 
+
+  
+
+  
+
+Item 
+
+Actual result 
+
+Distinct assingedGroups 
+
+assignedGroups: [ 4, 7, 8, 6, 1 ] 
+
+assignedGroups: [ A, F, D, G, H] 
+
+Total Number of products 
+
+totalProducts: 13410 
+
+Total Number of reviews 
+
+[ { totalReviews: 258268 } ] 
+
+Total Number of products per assignedGroup 
+
+    productsPerGroup: [ 
+
+      { _id: 4, count: 2698 }, 
+
+      { _id: 7, count: 2701 }, 
+
+      { _id: 8, count: 2686 }, 
+
+      { _id: 6, count: 2652 }, 
+
+      { _id: 1, count: 2673 } 
+
+    ] 
+
+ 
+
+ 
+
+2. 
+
+a. 
+
+db.p_collection.updateMany(  {},  [    {      $set: {        price: { $substr: ["$price", 1, -1] }      }    }  ]) 
+
+  
+
+b. 
+
+db.p_collection.updateMany(  {},  [    {      $set: {        price: { $toDouble: "$price" }      }    }  ]) 
+
+  
+
+  
+
+3 
+
+aggregate pipeline: 
+
+  
+
+db.p_collection.aggregate([  {    $sort: { price: -1 }  },  {    $limit: 1  }]) 
+
+  
+
+simple find() 
+
+  
+
+db.p_collection.find().sort({ price: -1 }).limit(1) 
+
+  
+
+4. 
+
+  
+
+db.r_collection.aggregate([  {    $group: {      _id: "$asin",      review_count: { $sum: 1 }    }  },  {    $sort: {      review_count: -1    }  },  {    $limit: 1  },  {    $lookup: {      from: "p_collection",      localField: "_id",      foreignField: "asin",      as: "product"    }  },  {    $unwind: "$product"  },  {    $project: {      _id: 0,      "Most Reviewed Product": "$product.title",      "Number of Reviews": "$review_count"    }  }]) 
+
+  
+
+5. 
+
+  
+
+db.r_collection.aggregate([  {    $group: {      _id: "$reviewerID",      reviewerName: { $first: "$reviewerName" },      verified: { $sum: { $cond: { if: "$verified", then: 1, else: 0 } } },      numReviews: { $sum: 1 }    }  },  {    $sort: {      numReviews: -1    }  },  {    $limit: 1  },  {    $project: {      _id: 0,      "Reviewer with Most Reviews": "$reviewerName",      "Number of Reviews": "$numReviews"    }  }]) 
+
+  
+
+6. 
+
+  
+
+db.r_collection.aggregate([  {    $group: {      _id: "$reviewerID",      reviewerName: { $first: "$reviewerName" },      verified: { $sum: { $cond: { if: "$verified", then: 1, else: 0 } } },      numReviews: { $sum: 1 }    }  },  {    $sort: { numReviews: -1 }  },  {    $limit: 10  },  {    $project: {      _id: 1,      reviewerName: 1,      numReviews: 1,      verified: 1    }  }]); 
+
+ 
