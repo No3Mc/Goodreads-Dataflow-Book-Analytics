@@ -279,3 +279,120 @@ will require the two collections to be “joined” or queried separately.
 consistent across the actor and role collections. Then change it back to its
 original number. This will require several operations across several
 collections.
+
+Appendix – Relational data
+--------------------------
+
+Class
+-----
+
+| classId | description                                                 |
+| ------- | ----------------------------------------------------------- |
+| U       | Universal: Suitable for all                                 |
+| PG      | Parental Guidance: General viewing but some scenes may be    |
+|         | unsuitable for young children                                |
+| 12      | Suitable only for persons of 12 years or over                |
+| 15      | Suitable only for persons of 15 years or over                |
+| 18      | Suitable only for persons of 18 years or over                |
+
+
+
+Film
+----
+
+| filmId | Title               | UKreleaseDate | filename              | runtime | classId |
+| ------ | ------------------ | ------------- | --------------------- | ------- | ------- |
+| 1      | Slumdog Millionaire | 2009-01-09    | slumdogMillionaire.mpg | 120     | 15      |
+| 2      | Shaft               | 2018-06-28    | shaft2019.mpg         | 111     | 15      |
+| 3      | Shaft               | 2000-09-15    | shaft2000.mpg         | 99      | 18      |
+| 4      | Lion                | 2017-01-20    | lion.mpg              | 118     | PG      |
+| 5      | Captain Marvel      | 2019-03-08    | captainMarvel.mpg     | 123     | 12      |
+| 6      | Cloud Atlas         | 2013-02-22    | cloudAtlas.mpg        | 172     | 15      |
+| 7      | Shadow              | 2018-10-19    | shadow.mpg            | 176     | 18      |
+| 8      | Yesterday           | 2019-06-28    | yesterday.mpg         | 116     | 12      |
+
+FilmGenre
+---------
+
+| filmId | genre     |
+| ------ | --------- |
+| 1      | Drama     |
+| 1      | Romance   |
+| 2      | Action    |
+| 2      | Comedy    |
+| 2      | Crime     |
+| 3      | Action    |
+| 3      | Crime     |
+| 3      | Thriller  |
+| 4      | Biography |
+| 4      | Drama     |
+| 5      | Action    |
+| 5      | Adventure |
+| 5      | Sci-Fi    |
+| 6      | Action    |
+| 6      | Drama     |
+| 6      | Mystery   |
+| 7      | Action    |
+| 7      | Drama     |
+| 7      | War       |
+| 8      | Comedy    |
+| 8      | Fantasy   |
+| 8      | Music     |
+
+
+Director
+--------
+
+| directorId | directorFirstname | directorLastname | dateOfBirth  | nationality |
+| ---------- | ----------------- | ---------------- | ------------ | ----------- |
+| 1          | danny             | boyle            | 1956-10-20   | English     |
+| 2          | loveleen          | tandan           | N/A          | Indian      |
+| 3          | tim               | story            | 1970-03-13   | American    |
+| 4          | john              | singleton        | 1968-01-06   | American    |
+| 5          | garth             | davis            | N/A          | Australian  |
+| 6          | anna              | boden            | 1979-10-20   | American    |
+| 7          | ryan              | fleck            | 1976-09-20   | American    |
+| 8          | steven            | spielberg        | 1946-12-18   | American    |
+| 9          | tom               | tykwer           | 1965-05-23   | German      |
+| 10         | lana              | wachowski        | 1965-06-21   | American    |
+| 11         | lilly             | wachowski        | 1967-12-29   | American    |
+| 12         | yimon             | zhang            | 1951-11-14   | Chinese     |
+
+
+FilmDirector
+------------
+
+
+| filmId | directorId |
+| ------ | ---------- |
+| 1      | 1          |
+| 1      | 2          |
+| 2      | 3          |
+| 3      | 4          |
+| 4      | 5          |
+| 5      | 6          |
+| 5      | 7          |
+| 6      | 9          |
+| 6      | 10         |
+| 6      | 11         |
+| 7      | 12         |
+| 8      | 1          |
+
+
+Actor
+-----
+
+| actorId | firstname    | lastname | dateOfBirth | nationality | biography                                                               |
+| ------- | ------------ | -------- | ----------- | ----------- | ----------------------------------------------------------------------- |
+| 1       | dev          | patel    | 1990-04-23  | English     | ... born in Harrow, London, to Anita, a caregiver, and Raj Patel, who works in IT. His parents, originally from Nairobi, Kenya, are both of Gujarati Indian descent. His first role was in the UK TV series Skins (2007) ....  |
+| 2       | freida       | pinto    | 1984-10-18  | Indian      | ... born in Bombay (now Mumbai), Maharashtra, India, to Sylvia, a school principal, and Frederick Pinto, a senior bank branch manager. She traversed the modeling circuit in Mumbai for two years before gaining her big break in a movie ...                                                                                  |
+| 3       | samuel l.    | jackson  | 1948-12-21  | American    | ... born in Washington, D.C., to Elizabeth (Montgomery) and Roy Henry Jackson. He was raised by his mother, a factory worker, and his grandparents. At Morehouse College, Jackson was active in the black student movement ...                                                                               |
+| 4       | fawad        | khan     | 1981-11-29  | Pakistani   | ... born in Karachi to a family originally based in Lahore. He spent earlier years of his life abroad. Khan, as his father's job required, lived in Athens, Dubai, Saudi Arabia and Riyadh and then went to Manchester during the Gulf War, moving back to Lahore ...                                                                                  |
+| 5       | gemma        | chan     | 1982-11-29  | English     | ... born at Guy's Hospital in London, England. Her father grew up in Hong Kong and was an engineer. Her mother, a pharmacist at Guy's Hospital, emigrated from China via Hong Kong with Chan's maternal grandparents and younger sister, growing up in Greenock, Scotland ...                                                                                  |
+| 6       | halle        | berry    | 1966-08-14  | American    | ... born in Cleveland, Ohio. Her father, Jerome Jesse Berry, was African-American, and worked as a hospital attendant. Her mother, Judith Ann (Hawkins), who is Caucasian, has English and German ancestry, and is a retired psychiatric nurse ...                                                                                    |
+| 7       | wu           | lei      | 1999-12-26  | Chinese     | ... born in Shanghai, China. He is an actor, known for Nirvana in Fire (2015), Whirlwind Girl 2 (2016) and The Shanghai Job (2017) ...                                                                                               |
+
+
+Role
+----
+
