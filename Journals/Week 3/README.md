@@ -172,24 +172,25 @@ stage:
 
 
 The $project stage keeps the id, city, state and pop fields from the previous
-stage but adds new fields for longitude and latitude. The longitude field is only
-added if the locIndex is 0 and similarly the latitude field is only added if the
-locIndex is 1. Each document at this stage only contains one of these fields
-because they only have one element from the original array. For example:
-{ "_id" : "01007",
-"city" : "BELCHERTOWN",
-"pop" : 10579,
-"state" : "MA",
-"longitude" : -72.410953 }
-{ "_id" : "01007",
-"city" : "BELCHERTOWN",
-"pop" : 10579,
-"state" : "MA",
-"latitude" : 42.275103 }
-IMAT3104 Database Management and Programming Aggregation Methods
+stage but adds new fields for longitude and latitude. The longitude field is only added if the locIndex is 0 and similarly the latitude field is only added if the locIndex is 1. Each document at this stage only contains one of these fields because they only have one element from the original array. For example:
+
+    { "_id" : "01007",
+    "city" : "BELCHERTOWN",
+    "pop" : 10579,
+    "state" : "MA",
+    "longitude" : -72.410953 }
+    { "_id" : "01007",
+    "city" : "BELCHERTOWN",
+    "pop" : 10579,
+    "state" : "MA",
+    "latitude" : 42.275103 }
+
+
 Next let’s merge the pairs of documents together so that each zip code has
 both a longitude and latitude field in the same document. For this we will
 group the documents according to their zip code:
+
+
 The $group stage creates one document for each zip code containing the city,
 state and pop from the first document it finds. It does not matter which
 document is found first because both documents for the same zip code
