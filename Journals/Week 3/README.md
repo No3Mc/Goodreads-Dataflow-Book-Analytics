@@ -71,74 +71,94 @@ The loosely equivalent SQL statement for this aggregation pipeline would be:
     GROUP BY state;
 
 Here the populations of zip codes in the same state are added together.
-Next the results must be restricted to just those with a total population greater
-than ten million by adding the $match aggregation pipeline stage.
+
+Next the results must be restricted to just those with a total population greater than ten million by adding the $match aggregation pipeline stage.
+
+
 The $match stage operator filters the documents like a find(). For example:
+
 { "_id" : "CA", "totalPop" : 29754890}
+
 The loosely equivalent SQL statement for this aggregation pipeline would be:
-SELECT state, SUM(pop) AS totalPop
-FROM zips
-GROUP BY state
-HAVING totalPop > (10*1000*1000);
+
+    SELECT state, SUM(pop) AS totalPop
+    FROM zips
+    GROUP BY state
+    HAVING totalPop > (10*1000*1000);
+
+
 Where the $match stage in this case functions in a similar way to the HAVING
 clause in SQL.
-IMAT3104 Database Management and Programming Aggregation Methods
-Example 2: Find the average size of city by population for each state.
-By way of example, there are two zip codes for the city of Aiken in the state of
-South Carolina. We need to add the populations of each zip code to calculate
-the total population of the city. Only then can we calculate the average size of
-a city in South Carolina.
-{ "_id" : "29801",
-"city" : "AIKEN",
-"loc" : [-81.719429, 33.553024],
-"pop" : 51233,
-"state" : "SC" }
-{ "_id" : "29803",
-"city" : "AIKEN",
-"loc" : [-81.594702, 33.531868],
-"pop" : 743,
-"state" : "SC" }
-First, let’s use a $group stage to create new documents for every combination
-of city and state to calculate the sum of the populations for a city. We need to
-include the state because some city names appear in more than one state.
+
+
+**Example 2: Find the average size of city by population for each state.**
+
+By way of example, there are two zip codes for the city of Aiken in the state of South Carolina. We need to add the populations of each zip code to calculate the total population of the city. Only then can we calculate the average size of a city in South Carolina.
+
+    { "_id" : "29801",
+    "city" : "AIKEN",
+    "loc" : [-81.719429, 33.553024],
+    "pop" : 51233,
+    "state" : "SC" }
+    { "_id" : "29803",
+    "city" : "AIKEN",
+    "loc" : [-81.594702, 33.531868],
+    "pop" : 743,
+    "state" : "SC" }
+
+First, let’s use a $group stage to create new documents for every combination of city and state to calculate the sum of the populations for a city. We need to include the state because some city names appear in more than one state.
+
+
+
 For Aiken this outputs the following document:
-{ "_id" : {
-"state" : "SC",
-"city" : "AIKEN"
-}, "totalPop" : 51976 }
+
+    { "_id" : {
+    "state" : "SC",
+    "city" : "AIKEN"
+    }, "totalPop" : 51976 }
+
 Check that the total population is correct.
+
+
 Finally, let’s use a second $group to take these new documents from the first
 $group as input. This second $group needs to group by state to calculate the
 state’s average city population:
+
+
+
 It should output documents like this:
-{ "_id" : "SC", "avgCityPop" : 11139.6261980831 }
+
+    { "_id" : "SC", "avgCityPop" : 11139.6261980831 }
+
 This is a powerful multi-group aggregation that is difficult to achieve in SQL.
-IMAT3104 Database Management and Programming Aggregation Methods
-Example 3: Find the minimum and maximum longitude and latitude for
-all zip codes
-Let’s investigate a variety of aggregate pipeline stages. First, let’s replace the
-location array for each zip code with separate longitude and latitude fields,
-and then calculate the minimum and maximum longitude and latitude for all
-zip codes.
+
+**Example 3: Find the minimum and maximum longitude and latitude for all zip codes**
+
+Let’s investigate a variety of aggregate pipeline stages. First, let’s replace the location array for each zip code with separate longitude and latitude fields, and then calculate the minimum and maximum longitude and latitude for all zip codes.
+
 First let’s dismantle the location array so that its longitude and latitude
 elements are each placed into their own separate document. To deconstruct
 an array we will use the $unwind aggregation pipeline operator:
+
+
 This outputs pairs of documents for each zip code. One document contains
 the value from the first location index of the array (index 0) and the other
 associated document holds the value for the second index (index 1). For
 example:
-{ "_id" : "01007",
-"city" : "BELCHERTOWN",
-"loc" : -72.410953,
-"pop" : 10579,
-"state" : "MA",
-"locIndex" : NumberLong(0) }
-{ "_id" : "01007",
-"city" : "BELCHERTOWN",
-"loc" : 42.275103,
-"pop" : 10579,
-"state" : "MA",
-"locIndex" : NumberLong(1) }
+
+    { "_id" : "01007",
+    "city" : "BELCHERTOWN",
+    "loc" : -72.410953,
+    "pop" : 10579,
+    "state" : "MA",
+    "locIndex" : NumberLong(0) }
+    { "_id" : "01007",
+    "city" : "BELCHERTOWN",
+    "loc" : 42.275103,
+    "pop" : 10579,
+    "state" : "MA",
+    "locIndex" : NumberLong(1) }
+
 Note that the includeArrayIndex field in the $unwind stage creates a
 new field to hold the array index of the element, locIndex.
 includeArrayIndex is optional but is very useful in this case because we
@@ -147,7 +167,10 @@ latitude value.
 Next let’s reshape each document so each loc field is named longitude or
 latitude depending on the locIndex. To do this, we need a $project
 stage:
-IMAT3104 Database Management and Programming Aggregation Methods
+
+
+
+
 The $project stage keeps the id, city, state and pop fields from the previous
 stage but adds new fields for longitude and latitude. The longitude field is only
 added if the locIndex is 0 and similarly the latitude field is only added if the
