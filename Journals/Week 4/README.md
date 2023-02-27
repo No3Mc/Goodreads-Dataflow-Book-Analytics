@@ -148,39 +148,39 @@ deleting other student’s collection or products and reviews collections.
 2. Connect to MongoDB localhost
 
 3. Create a DB named AmazonProducts. Connect to this DB.
+
 4. Import both JSON files exported from Exercise 2
-a. Pxxxxxxx_products.json into Pxxxxxxx_products collection
-b. Pxxxxxxx_reviews.json into Pxxxxxxx_reviews collection
-Exercise 4
+
+    a. Pxxxxxxx_products.json into Pxxxxxxx_products collection
+    b. Pxxxxxxx_reviews.json into Pxxxxxxx_reviews collection
+
+**Exercise 4**
+
 These exercises are to be completed on your extracted and imported local
 database AmazonProducts
 1. Using the most efficient approach, complete the table below. Remove the
 Sample result column before submitting your Journal.
-Item Sample result Actual result
-Distinct
-assingedGroups
-[A, B, C, D]
-Total Number
-of products
-8451
-Total Number
-of reviews
-45122
-Total Number
-of products per
-assignedGroup
-[
-{"_id": "A", "count": 3545},
-{"_id": "B", "count": 5545},
-{"_id": "C", "count": 7845},
-{"_id": "D", "count": 1345},
-]
+
+    | Item                           | Sample result                  | Actual result                                                  |
+    |--------------------------------|--------------------------------|----------------------------------------------------------------|
+    | Distinct assignedGroups        | [A, B, C, D]                   |                                                                |
+    | Total Number of products       | 8451                           |                                                                |
+    | Total Number of reviews        | 45122                          |                                                                |
+    | Total Number of products per assignedGroup | [{"_id": "A", "count": 3545}, {"_id": "B", "count": 5545}, {"_id": "C", "count": 7845}, {"_id": "D", "count": 1345}] | |
+
+
 1. The price field in the products collection needs some transformation
-a. Remove the dollar sign from all prices (Hint: use $substr operator)
-b. Convert the price field to double (Hint: use $toDouble operator)
-1. Find the most expensive product using aggregation pipeline and simple
+
+    a. Remove the dollar sign from all prices (Hint: use $substr operator)
+
+    b. Convert the price field to double (Hint: use $toDouble operator)
+
+2. Find the most expensive product using aggregation pipeline and simple
 find(). Show both solutions.
+
 1. Find the most reviewed product in your collection.
+
 2. Find the reviewer with highest number of reviews.
+
 3. Get the reviewerID, reviewerNames and number of verified reviews of the
 top 10 reviewers ordered by number of reviews in desceding order.
