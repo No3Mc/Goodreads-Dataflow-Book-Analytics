@@ -1,0 +1,81 @@
+1. db.zip.aggregate([ { $match: { city: "CHICOPEE" } }, { $group: { _id: false, totalPopulation: { $sum: "$pop" } } }])
+
+2. db.zip.aggregate([ { $match: { state: "SC" } }, { $group: { _id: false, totalPopulation: { $sum: "$pop" } } }])
+
+3. db.collection_name.aggregate([
+  { $match: { state: "SC" } },
+  { $count: "total" }
+])
+
+
+
+4. db.zip.distinct("state")
+
+5. Distinct:
+db.zip.distinct("city", {state: "NJ"});
+
+Aggregate:
+db.zip.aggregate([ { $match: { state: "NJ" } }, { $group: { _id: "$city" }
+}]);
+
+6.
+db.zip.aggregate([ { $match: { pop: { $gte: 1, $lte: 9 } } }, { $project: { _id: 0, city: 1, pop: 1 } }]);
+
+7. 
+db.zip.aggregate([ { $match: { state: "NJ", pop: { $lt: 50 } } }, { $project: { _id: 0, city: 1, pop: 1 } }]);
+
+8.
+db.zip.aggregate([
+  { $group: { _id: { state: "$state", city: "$city" }, pop: { $sum: "$pop" } } },
+  { $sort: { pop: -1 } },
+  { $group: { _id: "$_id.state", city: { $first: "$_id.city" }, pop: { $first: "$pop" } } },
+  { $project: { _id: 0, state: "$_id", city: 1, pop: 1 } }
+])
+
+9. db.zip.distinct("state", {pop:{$gt:"330000"}})
+
+10. db.zip.aggregate([
+  { $sort: { state: 1, pop: -1 } },
+  { $group: { _id: "$state", city: { $first: "$city" }, pop: { $first: "$pop" } } },
+  { $project: { _id: 0, state: "$_id", city: 1, pop: 1 } }
+])
+
+11. db.zip.aggregate([
+  { $group: { _id: "$state", count: { $sum: 1 } } },
+  { $sort: { _id: 1 } },
+  { $project: { _id: 0, state: "$_id", count: 1 } }
+])
+
+12. db.zip.aggregate([
+  { $group: { _id: "$state", count: { $sum: 1 } } },
+  { $match: { count: { $lt: 200 } } },
+  { $sort: { _id: 1 } },
+  { $project: { _id: 0, state: "$_id", count: 1 } }
+])
+
+13. 
+	Solution 1: 
+
+db.zip.distinct("city", { state: "TX" }).length
+	
+	Solution 2:  
+
+db.zip.aggregate([
+  { $match: { state: "TX" } },
+  { $group: { _id: "$city" } },
+  { $count: "count" }
+])
+
+
+14. db.zip.aggregate([
+  { $group: { _id: { state: "$state", city: "$city" }, count: { $sum: 1 } } },
+  { $match: { count: { $gt: 45 } } },
+  { $sort: { "_id.state": 1, "_id.city": 1 } }
+])
+
+15. db.zip.aggregate([
+  { $group: { _id: "$city", states: { $addToSet: "$state" } } },
+  { $project: { _id: 1, states: 1, size: { $size: "$states" } } },
+  { $match: { size: { $gt: 20 } } },
+  { $sort: { "_id": 1, "states": 1 } }
+])
