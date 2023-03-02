@@ -64,7 +64,7 @@ Let's try alternate way as the following have errors:
 <!--     db.reviews.aggregate([
     {
         $match: {
-        review_id: { $in: db.p2652259_books.distinct("book_id") }
+        book_id: { $in: db.p2652259_books.distinct("book_id") }
         }
     },
     { $out: "p2652259_reviews" }
