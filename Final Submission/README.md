@@ -15,6 +15,7 @@
 Let's try alternate way as the following have errors:
 
 .
+
     db.books.find({ assignedGroup: 100 })
 
 .
