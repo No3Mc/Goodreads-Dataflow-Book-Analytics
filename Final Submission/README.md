@@ -1,6 +1,15 @@
 3.3 Getting your personalized data. 
 
 
+####    Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. [2 mark]
+
+####    Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. [1 mark]
+
+####   Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. [1 mark]
+
+####    Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
+
+
 1. 
 
     db.books.aggregate([
