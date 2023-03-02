@@ -14,41 +14,32 @@
 
 Let's try alternate way as the following have errors:
 
-.
+1.
 
-    db.books.find({ assignedGroup: 100 })
+    db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})
 
-.
+2.
 
-    db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insert(doc)})
+    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
 
-.
+3.
 
-    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+    db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insertOne(doc)})
 
-.
+4.
 
-    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insert(doc)})
+    db.genres.aggregate([
+      {
+        $match: {
+          book_id: { $in: db.p2652259_books.distinct("book_id") }
+        }
+      },
+      { $out: "p2652259_genres" }
+    ])
 
-.
+------------
 
-    db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } })
-
-.
-
-    db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insert(doc)})
-
-.
-
-    db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
-
-.
-
-    db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_genres.insert(doc)})
-.
-
-
-1. 
+<!-- 1.  -->
 
 <!--     db.books.aggregate([
     { $match: { assignedGroup: 100 } },
@@ -59,7 +50,7 @@ Let's try alternate way as the following have errors:
 
 
 
-2. 
+<!-- 2.  -->
 
 <!--     db.reviews.aggregate([
     {
@@ -91,7 +82,7 @@ Let's try alternate way as the following have errors:
 
 
 
-3.
+<!-- 3. -->
 <!-- 
     db.authors.aggregate([
     {
@@ -104,7 +95,7 @@ Let's try alternate way as the following have errors:
 
 
 
-4.
+<!-- 4. -->
 
 <!--     db.genres.aggregate([
     {
