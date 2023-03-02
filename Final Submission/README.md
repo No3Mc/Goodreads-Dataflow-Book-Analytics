@@ -114,25 +114,25 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaiKy_Izyd1GvmbVIHq-aZYBF0OeODCh68f8Kft8HUAU_Q) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaKjuHy_5xpFna9Det1Z-REBMW72FQ4IHpZdp7vCGjqzpw) |
+| goodreads_reviews_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EYwV48GcIbxAoLucY0I5z6MBNTqWf2w9-JiEaOg18s-Z7w) |
 
 - Genre.Romance:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXOgdqrOhqZPu1taZwal4MoBwKseTSHPkvwiswho5ou9pQ) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Edsym-cw63lIkNdOBjCx_IIBGbjzIGRcMYSjT8STYzqLBA) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZSupfmDNy5Lg6feaWiIM-gBzLnvs9XEGQ4B5x9ZToFqGg) |
 
 - Genre.Young Adult:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| goodreads_books_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETMh4zpBK6VDm04RvBackr0BxpUlCygMhn3-wJ9SlFnkmw) |
+| goodreads_interactions_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ea3oVC_jeVVMhJcVpy4TsQABus-1iWeNiD22pD7ZCGu_uA) |
+| goodreads_reviews_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeSX9wfLNhBNvpkGLlMh4UgByDFic2H3S80seX-2bAk91g) |
 
 ----------
 
