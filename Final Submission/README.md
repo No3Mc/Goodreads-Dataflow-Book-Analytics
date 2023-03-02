@@ -10,10 +10,6 @@
 ####    Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
 
 
-
-
-Let's try alternate way as the following have errors:
-
 1.
 
     db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})
