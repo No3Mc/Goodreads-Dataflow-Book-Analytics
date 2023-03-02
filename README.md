@@ -37,6 +37,7 @@ Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu
 1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
 
 2. Study the collections briefly with their fields and values. [6 marks]
+ 
  a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
  b. Identify examples and how you intend to address them. You do not need to solve the issues here.
 
