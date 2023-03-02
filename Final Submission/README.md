@@ -1,3 +1,57 @@
+3.2
+
+1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
+
+Books.json:
+
+    goodreads_book_authors: author_id
+    goodreads_book_genres_initial: book_id
+    goodreads_book_series: series_id
+    goodreads_book_works: work_id
+    goodreads_books: book_id
+
+
+Genre.Children.json:
+
+    goodreads_books_children	isbn
+    goodreads_interactions_children	user_id, book_id
+    goodreads_reviews_children	user_id, book_id
+
+Comics n Graphics:
+
+    goodreads_books_comics_graphic	book_id
+    goodreads_interactions_comics_graphic	N/A (No unique key)
+    goodreads_reviews_comics_graphic	review_id
+
+Fantasy n Paranormal:
+
+
+
+History n Biography:
+
+
+
+Mystery, Thriller n Crime:
+
+
+
+Poetry:
+
+
+
+Romance:
+
+
+
+Young Adult:
+
+
+
+----------
+
+
+
+
 3.3 Getting your personalized data. 
 
 
