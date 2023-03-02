@@ -10,12 +10,50 @@
 ####    Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
 
 
+
+
+Let's try alternate way as the following have errors:
+
+
+db.books.find({ assignedGroup: 100 })
+
+db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insert(doc)})
+
+db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+
+db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insert(doc)})
+
+db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } })
+
+db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insert(doc)})
+
+db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+
+db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_genres.insert(doc)})
+
 1. 
 
-    db.books.aggregate([
+<!--     db.books.aggregate([
     { $match: { assignedGroup: 100 } },
     { $out: "p2652259_books" }
-    ])
+    ]) -->
+
+
+
+
+
+2. 
+
+<!--     db.reviews.aggregate([
+    {
+        $match: {
+        review_id: { $in: db.p2652259_books.distinct("book_id") }
+        }
+    },
+    { $out: "p2652259_reviews" }
+    ]) -->
+
+
 
 
 <!-- 2. db.p2652259_books.aggregate([
@@ -31,20 +69,13 @@
 ]) -->
 
 
-2. 
 
-    db.reviews.aggregate([
-    {
-        $match: {
-        review_id: { $in: db.p2652259_books.distinct("book_id") }
-        }
-    },
-    { $out: "p2652259_reviews" }
-    ])
+
+
 
 
 3.
-
+<!-- 
     db.authors.aggregate([
     {
         $match: {
@@ -52,20 +83,20 @@
         }
     },
     { $out: "p2652259_authors" }
-    ])
+    ]) -->
 
 
 
 4.
 
-    db.genres.aggregate([
+<!--     db.genres.aggregate([
     {
         $match: {
         book_id: { $in: db.p2652259_books.distinct("book_id") }
         }
     },
     { $out: "p2652259_genres" }
-    ])
+    ]) -->
 
 
 
