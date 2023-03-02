@@ -84,7 +84,7 @@ Genre:
 
 - Genre.Fantasy n Paranormal:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_fantasy_paranormal.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EUgo6_7v6vFKpRDUtPg2qywB2ycEKbPkWiPD16QSgZwAkA) |
 | goodreads_interactions_fantasy_paranormal.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXEqw5clTPdBrGr9Nl2SpS4Bn0qUEyPhiMThPRLHub5BfQ) |
@@ -94,7 +94,7 @@ Genre:
 
 - Genre.History n Biography:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_history_biography.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EbFFohv1WkhDhtvTOdDCwC0BLbQm8ycynCA8NlGDfxpznA) |
 | goodreads_interactions_history_biography.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EckO2Pz8yClMtptbPST46qEB4DzjTW_DzcPZxtU1iwvgsQ) |
@@ -104,7 +104,7 @@ Genre:
 
 - Genre.Mystery, Thriller n Crime:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EQ5tXa0o6LtLhbqpJ5AJvOQBP5IyVrUO8NslerdpED-ZHQ) |
 | goodreads_interactions_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcvdawHx6DFPq8HhTorT97sBsPNmV4rOIG13YAabpCNyaw) |
@@ -112,7 +112,7 @@ Genre:
 
 - Genre.Poetry:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaiKy_Izyd1GvmbVIHq-aZYBF0OeODCh68f8Kft8HUAU_Q) |
 | goodreads_interactions_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaKjuHy_5xpFna9Det1Z-REBMW72FQ4IHpZdp7vCGjqzpw) |
@@ -120,7 +120,7 @@ Genre:
 
 - Genre.Romance:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXOgdqrOhqZPu1taZwal4MoBwKseTSHPkvwiswho5ou9pQ) |
 | goodreads_interactions_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Edsym-cw63lIkNdOBjCx_IIBGbjzIGRcMYSjT8STYzqLBA) |
@@ -128,7 +128,7 @@ Genre:
 
 - Genre.Young Adult:
 
-| Collection | Primary Key | Link |
+| Collection | Keys | Link |
 | -------- | -------- | -------- |
 | goodreads_books_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETMh4zpBK6VDm04RvBackr0BxpUlCygMhn3-wJ9SlFnkmw) |
 | goodreads_interactions_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ea3oVC_jeVVMhJcVpy4TsQABus-1iWeNiD22pD7ZCGu_uA) |
