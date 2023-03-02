@@ -54,11 +54,11 @@ Books:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| goodreads_book_authors | author_id | [Link]() |
-| goodreads_book_genres_initial | book_id | [Link]() |
-| goodreads_book_series | series_id | [Link]() |
-| goodreads_book_works | work_id | [Link]() |
-| goodreads_books | book_id | [Link]() |
+| goodreads_book_authors | author_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ec0zu-dEyepJpst0nP83ENgBpWn6kxyDkH5Iogn1Mw2dzA) |
+| goodreads_book_genres_initial | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EVl07zLePvVOiLQGhNHC8cUB4cw_9qlIz4azALDFhY80Gg) |
+| goodreads_book_series | series_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETuFaUSCFM1FiGn0Re4Q45kBaaN3Ta724tQUhLAL6M5L-Q) |
+| goodreads_book_works | work_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaSAlxEG189NnrUwcrCkJL4BzJavSMO1uxrs3grWmiDL4w) |
+| goodreads_books | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeoY_jKgz01IlfjHqIQY_PoB7DoDxCweL1vpRL1A2vkgMg) |
 
 Genre:
 
@@ -67,9 +67,9 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| goodreads_books_children | isbn | [Link]() |
-| goodreads_interactions_children | user_id, book_id | [Link]() |
-| goodreads_reviews_children | user_id, book_id | [Link]() |
+| goodreads_books_children | isbn | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZ_CixJS7OdPq4fWt8cMX3EB2i51vPMeljoq2XM4Oi0gIA) |
+| goodreads_interactions_children | user_id, book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EdAY8z_EuptMqF5gfPyHwpQB9VsEiD-jrzmWz6tXc0ub2A) |
+| goodreads_reviews_children | user_id, book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EUYpdXrbz9RBvR36_7cuHjUB9tZLx5MQEZVqzalleuQCEg) |
 
 
 
@@ -77,9 +77,9 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| goodreads_books_comics_graphic | book_id | [Link]() |
-| goodreads_interactions_comics_graphic | N/A (No unique key) | [Link]() |
-| goodreads_reviews_comics_graphic | review_id | [Link]() |
+| goodreads_books_comics_graphic | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETGXmad5ju1Gu_rc7OSX_QgBV3_6NvPsScfOEiu_-sf5Cw) |
+| goodreads_interactions_comics_graphic | N/A (No unique key) | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ecy_C1KgS8RKqw84DmA3ruMBpsC8Vx-rkj9Fv1cZ6mRiMQ) |
+| goodreads_reviews_comics_graphic | review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ea1HcuPiXptDiVrLxvAHUzIBWXuWbvsopygvoVfjNxysQw) |
 
 
 - Genre.Fantasy n Paranormal:
