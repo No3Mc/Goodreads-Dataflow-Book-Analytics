@@ -36,7 +36,7 @@
     db.reviews.aggregate([
     {
         $match: {
-        review_id: { $in: db.p2652259_books.distinct("reviews") }
+        review_id: { $in: db.p2652259_books.distinct("book_id") }
         }
     },
     { $out: "p2652259_reviews" }
