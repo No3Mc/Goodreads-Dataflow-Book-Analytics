@@ -46,7 +46,10 @@ Note: At the moment, you can only connect to the MongoDB server while on univers
 
 1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
 
-Books.json:
+Books:
+
+
+- Books.json:
 
 
 | Collection | Primary Key | Link |
@@ -57,8 +60,9 @@ Books.json:
 | goodreads_book_works | work_id | [Link]() |
 | goodreads_books | book_id | [Link]() |
 
+Genre:
 
-Genre.Children.json:
+- Genre.Children.json:
 
 
 | Collection | Primary Key | Link |
@@ -69,7 +73,7 @@ Genre.Children.json:
 
 
 
-Genre.Comics n Graphics:
+- Genre.Comics n Graphics:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
@@ -78,16 +82,7 @@ Genre.Comics n Graphics:
 | goodreads_reviews_comics_graphic | review_id | [Link]() |
 
 
-Genre.Fantasy n Paranormal:
-| Collection | Primary Key | Link |
-| -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-
-
-
-Genre.History n Biography:
+- Genre.Fantasy n Paranormal:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
@@ -97,7 +92,7 @@ Genre.History n Biography:
 
 
 
-Genre.Mystery, Thriller n Crime:
+- Genre.History n Biography:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
@@ -105,7 +100,9 @@ Genre.Mystery, Thriller n Crime:
 | Column | Column | [Link]() |
 | Column | Column | [Link]() |
 
-Genre.Poetry:
+
+
+- Genre.Mystery, Thriller n Crime:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
@@ -113,7 +110,7 @@ Genre.Poetry:
 | Column | Column | [Link]() |
 | Column | Column | [Link]() |
 
-Genre.Romance:
+- Genre.Poetry:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
@@ -121,7 +118,15 @@ Genre.Romance:
 | Column | Column | [Link]() |
 | Column | Column | [Link]() |
 
-Genre.Young Adult:
+- Genre.Romance:
+
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+
+- Genre.Young Adult:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
