@@ -14,22 +14,38 @@
 
 Let's try alternate way as the following have errors:
 
+.
+    db.books.find({ assignedGroup: 100 })
 
-db.books.find({ assignedGroup: 100 })
+.
 
-db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insert(doc)})
+    db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insert(doc)})
 
-db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+.
 
-db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insert(doc)})
+    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
 
-db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } })
+.
 
-db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insert(doc)})
+    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insert(doc)})
 
-db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+.
 
-db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_genres.insert(doc)})
+    db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } })
+
+.
+
+    db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insert(doc)})
+
+.
+
+    db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } })
+
+.
+
+    db.genre.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_genres.insert(doc)})
+.
+
 
 1. 
 
