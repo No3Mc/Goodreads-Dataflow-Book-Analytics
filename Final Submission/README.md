@@ -63,25 +63,20 @@ Genre.Children.json:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| goodreads_books_children | isbn | [Link]() |
+| goodreads_interactions_children | user_id, book_id | [Link]() |
+| goodreads_reviews_children | user_id, book_id | [Link]() |
 
-    goodreads_books_children	isbn
-    goodreads_interactions_children	user_id, book_id
-    goodreads_reviews_children	user_id, book_id
+
 
 Genre.Comics n Graphics:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| goodreads_books_comics_graphic | book_id | [Link]() |
+| goodreads_interactions_comics_graphic | N/A (No unique key) | [Link]() |
+| goodreads_reviews_comics_graphic | review_id | [Link]() |
 
-    goodreads_books_comics_graphic	book_id
-    goodreads_interactions_comics_graphic	N/A (No unique key)
-    goodreads_reviews_comics_graphic	review_id
 
 Genre.Fantasy n Paranormal:
 | Collection | Primary Key | Link |
