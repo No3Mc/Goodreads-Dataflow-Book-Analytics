@@ -1,51 +1,138 @@
+## IMAT3104 DATABASE MANAGEMENT AND PROGRAMMING NOSQL
+### MongoDB Coursework 2022-2023
+
+**1.0 INTRODUCTION**
+
+This is an individual assignment, which gives you an opportunity to demonstrate your knowledge of NoSQL and your ability to implement, query and design a MongoDB document database. You will be awarded marks for what is achieved. This assignment is worth 50% of the overall module mark.
+
+--------
+
+
+**2.0 SCENARIO**
+
+Goodreads is an American social cataloguing website and a subsidiary of Amazon that allows individuals to search its database of books, annotations, quotes, and reviews. Users can sign up and register books to generate library catalogues and reading lists. They can also create their own groups of book suggestions, surveys, polls, blogs, and discussions (copied directly from the Wikipedia page).
+- Goodreads has a web page for each book e.g. https://www.goodreads.com/book/show/5333265
+- or each review e.g., https://www.goodreads.com/review/show/2410025795
+
+A subset of Goodreads data has been selected for this coursework. There is data on books, reviews, authors, and genre. Permission was granted to use the data for this coursework from https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home on condition that the authors’ research papers are referenced (Mengting W. and Julian J. M 2018), (Mengting W et al. 2019). It is not necessary to read these papers to complete this coursework.
+
+---------
+
+
+**3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]**
+
+3.1 Connecting to DMU MongoDB server.
+
+Connect to MongoDB server using MongoDB Compass with the following credentials. Please note that the username and password are in lowercase.
+
+| Host                   | Username | Password | Authentication Database |
+| ---------------------- | -------- | -------- | ------------------------ |
+| mongodb.dmu.ac.uk      | cwuser   | cwuser   | IMAT3104Coursework        |
+
+
+If you are having difficulties with the credentials above, paste the below URI in the Connection String window
+
+mongodb://cwuser:cwuser@mongodb.dmu.ac.uk/?authMechanism=DEFAULT&authSource=IMAT3104Coursework
+
+Note: At the moment, you can only connect to the MongoDB server while on university network. This means either you are on the University lab machines or you connect via Horizon. If you wish to work on your PC, you have to complete the ETL using above methods then move to your PC and import the personalized datasets.
+
+-------
+
+
 3.2
+
+
+
 
 1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
 
 Books.json:
 
-    goodreads_book_authors: author_id
-    goodreads_book_genres_initial: book_id
-    goodreads_book_series: series_id
-    goodreads_book_works: work_id
-    goodreads_books: book_id
+
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| goodreads_book_authors | author_id | [Link]() |
+| goodreads_book_genres_initial | book_id | [Link]() |
+| goodreads_book_series | series_id | [Link]() |
+| goodreads_book_works | work_id | [Link]() |
+| goodreads_books | book_id | [Link]() |
 
 
 Genre.Children.json:
+
+
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
     goodreads_books_children	isbn
     goodreads_interactions_children	user_id, book_id
     goodreads_reviews_children	user_id, book_id
 
-Comics n Graphics:
+Genre.Comics n Graphics:
+
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
     goodreads_books_comics_graphic	book_id
     goodreads_interactions_comics_graphic	N/A (No unique key)
     goodreads_reviews_comics_graphic	review_id
 
-Fantasy n Paranormal:
+Genre.Fantasy n Paranormal:
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
 
 
-History n Biography:
+Genre.History n Biography:
+
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
 
 
-Mystery, Thriller n Crime:
+Genre.Mystery, Thriller n Crime:
 
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
+Genre.Poetry:
 
-Poetry:
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
+Genre.Romance:
 
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
-Romance:
+Genre.Young Adult:
 
-
-
-Young Adult:
-
-
+| Collection | Primary Key | Link |
+| -------- | -------- | -------- |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
+| Column | Column | [Link]() |
 
 ----------
 
@@ -78,73 +165,3 @@ Young Adult:
     ])
 
 ------------
-
-<!-- 1.  -->
-
-<!--     db.books.aggregate([
-    { $match: { assignedGroup: 100 } },
-    { $out: "p2652259_books" }
-    ]) -->
-
-
-
-
-
-<!-- 2.  -->
-
-<!--     db.reviews.aggregate([
-    {
-        $match: {
-        book_id: { $in: db.p2652259_books.distinct("book_id") }
-        }
-    },
-    { $out: "p2652259_reviews" }
-    ]) -->
-
-
-
-
-<!-- 2. db.p2652259_books.aggregate([
-  { $lookup: {
-      from: "reviews",
-      localField: "book_id",
-      foreignField: "book_id",
-      as: "reviews"
-  } },
-  { $unwind: "$reviews" },
-  { $project: { _id: 0 } }, 
-  { $out: "p2652259_reviews" }
-]) -->
-
-
-
-
-
-
-
-<!-- 3. -->
-<!-- 
-    db.authors.aggregate([
-    {
-        $match: {
-        author_id: { $in: db.p2652259_books.distinct("authors") }
-        }
-    },
-    { $out: "p2652259_authors" }
-    ]) -->
-
-
-
-<!-- 4. -->
-
-<!--     db.genres.aggregate([
-    {
-        $match: {
-        book_id: { $in: db.p2652259_books.distinct("book_id") }
-        }
-    },
-    { $out: "p2652259_genres" }
-    ]) -->
-
-
-
