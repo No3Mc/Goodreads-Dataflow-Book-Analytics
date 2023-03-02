@@ -86,9 +86,9 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EUgo6_7v6vFKpRDUtPg2qywB2ycEKbPkWiPD16QSgZwAkA) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXEqw5clTPdBrGr9Nl2SpS4Bn0qUEyPhiMThPRLHub5BfQ) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcwTpxdH1XRHp6qLJVnRFGkBS-HhLIHWPkNtGU9OqAKy3g) |
 
 
 
@@ -96,9 +96,9 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EbFFohv1WkhDhtvTOdDCwC0BLbQm8ycynCA8NlGDfxpznA) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EckO2Pz8yClMtptbPST46qEB4DzjTW_DzcPZxtU1iwvgsQ) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcERiOQb8CZOhIL5I7s_6WsBTdQO7GelV1OIxhlk49EJwA) |
 
 
 
@@ -106,9 +106,9 @@ Genre:
 
 | Collection | Primary Key | Link |
 | -------- | -------- | -------- |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
-| Column | Column | [Link]() |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EQ5tXa0o6LtLhbqpJ5AJvOQBP5IyVrUO8NslerdpED-ZHQ) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcvdawHx6DFPq8HhTorT97sBsPNmV4rOIG13YAabpCNyaw) |
+| Column | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ERYj0vCw3ylAqu0j5IFXiXcBr0-krwUEIsfFbIpy22M2Wg) |
 
 - Genre.Poetry:
 
