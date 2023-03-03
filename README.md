@@ -1,8 +1,8 @@
-[Week 1]()
-[Week 2]()
-[Week 3]()
-[Week 4]()
-[Week 5]()
+[Week 1](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%201/Week%201.txt)
+[Week 2](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%202/Week%202.txt)
+[Week 3](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%203/Week%203.txt)
+[Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt)
+[Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%205.txt)
 [Final]()
 
 
