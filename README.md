@@ -1,9 +1,11 @@
+Solutions:
+
 [Week 1](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%201/Week%201.txt)
 [Week 2](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%202/Week%202.txt)
 [Week 3](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%203/Week%203.txt)
 [Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt)
 [Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%205/Week%205.txt)
-[Final]()
+[Final](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md)
 
 
 ## IMAT3104 DATABASE MANAGEMENT AND PROGRAMMING NOSQL
