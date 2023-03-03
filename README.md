@@ -5,7 +5,16 @@ Solutions:
 [Week 3](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%203/Week%203.txt)
 [Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt)
 [Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%205/Week%205.txt)
+
+
 [Final](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md)
+
+[3.2 Understanding the data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md?plain=1#L42)
+
+[3.3 Getting your personalized data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md?plain=1#L142)
+
+[4.0 CLEANING THE COLLECTIONS]()
+
 
 
 ## IMAT3104 DATABASE MANAGEMENT AND PROGRAMMING NOSQL
