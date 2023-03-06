@@ -165,3 +165,16 @@ Genre:
     ])
 
 ------------
+
+4.0 CLEANING THE COLLECTIONS [20 marks]
+
+4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
+
+Provide for a minimum of four (4) anomalies. [4 marks each]
+a. Take screenshots of sample documents with the anomaly before it is corrected. b. Show the query/queries used to address this anomaly. c. Take screenshots of samples of documents after the anomaly has been corrected.
+
+Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year [2 marks]
+
+Create another field in the books collection unix_publication_date that converts publication_date to Unix format. [2 marks]
+
+-----------
