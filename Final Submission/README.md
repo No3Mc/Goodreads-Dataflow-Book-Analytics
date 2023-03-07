@@ -32,7 +32,7 @@ Connect to MongoDB server using MongoDB Compass with the following credentials. 
 
 If you are having difficulties with the credentials above, paste the below URI in the Connection String window
 
-mongodb://cwuser:cwuser@mongodb.dmu.ac.uk/?authMechanism=DEFAULT&authSource=IMAT3104Coursework
+    mongodb://cwuser:cwuser@mongodb.dmu.ac.uk/?authMechanism=DEFAULT&authSource=IMAT3104Coursework
 
 Note: At the moment, you can only connect to the MongoDB server while on university network. This means either you are on the University lab machines or you connect via Horizon. If you wish to work on your PC, you have to complete the ETL using above methods then move to your PC and import the personalized datasets.
 
