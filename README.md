@@ -65,41 +65,41 @@ Complete the table below based on 2(a) and 2(b).
 
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
-<b>Books.json:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Books.json:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 goodreads_book_authors | ex | ex | ex | ex
 goodreads_book_genres_initial | ex | ex | ex | ex
 goodreads_book_series | ex | ex | ex | ex
 goodreads_book_works | ex | ex | ex | ex
 goodreads_books | ex | ex | ex | ex
-<b>Genre.Children.json:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Children.json:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.Comics n Graphics:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Comics n Graphics:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.Fantasy n Paranormal:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Fantasy n Paranormal:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.History n Biography:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.History n Biography:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.Mystery, Thriller n Crime:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Mystery, Thriller n Crime:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.Poetry:</b> | <b>====</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Poetry:</b> | <b>=========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Romance:</b> | <b>====</b> | <b>====</b> | <b>====</b> | <b>====</b>
+Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b>=========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-<b>Genre.Young Adult:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
+<b>Genre.Young Adult:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
