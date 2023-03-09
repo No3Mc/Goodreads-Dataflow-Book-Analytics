@@ -57,9 +57,9 @@ Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu
 
 2. Study the collections briefly with their fields and values. [6 marks]
  
-  a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
+      a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
 
-  b. Identify examples and how you intend to address them. You do not need to solve the issues here.
+      b. Identify examples and how you intend to address them. You do not need to solve the issues here.
 
 Complete the table below based on 2(a) and 2(b).
 
@@ -179,18 +179,18 @@ displayed answers the requirements and demonstrates that the query is correct. Y
 all the marks available for a question.
 
 
-Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
-price, and average rating. [5 marks]
+    Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
+    price, and average rating. [5 marks]
 
-Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
-of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
-n_comments and total number of reviews written by this reviewer. [6 marks]
+    Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
+    of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
+    n_comments and total number of reviews written by this reviewer. [6 marks]
 
-Q3. Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
-most_famous and set its value to true. [4 mark]
+    Q3. Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
+    most_famous and set its value to true. [4 mark]
 
-Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
-the most famous reviewer. No other product details are required. [5 marks]
+    Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
+    the most famous reviewer. No other product details are required. [5 marks]
 
 
 
@@ -256,37 +256,37 @@ Report all your journal submissions by completing the table below:
 
 9.0 DELIVERABLES
 
-1. You are required to upload your answers to the questions into Turnitin on Blackboard as one
-PDF file. Do NOT submit any JSON file.
+    1. You are required to upload your answers to the questions into Turnitin on Blackboard as one
+    PDF file. Do NOT submit any JSON file.
 
-2. Add your P number to your filename.
+    2. Add your P number to your filename.
 
-3. Your file must be in a readable format so the NoSQL code in plain text can be copied and executed
-from it.
+    3. Your file must be in a readable format so the NoSQL code in plain text can be copied and executed
+    from it.
 
-4. In Turnitin, press both the Upload button and the Confirm button to submit your file and receive
-a receipt.
+    4. In Turnitin, press both the Upload button and the Confirm button to submit your file and receive
+    a receipt.
 
 10.0 CLOSING COMMENTS
 
-1. This is an individual assignment. Do not negotiate with others to clarify what is required. By
-uploading your work to Turnitin in Blackboard you will be declaring that the work you submit is
-your own and not plagiarised in any way.
+    1. This is an individual assignment. Do not negotiate with others to clarify what is required. By
+    uploading your work to Turnitin in Blackboard you will be declaring that the work you submit is
+    your own and not plagiarised in any way.
 
-2. Tutors are prepared to offer help with the part of the assignment where there is clear evidence
-that you have made a substantial attempt but have become stuck.
+    2. Tutors are prepared to offer help with the part of the assignment where there is clear evidence
+    that you have made a substantial attempt but have become stuck.
 
-3. Mark totals are shown alongside each question. Your tutor will need to able to execute your NoSQL
-code in MongoSH to check for correctness. Marks will be awarded for correctness and
-presentation.
+    3. Mark totals are shown alongside each question. Your tutor will need to able to execute your NoSQL
+    code in MongoSH to check for correctness. Marks will be awarded for correctness and
+    presentation.
 
-4. Marks will typically be deducted if information is erroneous, missing, irrelevant or difficult to
-ascertain. Marks can also be deducted if the answer is particularly inefficient. Therefore, partial
-marks are available if an answer is partially correct or partially presented.
+    4. Marks will typically be deducted if information is erroneous, missing, irrelevant or difficult to
+    ascertain. Marks can also be deducted if the answer is particularly inefficient. Therefore, partial
+    marks are available if an answer is partially correct or partially presented.
 
-5. There is often more than one way to answer a question and so it is possible to gain full marks for
-an answer even if it is different from the markers' specimen set of answers. However, if these
-answers do not follow the examples and exercises taught on the module, they may be inferior in some way and so consequently marks may be deducted. Note that some questions hint at the most appropriate method to use.
+    5. There is often more than one way to answer a question and so it is possible to gain full marks for
+    an answer even if it is different from the markers' specimen set of answers. However, if these
+    answers do not follow the examples and exercises taught on the module, they may be inferior in some way and so consequently marks may be deducted. Note that some questions hint at the most appropriate method to use.
 
 
 REFERENCES
