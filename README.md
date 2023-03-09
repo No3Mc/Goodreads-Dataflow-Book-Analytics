@@ -165,7 +165,10 @@ publication_date to Unix format. [2 marks]
 
 Write the following queries (Q1 to Q4) against the collections that you personalised and loaded you’re
 your local MongoDB. For each query, submit the MongoDB command in plain text, AND present it with its
-results as a screenshot showing the command and the documents returned. For example:
+results as a screenshot showing the command and the documents returned. 
+
+For example:
+
 //Q1001. Find the details of the product identified as " B001KTEBOG ".
 db.p77342060_softwares.find({asin:"B001KTEBOG"})
 
@@ -176,18 +179,19 @@ displayed answers the requirements and demonstrates that the query is correct. Y
 all the marks available for a question.
 
 
-Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title,
+Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
 price, and average rating. [5 marks]
 
-Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number of
-5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total
+Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
+of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
 n_comments and total number of reviews written by this reviewer. [6 marks]
 
-Q3. Update the most famous reviewer from Q2 by adding a new field named most_famous and set its
-value to true. [4 mark]
+Q3. Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
+most_famous and set its value to true. [4 mark]
 
-Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by
+Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
 the most famous reviewer. No other product details are required. [5 marks]
+
 
 
 
