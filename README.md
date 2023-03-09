@@ -169,8 +169,8 @@ results as a screenshot showing the command and the documents returned.
 
 For example:
 
-//Q1001. Find the details of the product identified as " B001KTEBOG ".
-db.p77342060_softwares.find({asin:"B001KTEBOG"})
+//Q1001. Find the details of the product identified as <code>" B001KTEBOG "</code>.
+<code>db.p77342060_softwares.find({asin:"B001KTEBOG"})</code>
 
 ![image](https://user-images.githubusercontent.com/41834061/221639935-5b74f24d-c3d2-48dc-a8f1-a7c49569350f.png)
 
