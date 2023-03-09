@@ -108,20 +108,30 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
  
 
 3.3 Getting your personalized data. 
-
-1.Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. [2 mark]
+<ol>
+<li>
+Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. [2 mark]
 
     db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})
 
-2.Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. [1 mark]
+</li>
+<li>
+    
+Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. [1 mark]
 
     db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
 
-3.Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. [1 mark]
+</li>
+<li>
+    
+Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. [1 mark]
 
     db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insertOne(doc)})
 
-4.Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
+</li>
+<li>
+    
+Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
 
     db.genres.aggregate([
       {
@@ -131,7 +141,9 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
       },
       { $out: "p2652259_genres" }
     ])
-
+    
+</li>
+</ol>
 
 
 
