@@ -6,17 +6,6 @@ Solutions:
 [Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt)
 [Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%205/Week%205.txt)
 
-
-[Final](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md)
-
-[3.2 Understanding the data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md?plain=1#L42)
-
-[3.3 Getting your personalized data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md?plain=1#L142)
-
-[4.0 CLEANING THE COLLECTIONS]()
-
-
-
 ## IMAT3104 DATABASE MANAGEMENT AND PROGRAMMING NOSQL
 ### MongoDB Coursework 2022-2023
 
@@ -54,6 +43,96 @@ Note: At the moment, you can only connect to the MongoDB server while on univers
 Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home) and answer the following:
 
 1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
+
+
+Books:
+
+
+- Books.json:
+
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_book_authors | author_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ec0zu-dEyepJpst0nP83ENgBpWn6kxyDkH5Iogn1Mw2dzA) |
+| goodreads_book_genres_initial | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EVl07zLePvVOiLQGhNHC8cUB4cw_9qlIz4azALDFhY80Gg) |
+| goodreads_book_series | series_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETuFaUSCFM1FiGn0Re4Q45kBaaN3Ta724tQUhLAL6M5L-Q) |
+| goodreads_book_works | work_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaSAlxEG189NnrUwcrCkJL4BzJavSMO1uxrs3grWmiDL4w) |
+| goodreads_books | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeoY_jKgz01IlfjHqIQY_PoB7DoDxCweL1vpRL1A2vkgMg) |
+
+Genre:
+
+- Genre.Children.json:
+
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_children | isbn | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZ_CixJS7OdPq4fWt8cMX3EB2i51vPMeljoq2XM4Oi0gIA) |
+| goodreads_interactions_children | user_id, book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EdAY8z_EuptMqF5gfPyHwpQB9VsEiD-jrzmWz6tXc0ub2A) |
+| goodreads_reviews_children | user_id, book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EUYpdXrbz9RBvR36_7cuHjUB9tZLx5MQEZVqzalleuQCEg) |
+
+
+
+- Genre.Comics n Graphics:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_comics_graphic | book_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETGXmad5ju1Gu_rc7OSX_QgBV3_6NvPsScfOEiu_-sf5Cw) |
+| goodreads_interactions_comics_graphic | N/A (No unique key) | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ecy_C1KgS8RKqw84DmA3ruMBpsC8Vx-rkj9Fv1cZ6mRiMQ) |
+| goodreads_reviews_comics_graphic | review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ea1HcuPiXptDiVrLxvAHUzIBWXuWbvsopygvoVfjNxysQw) |
+
+
+- Genre.Fantasy n Paranormal:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_fantasy_paranormal.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EUgo6_7v6vFKpRDUtPg2qywB2ycEKbPkWiPD16QSgZwAkA) |
+| goodreads_interactions_fantasy_paranormal.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXEqw5clTPdBrGr9Nl2SpS4Bn0qUEyPhiMThPRLHub5BfQ) |
+| goodreads_reviews_fantasy_paranormal.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcwTpxdH1XRHp6qLJVnRFGkBS-HhLIHWPkNtGU9OqAKy3g) |
+
+
+
+- Genre.History n Biography:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_history_biography.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EbFFohv1WkhDhtvTOdDCwC0BLbQm8ycynCA8NlGDfxpznA) |
+| goodreads_interactions_history_biography.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EckO2Pz8yClMtptbPST46qEB4DzjTW_DzcPZxtU1iwvgsQ) |
+| goodreads_reviews_history_biography.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcERiOQb8CZOhIL5I7s_6WsBTdQO7GelV1OIxhlk49EJwA) |
+
+
+
+- Genre.Mystery, Thriller n Crime:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EQ5tXa0o6LtLhbqpJ5AJvOQBP5IyVrUO8NslerdpED-ZHQ) |
+| goodreads_interactions_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcvdawHx6DFPq8HhTorT97sBsPNmV4rOIG13YAabpCNyaw) |
+| goodreads_reviews_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ERYj0vCw3ylAqu0j5IFXiXcBr0-krwUEIsfFbIpy22M2Wg) |
+
+- Genre.Poetry:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaiKy_Izyd1GvmbVIHq-aZYBF0OeODCh68f8Kft8HUAU_Q) |
+| goodreads_interactions_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaKjuHy_5xpFna9Det1Z-REBMW72FQ4IHpZdp7vCGjqzpw) |
+| goodreads_reviews_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EYwV48GcIbxAoLucY0I5z6MBNTqWf2w9-JiEaOg18s-Z7w) |
+
+- Genre.Romance:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXOgdqrOhqZPu1taZwal4MoBwKseTSHPkvwiswho5ou9pQ) |
+| goodreads_interactions_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Edsym-cw63lIkNdOBjCx_IIBGbjzIGRcMYSjT8STYzqLBA) |
+| goodreads_reviews_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZSupfmDNy5Lg6feaWiIM-gBzLnvs9XEGQ4B5x9ZToFqGg) |
+
+- Genre.Young Adult:
+
+| Collection | Keys | Link |
+| -------- | -------- | -------- |
+| goodreads_books_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ETMh4zpBK6VDm04RvBackr0BxpUlCygMhn3-wJ9SlFnkmw) |
+| goodreads_interactions_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Ea3oVC_jeVVMhJcVpy4TsQABus-1iWeNiD22pD7ZCGu_uA) |
+| goodreads_reviews_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeSX9wfLNhBNvpkGLlMh4UgByDFic2H3S80seX-2bAk91g) |
+
 
 2. Study the collections briefly with their fields and values. [6 marks]
  
@@ -104,6 +183,13 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
 <i>goodreads_interactions_young_adult.json | ex | ex | ex | ex
 <i>goodreads_reviews_young_adult.json | ex | ex | ex | ex
 
+
+    
+    
+    
+    
+    
+    
 
  
 
