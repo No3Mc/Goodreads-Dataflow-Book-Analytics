@@ -149,44 +149,6 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
 8.0 WEEKLY JOURNALS <b>[10 marks]</b>
 
 
-9.0 DELIVERABLES
-    
-<ol>
-
-<li>You are required to upload your answers to the questions into Turnitin on Blackboard as one
-PDF file. Do NOT submit any JSON file.
-
-<li>Add your P number to your filename.
-
-<li>Your file must be in a readable format so the NoSQL code in plain text can be copied and executed
-from it.
-
-<li>In Turnitin, press both the Upload button and the Confirm button to submit your file and receive
-a receipt.
-</ol>
-    
-10.0 CLOSING COMMENTS
-    
-<ol>
-    
-<li>This is an individual assignment. Do not negotiate with others to clarify what is required. By
-uploading your work to Turnitin in Blackboard you will be declaring that the work you submit is
-your own and not plagiarised in any way.</li>
-
-<li>Tutors are prepared to offer help with the part of the assignment where there is clear evidence
-that you have made a substantial attempt but have become stuck.</li>
-
-<li>Mark totals are shown alongside each question. Your tutor will need to able to execute your NoSQL
-code in MongoSH to check for correctness. Marks will be awarded for correctness and
-presentation.</li>
-
-<li>Marks will typically be deducted if information is erroneous, missing, irrelevant or difficult to
-ascertain. Marks can also be deducted if the answer is particularly inefficient. Therefore, partial
-marks are available if an answer is partially correct or partially presented.</li>
-
-<li>There is often more than one way to answer a question and so it is possible to gain full marks for
-an answer even if it is different from the markers' specimen set of answers. However, if these
-answers do not follow the examples and exercises taught on the module, they may be inferior in some way and so consequently marks may be deducted. Note that some questions hint at the most appropriate method to use.</li>
     
 </ol>
 
