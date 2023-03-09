@@ -85,24 +85,24 @@ Collection | Field | Anomaly | Examples | Solution Plan
 <i>goodreads_reviews_fantasy_paranormal.json | ex | ex | ex | ex
 <b>Genre.History n Biography:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 <i>goodreads_books_history_biography.json | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
+<i>goodreads_interactions_history_biography.json | ex | ex | ex | ex
+<i>goodreads_reviews_history_biography.json | ex | ex | ex | ex
 <b>Genre.Mystery, Thriller n Crime:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
+<i>goodreads_books_mystery_thriller_crime.json | ex | ex | ex | ex
+<i>goodreads_interactions_mystery_thriller_crime.json | ex | ex | ex | ex
+<i>goodreads_reviews_mystery_thriller_crime.json | ex | ex | ex | ex
 <b>Genre.Poetry:</b> | <b>=========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
+<i>goodreads_books_poetry.json | ex | ex | ex | ex
+<i>goodreads_interactions_poetry.json | ex | ex | ex | ex
+<i>goodreads_reviews_poetry.json | ex | ex | ex | ex
 Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b>=========</b>
-<i>ex | ex | ex | ex | ex
-<i><i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
+<i>goodreads_books_romance.json | ex | ex | ex | ex
+<i>goodreads_interactions_romance.json | ex | ex | ex | ex
+<i>goodreads_reviews_romance.json | ex | ex | ex | ex
 <b>Genre.Young Adult:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
-<i>ex | ex | ex | ex | ex
+<i>goodreads_books_young_adult.json | ex | ex | ex | ex
+<i>goodreads_interactions_young_adult.json | ex | ex | ex | ex
+<i>goodreads_reviews_young_adult.json | ex | ex | ex | ex
 
 
  
