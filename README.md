@@ -147,17 +147,23 @@ this is the time to move back to your PC!
 4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data
 was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
 
+    
+<ol>
 1. Provide for a minimum of four (4) anomalies. [4 marks each]
+    
 <ol type="a">
 <li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
 <li> Show the query/queries used to address this anomaly.</li>
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
 </ol>
+</ol>
+<ol>
 2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year [2 marks]
-
+</ol>
+<ol>
 3. Create another field in the books collection unix_publication_date that converts
 publication_date to Unix format. [2 marks]
-
+</ol>
 
 
 5.0 QUERYING THE COLLECTIONS [20 marks]
