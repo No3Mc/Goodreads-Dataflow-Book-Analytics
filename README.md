@@ -65,14 +65,45 @@ Complete the table below based on 2(a) and 2(b).
 
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
+Books.json: | -- | -- | -- | --
 goodreads_book_authors | ex | ex | ex | ex
 goodreads_book_genres_initial | ex | ex | ex | ex
 goodreads_book_series | ex | ex | ex | ex
 goodreads_book_works | ex | ex | ex | ex
 goodreads_books | ex | ex | ex | ex
--- | -- | -- | -- | --
+Genre.Children.json: | -- | -- | -- | --
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Comics n Graphics: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Fantasy n Paranormal: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.History n Biography: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Mystery, Thriller n Crime: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Poetry: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Romance: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+Genre.Young Adult: | -- | -- | -- | --
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+ex | ex | ex | ex | ex
+
 
  
 
