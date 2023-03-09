@@ -65,41 +65,41 @@ Complete the table below based on 2(a) and 2(b).
 
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
-Books.json: | -- | -- | -- | --
+<b>Books.json:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 goodreads_book_authors | ex | ex | ex | ex
 goodreads_book_genres_initial | ex | ex | ex | ex
 goodreads_book_series | ex | ex | ex | ex
 goodreads_book_works | ex | ex | ex | ex
 goodreads_books | ex | ex | ex | ex
-Genre.Children.json: | -- | -- | -- | --
+<b>Genre.Children.json:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Comics n Graphics: | -- | -- | -- | --
+<b>Genre.Comics n Graphics:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Fantasy n Paranormal: | -- | -- | -- | --
+<b>Genre.Fantasy n Paranormal:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.History n Biography: | -- | -- | -- | --
+<b>Genre.History n Biography:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Mystery, Thriller n Crime: | -- | -- | -- | --
+<b>Genre.Mystery, Thriller n Crime:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Poetry: | -- | -- | -- | --
+<b>Genre.Poetry:</b> | <b>====</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Romance: | -- | -- | -- | --
+Genre.Romance:</b> | <b>====</b> | <b>====</b> | <b>====</b> | <b>====</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
-Genre.Young Adult: | -- | -- | -- | --
+<b>Genre.Young Adult:</b> | <b>======</b> | <b>======</b> | <b>======</b> | <b>======</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
