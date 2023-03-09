@@ -66,11 +66,11 @@ Complete the table below based on 2(a) and 2(b).
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
 <b>Books.json:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
-goodreads_book_authors | ex | ex | ex | ex
-goodreads_book_genres_initial | ex | ex | ex | ex
-goodreads_book_series | ex | ex | ex | ex
-goodreads_book_works | ex | ex | ex | ex
-goodreads_books | ex | ex | ex | ex
+<i>goodreads_book_authors | ex | ex | ex | ex
+<i>goodreads_book_genres_initial | ex | ex | ex | ex
+<i>goodreads_book_series | ex | ex | ex | ex
+<i>goodreads_book_works | ex | ex | ex | ex
+<i>goodreads_books | ex | ex | ex | ex
 <b>Genre.Children.json:</b> | <b>===========</b> | <b>===========</b> | <b>===========</b> | <b>===========</b>
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
