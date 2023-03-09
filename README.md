@@ -352,11 +352,11 @@ Report all your journal submissions by completing the table below:
 
 | Week No | Status/Reason                              |
 | ------- | ------------------------------------------ |
-| 1       | For example (Submitted on time)            |
-| 2       | For example (Late submission due to xyz)   |
-| 3       | For example (No submission due to abc)     |
-| 4       |                                            |
-| 5       |                                            |
+| 1       | (Submitted on time)            |
+| 2       | (Submitted on time)            |
+| 3       | (Submitted on time)            |
+| 4       | (Submitted on time)            |
+| 5       | (Submitted on time)            |
 
 
 
