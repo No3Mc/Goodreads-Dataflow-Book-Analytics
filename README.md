@@ -61,7 +61,7 @@ Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu
 
   b. Identify examples and how you intend to address them. You do not need to solve the issues here.
 
-3. Complete the table below.
+Complete the table below based on 2(a) and 2(b).
 
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
