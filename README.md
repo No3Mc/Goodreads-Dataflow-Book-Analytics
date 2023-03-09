@@ -42,7 +42,7 @@ Note: At the moment, you can only connect to the MongoDB server while on univers
 
 Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home) and answer the following:
 
-1. What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
+1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
 
 
 Books:
@@ -134,7 +134,7 @@ Genre:
 | goodreads_reviews_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeSX9wfLNhBNvpkGLlMh4UgByDFic2H3S80seX-2bAk91g) |
 
 
-2. Study the collections briefly with their fields and values. [6 marks]
+2. Study the collections briefly with their fields and values. <b>[6 marks]</b>
  
       a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
 
@@ -196,28 +196,28 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
 3.3 Getting your personalized data. 
 <ol>
 <li>
-Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. [2 mark]
+Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. <b>[2 mark]</b>
 
     db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})
 
 </li>
 <li>
     
-Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. [1 mark]
+Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. <b>[1 mark]</b>
 
     db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
 
 </li>
 <li>
     
-Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. [1 mark]
+Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. <b>[1 mark]</b>
 
     db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insertOne(doc)})
 
 </li>
 <li>
     
-Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. [1 mark]
+Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. <b>[1 mark]</b>
 
     db.genres.aggregate([
       {
@@ -240,14 +240,14 @@ this is the time to move back to your PC!
 
 
 
-4.0 CLEANING THE COLLECTIONS [20 marks]
+4.0 CLEANING THE COLLECTIONS <b>[20 marks]</b>
 
 4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data
 was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
 
     
 <ol>
-1. Provide for a minimum of four (4) anomalies. [4 marks each]
+1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
     
 <ol type="a">
 <li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
@@ -256,15 +256,15 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 </ol>
 </ol>
 <ol>
-2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year [2 marks]
+2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year <b>[2 marks]</b>
 </ol>
 <ol>
 3. Create another field in the books collection unix_publication_date that converts
-publication_date to Unix format. [2 marks]
+publication_date to Unix format. <b>[2 marks]</b>
 </ol>
 
 
-5.0 QUERYING THE COLLECTIONS [20 marks]
+5.0 QUERYING THE COLLECTIONS <b>[20 marks]</b>
 
 
 Write the following queries (Q1 to Q4) against the collections that you personalised and loaded you’re
@@ -285,35 +285,35 @@ all the marks available for a question.
 <ol>
 
 <li> Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
-price, and average rating. [5 marks]</li> 
+price, and average rating. <b>[5 marks]</b></li> 
 
 <li> Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
 of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
-n_comments and total number of reviews written by this reviewer. [6 marks]</li> 
+n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b></li> 
 
 <li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
-most_famous and set its value to true. [4 mark]</li> 
+most_famous and set its value to true. <b>[4 mark]</b></li> 
 
 <li> Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
-the most famous reviewer. No other product details are required. [5 marks]</li> 
+the most famous reviewer. No other product details are required. <b>[5 marks]</b></li> 
 
 </ol>
 
 
 
-6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE [15 marks]
+6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE <b>[15 marks]</b>
 
  1. Identify the chosen query from Section 5 and explain/justify your choice of index. Why do you think
- indexing could improve the query. [5 marks]
+ indexing could improve the query. <b>[5 marks]</b>
 
  2. Implement one index that would improve the querying of the database based on one of the queries
- (Q1-Q4). [2 marks]
+ (Q1-Q4). <b>[2 marks]</b>
 
  3. Present the execution plan of the selected query before the index and after the index has been
  created. Compare and discuss the execution plans to support your choice and summarise your
- findings. [8 marks]
+ findings. <b>[8 marks]</b>
 
-7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING [20 marks]
+7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING <b>[20 marks]</b>
 
 Write code in MongoDB to automatically embed the details of authors from authors collection and genres
 from genres collection with their corresponding book in the books collection. This is an aggregate data
@@ -321,32 +321,32 @@ modelling (ADM) question.
 Therefore, the books collection will contain the book data, authors data and genre data in a single
 collection of books. This requires the following tasks:
 
- 1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. [1 mark]
+ 1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. <b>[1 mark]</b>
 
  2. Embed all the authors and genres of books into their corresponding book using the new
- pxxxxxx_books_adm collection. [6 marks]
+ pxxxxxx_books_adm collection. <b>[6 marks]</b>
 
  3. To verify that the changes to the new products collection were successful, display the title,
- authors, and genre of the book with highest number of pages. [1 mark]
+ authors, and genre of the book with highest number of pages. <b>[1 mark]</b>
 
  4. Note that there is no longer need to reference the book_id inside each genre or author_id inside
  each book now that they are part of the book in pxxxxxx_books_adm collection. Show that these
- are removed. [2 marks]
+ are removed. <b>[2 marks]</b>
 
  5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
- genres using pxxxxxxx_books collection. Track the speed of the query. [3 marks]
+ genres using pxxxxxxx_books collection. Track the speed of the query. <b>[3 marks]</b>
 
  6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
- of the query. [3 marks]
+ of the query. <b>[3 marks]</b>
 
  7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
- results. [4 marks]
+ results. <b>[4 marks]</b>
 
 
 All tasks must each be fully automated by writing code. Note that some tasks may take many seconds or
 minutes to execute depending on the machine.
 
-8.0 WEEKLY JOURNALS [10 marks]
+8.0 WEEKLY JOURNALS <b>[10 marks]</b>
 
 Report all your journal submissions by completing the table below:
 
