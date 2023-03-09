@@ -65,9 +65,12 @@ Complete the table below based on 2(a) and 2(b).
 
 Collection | Field | Anomaly | Examples | Solution Plan
 --- | --- | --- | --- | ---
-ex | ex | ex | ex | ex
-ex | ex | ex | ex | ex
-ex | ex | ex | ex | ex
+goodreads_book_authors | ex | ex | ex | ex
+goodreads_book_genres_initial | ex | ex | ex | ex
+goodreads_book_series | ex | ex | ex | ex
+goodreads_book_works | ex | ex | ex | ex
+goodreads_books | ex | ex | ex | ex
+-- | -- | -- | -- | --
 ex | ex | ex | ex | ex
 ex | ex | ex | ex | ex
 
