@@ -178,20 +178,22 @@ If a lot of documents are returned, show the first set of documents that are dis
 displayed answers the requirements and demonstrates that the query is correct. You must do this to gain
 all the marks available for a question.
 
+<ol>
 
-    Q1. Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
-    price, and average rating. [5 marks]
+<li> Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
+price, and average rating. [5 marks]</li> 
 
-    Q2. Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
-    of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
-    n_comments and total number of reviews written by this reviewer. [6 marks]
+<li> Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
+of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
+n_comments and total number of reviews written by this reviewer. [6 marks]</li> 
 
-    Q3. Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
-    most_famous and set its value to true. [4 mark]
+<li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
+most_famous and set its value to true. [4 mark]</li> 
 
-    Q4. Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
-    the most famous reviewer. No other product details are required. [5 marks]
+<li> Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
+the most famous reviewer. No other product details are required. [5 marks]</li> 
 
+</ol>
 
 
 
