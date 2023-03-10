@@ -274,6 +274,21 @@ p2652259_books:
 ![Screenshot from 2023-03-10 04-08-25](https://user-images.githubusercontent.com/41834061/224221038-6273fe23-c462-40f9-bc82-2b73caff733b.png)
 
 <li> Show the query/queries used to address this anomaly.</li>
+
+
+db.p2652259_reviews.updateMany(
+   { $or: [ { read_at: "" }, { started_at: "" } ] },
+   { $set: { read_at: "not given", started_at: "not given" } }
+)
+
+
+p2652259_books:
+db.p2652259_books.updateMany(
+   { isbn: "" },
+   { $set: { isbn: "not specified" } }
+)
+
+
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
 </ol>
 </ol>
