@@ -94,3 +94,63 @@ p2652259_reviews:
       "n_votes": 1,
       "n_comments": 0
     }
+
+
+p2652259_books_adm:
+
+        {
+          "_id": {
+            "$oid": "63e1223517028313a42801f5"
+          },
+          "isbn": "1904095712",
+          "text_reviews_count": "1",
+          "country_code": "US",
+          "is_ebook": "false",
+          "average_rating": "3.53",
+          "similar_books": [],
+          "description": "In 1919 Sian Busby's great-grandmother, Beth, gave birth to triplets. One of the babies died at birth and 11 days later Beth drowned the surviving twins in a bath of cold water. She was sentenced to an indefinite term of imprisonment at Broadmoor.The murder and the deep sense of shame it generated obviously affected Beth, her husband and their surviving children to an extraordinary degree, but it also resounded through the lives of her grandchildren and great-grandchildren. It gave rise to a collective anxiety about their family's ability to parent and an obsessive fear of hereditary insanity and depressive illness.In Sian's case, ill-suppressed knowledge of the event manifested itself in recurring nightmares and contributed to a prolonged bout of post-natal depression. She decided to investigate the story once and for all and lay to rest the ghosts which have haunted the family for 80 years.",
+          "format": "Hardcover",
+          "link": "https://www.goodreads.com/book/show/1911901.The_Cruel_Mother",
+          "publisher": "Short Books",
+          "num_pages": "301",
+          "publication_day": "1",
+          "publication_month": "1",
+          "edition_information": "",
+          "publication_year": "2004",
+          "url": "https://www.goodreads.com/book/show/1911901.The_Cruel_Mother",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "book_id": 1911901,
+          "ratings_count": "9",
+          "title": "The Cruel Mother: A Family Ghost Laid to Rest",
+          "unixDateAdded": 1331924445,
+          "assignedGroup": 100,
+          "price": "$176.492",
+          "authors": [
+            {
+              "_id": {
+                "$oid": "63e131f017028313a43c3687"
+              },
+              "average_rating": "3.37",
+              "author_id": "169908",
+              "text_reviews_count": "131",
+              "name": "Sian Busby",
+              "ratings_count": "964"
+            }
+          ],
+          "genres": [
+            [
+              {
+                "k": "non-fiction",
+                "v": 6
+              },
+              {
+                "k": "history, historical fiction, biography",
+                "v": 6
+              },
+              {
+                "k": "mystery, thriller, crime",
+                "v": 3
+              }
+            ]
+          ]
+        }
