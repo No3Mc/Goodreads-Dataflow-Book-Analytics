@@ -253,7 +253,7 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 <li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
 
 
-p2652259_reviews:
+<!-- p2652259_reviews:
 
 ![Screenshot from 2023-03-10 04-00-50](https://user-images.githubusercontent.com/41834061/224220194-86ff7316-8c8a-4cc4-a57b-3c1829e7ecf8.png)
 
@@ -271,7 +271,7 @@ p2652259_books:
 
 ![Screenshot from 2023-03-10 04-07-55](https://user-images.githubusercontent.com/41834061/224220983-22ec5ced-7cf4-4ac2-8cc5-21668e2bf2e9.png)
 
-![Screenshot from 2023-03-10 04-08-25](https://user-images.githubusercontent.com/41834061/224221038-6273fe23-c462-40f9-bc82-2b73caff733b.png)
+![Screenshot from 2023-03-10 04-08-25](https://user-images.githubusercontent.com/41834061/224221038-6273fe23-c462-40f9-bc82-2b73caff733b.png) -->
 
 <li> Show the query/queries used to address this anomaly.</li>
 
