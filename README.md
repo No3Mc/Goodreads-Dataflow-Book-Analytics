@@ -32,7 +32,11 @@ Study the collections briefly with their fields and values. [6 marks]
 
 To verify that the changes to the new products collection were successful, display the title, authors, and genre of the book with highest number of pages. [1 mark]
 
+Using $lookup operator, fetch the complete information of 50% of books with their authors and genres using pxxxxxxx_books collection. Track the speed of the query. [3 marks]
 
+Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed of the query. [3 marks]
+
+Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the results. [4 marks]
 
 
 8.0 [WEEKLY JOURNALS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks)
