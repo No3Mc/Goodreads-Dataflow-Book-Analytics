@@ -249,6 +249,10 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 <ol>
 1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
 
+<ol type="a">
+<li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
+
+
 p2652259_reviews:
 
 ![Screenshot from 2023-03-10 04-00-50](https://user-images.githubusercontent.com/41834061/224220194-86ff7316-8c8a-4cc4-a57b-3c1829e7ecf8.png)
@@ -269,10 +273,6 @@ p2652259_books:
 
 ![Screenshot from 2023-03-10 04-08-25](https://user-images.githubusercontent.com/41834061/224221038-6273fe23-c462-40f9-bc82-2b73caff733b.png)
 
-
-
-<ol type="a">
-<li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
 <li> Show the query/queries used to address this anomaly.</li>
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
 </ol>
