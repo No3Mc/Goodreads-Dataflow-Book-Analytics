@@ -7,15 +7,33 @@ Weekly Journals:
 
 
 
-3.0 [CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL)](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) ✅ 
+3.0 [CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL)](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) 
+
+3.2 Understanding the data
+
+What is/are the unique/identifying key(s) of the documents of each collection? [4 marks]
+
+Study the collections briefly with their fields and values. [6 marks]
 
 4.0 [CLEANING THE COLLECTIONS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#40-cleaning-the-collections-20-marks)
+
+4.1
+    c. Take screenshots of samples of documents after the anomaly has been corrected.
+
+2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year [2 marks]
+
+3. Create another field in the books collection unix_publication_date that converts publication_date to Unix format. [2 marks]
 
 5.0 [QUERYING THE COLLECTIONS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#50-querying-the-collections-20-marks)
 
 6.0 [IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks)
 
 7.0 [RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks)
+
+To verify that the changes to the new products collection were successful, display the title, authors, and genre of the book with highest number of pages. [1 mark]
+
+
+
 
 8.0 [WEEKLY JOURNALS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks)
 
