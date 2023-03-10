@@ -248,7 +248,13 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
     
 <ol>
 1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
-    
+
+p2652259_reviews:
+
+![Screenshot from 2023-03-10 04-00-50](https://user-images.githubusercontent.com/41834061/224220194-86ff7316-8c8a-4cc4-a57b-3c1829e7ecf8.png)
+
+
+
 <ol type="a">
 <li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
 <li> Show the query/queries used to address this anomaly.</li>
