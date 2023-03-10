@@ -21,9 +21,9 @@ Goodreads is an American social cataloguing website and a subsidiary of Amazon t
 
 A subset of Goodreads data has been selected for this coursework. There is data on books, reviews, authors, and genre. Permission was granted to use the data for this coursework from https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home on condition that the authors’ research papers are referenced (Mengting W. and Julian J. M 2018), (Mengting W et al. 2019). It is not necessary to read these papers to complete this coursework.
 
-**3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]**
+# **3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]**
 
-3.1 Connecting to DMU MongoDB server.
+# 3.1 Connecting to DMU MongoDB server.
 
 Connect to MongoDB server using MongoDB Compass with the following credentials. Please note that the username and password are in lowercase.
 
