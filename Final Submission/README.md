@@ -493,7 +493,7 @@ collection of books. This requires the following tasks:
 
  1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. <b>[1 mark]</b>
 
-    db.p2652259_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
+        db.p2652259_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
 
  2. Embed all the authors and genres of books into their corresponding book using the new
  pxxxxxx_books_adm collection. <b>[6 marks]</b>
