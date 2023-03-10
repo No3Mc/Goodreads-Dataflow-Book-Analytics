@@ -42,7 +42,7 @@ Note: At the moment, you can only connect to the MongoDB server while on univers
 
 Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home) and answer the following:
 
-## 1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
+1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
 
 
 Books:
