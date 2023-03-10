@@ -252,6 +252,8 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 p2652259_reviews:
 
 ![Screenshot from 2023-03-10 04-00-50](https://user-images.githubusercontent.com/41834061/224220194-86ff7316-8c8a-4cc4-a57b-3c1829e7ecf8.png)
+![Screenshot from 2023-03-10 04-03-15](https://user-images.githubusercontent.com/41834061/224220443-80318186-1fe1-4c94-bf6d-d5196826caa4.png)
+![Screenshot from 2023-03-10 04-04-26](https://user-images.githubusercontent.com/41834061/224220535-c701b69b-401b-4762-951f-f6ee2c9e26ba.png)
 
 
 
