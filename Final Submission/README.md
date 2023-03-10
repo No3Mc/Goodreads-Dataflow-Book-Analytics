@@ -427,6 +427,26 @@ p2652259_authors:
 </ol>
 <ol>
 2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year <b>[2 marks]</b>
+    
+            db.p2652259_books.updateMany(
+          {}, // Filter all documents
+          [
+            {
+              $set: {
+                publication_date: {
+                  $dateFromParts: {
+                    year: { $toInt: "$publication_year" },
+                    month: { $toInt: "$publication_month" },
+                    day: { $toInt: "$publication_day" }
+                  }
+                }
+              }
+            }
+          ]
+        )
+
+    
+    
 </ol>
 <ol>
 3. Create another field in the books collection unix_publication_date that converts
