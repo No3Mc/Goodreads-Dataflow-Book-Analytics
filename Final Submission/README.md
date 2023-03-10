@@ -323,15 +323,97 @@ collection of books. This requires the following tasks:
 
  1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. <b>[1 mark]</b>
 
+    db.p2652259_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
+
  2. Embed all the authors and genres of books into their corresponding book using the new
  pxxxxxx_books_adm collection. <b>[6 marks]</b>
+
+    db.p2652259_books.aggregate([
+      {
+        $lookup: {
+          from: "p2652259_authors",
+          localField: "authors",
+          foreignField: "author_id",
+          as: "authors"
+        }
+      },
+      {
+        $lookup: {
+          from: "p2652259_genres",
+          localField: "book_id",
+          foreignField: "book_id",
+          as: "genres"
+        }
+      },
+      {
+        $project: {
+          _id: 1,
+          isbn: 1,
+          text_reviews_count: 1,
+          country_code: 1,
+          is_ebook: 1,
+          average_rating: 1,
+          similar_books: 1,
+          description: 1,
+          format: 1,
+          link: 1,
+          publisher: 1,
+          num_pages: 1,
+          publication_day: 1,
+          publication_month: 1,
+          edition_information: 1,
+          publication_year: 1,
+          url: 1,
+          image_url: 1,
+          book_id: 1,
+          ratings_count: 1,
+          title: 1,
+          unixDateAdded: 1,
+          assignedGroup: 1,
+          price: 1,
+          authors: "$authors",
+          genres: "$genres.genres"
+        }
+      },
+      {
+        $out: "p2652259_books_adm"
+      }
+    ])
 
  3. To verify that the changes to the new products collection were successful, display the title,
  authors, and genre of the book with highest number of pages. <b>[1 mark]</b>
 
+
+
  4. Note that there is no longer need to reference the book_id inside each genre or author_id inside
  each book now that they are part of the book in pxxxxxx_books_adm collection. Show that these
  are removed. <b>[2 marks]</b>
+
+
+- Genres:
+
+    db.p2652259_genres.bulkWrite([
+      { 
+        updateMany: { 
+          filter: {}, 
+          update: { $unset: { book_id: "" } },
+          returnNewDocument: true
+        } 
+      }
+    ])
+
+- Authors:
+
+    db.p2652259_authors.bulkWrite([
+      { 
+        updateMany: { 
+          filter: {}, 
+          update: { $unset: { author_id: "" } },
+          returnNewDocument: true
+        } 
+      }
+    ])
+
 
  5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
  genres using pxxxxxxx_books collection. Track the speed of the query. <b>[3 marks]</b>
