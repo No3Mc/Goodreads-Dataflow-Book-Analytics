@@ -39,7 +39,7 @@ Using the pxxxxxx_books_adm collection, fetch the same information as above. Tra
 Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the results. [4 marks]
 
 
-8.0 [WEEKLY JOURNALS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks)
+8.0 [WEEKLY JOURNALS](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks)  ✅
 
 P2652259_authors:
 
