@@ -21,76 +21,76 @@ Weekly Journals:
 
 P2652259_authors:
 
-{
-  "_id": {
-    "$oid": "63e131f017028313a43c2b45"
-  },
-  "average_rating": "3.92",
-  "author_id": "10333",
-  "text_reviews_count": "5075",
-  "name": "Barbara Hambly",
-  "ratings_count": "122118"
-}
+    {
+      "_id": {
+        "$oid": "63e131f017028313a43c2b45"
+      },
+      "average_rating": "3.92",
+      "author_id": "10333",
+      "text_reviews_count": "5075",
+      "name": "Barbara Hambly",
+      "ratings_count": "122118"
+    }
 
 P2652259_books:
 
-{
-  "_id": {
-    "$oid": "63e1223417028313a427fa45"
-  },
-  "isbn": "0896211371",
-  "text_reviews_count": "1",
-  "country_code": "US",
-  "is_ebook": "false",
-  "average_rating": "3.67",
-  "similar_books": [],
-  "description": "",
-  "format": "",
-  "link": "https://www.goodreads.com/book/show/1531571.Family_Life",
-  "authors": "714123",
-  "publisher": "",
-  "num_pages": "",
-  "publication_day": "",
-  "publication_month": "",
-  "edition_information": "Large Print",
-  "publication_year": "",
-  "url": "https://www.goodreads.com/book/show/1531571.Family_Life",
-  "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-  "book_id": 1531571,
-  "ratings_count": "6",
-  "title": "Family Life",
-  "unixDateAdded": 1333891862,
-  "assignedGroup": 100,
-  "price": "$353.252",
-  "author_id": "714123"
-}
+    {
+      "_id": {
+        "$oid": "63e1223417028313a427fa45"
+      },
+      "isbn": "0896211371",
+      "text_reviews_count": "1",
+      "country_code": "US",
+      "is_ebook": "false",
+      "average_rating": "3.67",
+      "similar_books": [],
+      "description": "",
+      "format": "",
+      "link": "https://www.goodreads.com/book/show/1531571.Family_Life",
+      "authors": "714123",
+      "publisher": "",
+      "num_pages": "",
+      "publication_day": "",
+      "publication_month": "",
+      "edition_information": "Large Print",
+      "publication_year": "",
+      "url": "https://www.goodreads.com/book/show/1531571.Family_Life",
+      "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "book_id": 1531571,
+      "ratings_count": "6",
+      "title": "Family Life",
+      "unixDateAdded": 1333891862,
+      "assignedGroup": 100,
+      "price": "$353.252",
+      "author_id": "714123"
+    }
 
 p2652259_genres:
 
-{
-  "_id": {
-    "$oid": "63e132d117028313a448d433"
-  },
-  "book_id": 1531571,
-  "genres": []
-}
+    {
+      "_id": {
+        "$oid": "63e132d117028313a448d433"
+      },
+      "book_id": 1531571,
+      "genres": []
+    }
 
 
 p2652259_reviews:
 
-{
-  "_id": {
-    "$oid": "63e12b7a17028313a4553a73"
-  },
-  "user_id": "62e739fa9c4d4f6899bb9597780f0ead",
-  "book_id": 248,
-  "review_id": "98f93fa952213acfda9b64b5ac8927e9",
-  "rating": 4,
-  "review_text": "Second time around and finding it just as interesting, perhaps even more so, that the first reading some forty years ago.",
-  "date_added": "Thu Sep 06 17:56:32 -0700 2012",
-  "date_updated": "Tue Mar 26 14:24:06 -0700 2013",
-  "read_at": "Mon Oct 01 00:00:00 -0700 2012",
-  "started_at": "Thu Sep 06 00:00:00 -0700 2012",
-  "n_votes": 1,
-  "n_comments": 0
-}
+    {
+      "_id": {
+        "$oid": "63e12b7a17028313a4553a73"
+      },
+      "user_id": "62e739fa9c4d4f6899bb9597780f0ead",
+      "book_id": 248,
+      "review_id": "98f93fa952213acfda9b64b5ac8927e9",
+      "rating": 4,
+      "review_text": "Second time around and finding it just as interesting, perhaps even more so, that the first reading some forty years ago.",
+      "date_added": "Thu Sep 06 17:56:32 -0700 2012",
+      "date_updated": "Tue Mar 26 14:24:06 -0700 2013",
+      "read_at": "Mon Oct 01 00:00:00 -0700 2012",
+      "started_at": "Thu Sep 06 00:00:00 -0700 2012",
+      "n_votes": 1,
+      "n_comments": 0
+    }
