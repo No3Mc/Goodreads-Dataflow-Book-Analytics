@@ -38,11 +38,11 @@ If you are having difficulties with the credentials above, paste the below URI i
 
 Note: At the moment, you can only connect to the MongoDB server while on university network. This means either you are on the University lab machines or you connect via Horizon. If you wish to work on your PC, you have to complete the ETL using above methods then move to your PC and import the personalized datasets.
 
-3.2 Understanding the data.
+# 3.2 Understanding the data.
 
 Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home) and answer the following:
 
-1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
+## 1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
 
 
 Books:
@@ -134,7 +134,7 @@ Genre:
 | goodreads_reviews_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeSX9wfLNhBNvpkGLlMh4UgByDFic2H3S80seX-2bAk91g) |
 
 
-2. Study the collections briefly with their fields and values. <b>[6 marks]</b>
+## 2. Study the collections briefly with their fields and values. <b>[6 marks]</b>
  
       a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
 
@@ -193,7 +193,7 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
 
  
 
-3.3 Getting your personalized data. 
+## 3.3 Getting your personalized data. 
 <ol>
 <li>
 Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. <b>[2 mark]</b>
@@ -240,7 +240,7 @@ this is the time to move back to your PC!
 
 
 
-4.0 CLEANING THE COLLECTIONS <b>[20 marks]</b>
+## 4.0 CLEANING THE COLLECTIONS <b>[20 marks]</b>
 
 4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data
 was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
@@ -264,7 +264,7 @@ publication_date to Unix format. <b>[2 marks]</b>
 </ol>
 
 
-5.0 QUERYING THE COLLECTIONS <b>[20 marks]</b>
+## 5.0 QUERYING THE COLLECTIONS <b>[20 marks]</b>
 
 
 Write the following queries (Q1 to Q4) against the collections that you personalised and loaded you’re
@@ -301,7 +301,7 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
 
 
 
-6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE <b>[15 marks]</b>
+## 6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE <b>[15 marks]</b>
 
  1. Identify the chosen query from Section 5 and explain/justify your choice of index. Why do you think
  indexing could improve the query. <b>[5 marks]</b>
@@ -313,7 +313,7 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
  created. Compare and discuss the execution plans to support your choice and summarise your
  findings. <b>[8 marks]</b>
 
-7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING <b>[20 marks]</b>
+## 7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING <b>[20 marks]</b>
 
 Write code in MongoDB to automatically embed the details of authors from authors collection and genres
 from genres collection with their corresponding book in the books collection. This is an aggregate data
@@ -346,7 +346,7 @@ collection of books. This requires the following tasks:
 All tasks must each be fully automated by writing code. Note that some tasks may take many seconds or
 minutes to execute depending on the machine.
 
-8.0 WEEKLY JOURNALS <b>[10 marks]</b>
+## 8.0 WEEKLY JOURNALS <b>[10 marks]</b>
 
 Report all your journal submissions by completing the table below:
 
@@ -360,7 +360,7 @@ Report all your journal submissions by completing the table below:
 
 
 
-9.0 DELIVERABLES
+## 9.0 DELIVERABLES
     
 <ol>
 
@@ -376,7 +376,7 @@ from it.
 a receipt.
 </ol>
     
-10.0 CLOSING COMMENTS
+## 10.0 CLOSING COMMENTS
     
 <ol>
     
@@ -401,7 +401,7 @@ answers do not follow the examples and exercises taught on the module, they may 
     
 </ol>
 
-REFERENCES
+## REFERENCES
 R. He, J. McAuley. "Modeling the visual evolution of fashion trends with one-class collaborative filtering".
 WWW, 2016.
 J. McAuley, C. Targett, J. Shi, "A. van den Hengel. Image-based recommendations on styles and substitutes".
