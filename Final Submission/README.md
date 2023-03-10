@@ -134,7 +134,7 @@ Genre:
 | goodreads_reviews_young_adult.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EeSX9wfLNhBNvpkGLlMh4UgByDFic2H3S80seX-2bAk91g) |
 
 
-## 2. Study the collections briefly with their fields and values. <b>[6 marks]</b>
+2. Study the collections briefly with their fields and values. <b>[6 marks]</b>
  
       a. Identify issues and anomalies you have seen such as invalid data, empty fields, etc.?
 
