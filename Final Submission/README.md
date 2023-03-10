@@ -392,27 +392,27 @@ collection of books. This requires the following tasks:
 
 - Genres:
 
-    db.p2652259_genres.bulkWrite([
-      { 
-        updateMany: { 
-          filter: {}, 
-          update: { $unset: { book_id: "" } },
-          returnNewDocument: true
-        } 
-      }
-    ])
+        db.p2652259_genres.bulkWrite([
+          { 
+            updateMany: { 
+              filter: {}, 
+              update: { $unset: { book_id: "" } },
+              returnNewDocument: true
+            } 
+          }
+        ])
 
 - Authors:
 
-    db.p2652259_authors.bulkWrite([
-      { 
-        updateMany: { 
-          filter: {}, 
-          update: { $unset: { author_id: "" } },
-          returnNewDocument: true
-        } 
-      }
-    ])
+        db.p2652259_authors.bulkWrite([
+          { 
+            updateMany: { 
+              filter: {}, 
+              update: { $unset: { author_id: "" } },
+              returnNewDocument: true
+            } 
+          }
+        ])
 
 
  5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
