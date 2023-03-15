@@ -243,10 +243,53 @@ Extract all books matching your assignedGroup from books collection into a new c
     
 Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. <b>[1 mark]</b>
 
-    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
-    
 
+1 Meth.
+
+    db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
+ 
+ 
+2 Meth.
+
+    var bookIds = db.p2652259_books.distinct("book_id");
+    var reviews = db.reviews.find({ book_id: { $in: bookIds } }).toArray();
+    db.p2652259_reviews.insertMany(reviews);
     
+3 Meth.
+    
+    db.reviews.aggregate([
+    { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
+    { $out: "p2652259_reviews" }
+    ]);
+    
+4 Meth.
+ 
+    var bookIds = db.p2652259_books.distinct("book_id");
+    var reviewsCursor = db.reviews.find({ book_id: { $in: bookIds } });
+    while (reviewsCursor.hasNext()) {
+    var review = reviewsCursor.next();
+    db.p2652259_reviews.insertOne(review);
+    }
+
+5 Meth.
+
+    var bookIds = db.p2652259_books.distinct("book_id");
+    var reviews = db.reviews.find({ book_id: { $in: bookIds } }).toArray();
+    var insertOps = reviews.map(function(review) {
+    return { insertOne: { document: review } };
+    });
+    db.p2652259_reviews.bulkWrite(insertOps);
+
+6 Meth.
+
+    var bookIds = db.p2652259_books.distinct("book_id");
+    var reviewsCursor = db.reviews.find({ book_id: { $in: bookIds } });
+    reviewsCursor.forEach(function(review) {
+      db.p2652259_reviews.insertOne(review);
+    });
+
+
+
 
 </li>
 <li>
