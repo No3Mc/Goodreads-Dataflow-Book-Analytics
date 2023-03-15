@@ -105,25 +105,25 @@ Genre:
 
 | Collection | Keys | Link |
 | -------- | -------- | -------- |
-| goodreads_books_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EQ5tXa0o6LtLhbqpJ5AJvOQBP5IyVrUO8NslerdpED-ZHQ) |
-| goodreads_interactions_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcvdawHx6DFPq8HhTorT97sBsPNmV4rOIG13YAabpCNyaw) |
-| goodreads_reviews_mystery_thriller_crime.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ERYj0vCw3ylAqu0j5IFXiXcBr0-krwUEIsfFbIpy22M2Wg) |
+| goodreads_books_mystery_thriller_crime.json | isbn | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EQ5tXa0o6LtLhbqpJ5AJvOQBP5IyVrUO8NslerdpED-ZHQ) |
+| goodreads_interactions_mystery_thriller_crime.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EcvdawHx6DFPq8HhTorT97sBsPNmV4rOIG13YAabpCNyaw) |
+| goodreads_reviews_mystery_thriller_crime.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/ERYj0vCw3ylAqu0j5IFXiXcBr0-krwUEIsfFbIpy22M2Wg) |
 
 - Genre.Poetry:
 
 | Collection | Keys | Link |
 | -------- | -------- | -------- |
-| goodreads_books_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaiKy_Izyd1GvmbVIHq-aZYBF0OeODCh68f8Kft8HUAU_Q) |
-| goodreads_interactions_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaKjuHy_5xpFna9Det1Z-REBMW72FQ4IHpZdp7vCGjqzpw) |
-| goodreads_reviews_poetry.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EYwV48GcIbxAoLucY0I5z6MBNTqWf2w9-JiEaOg18s-Z7w) |
+| goodreads_books_poetry.json | isbn | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaiKy_Izyd1GvmbVIHq-aZYBF0OeODCh68f8Kft8HUAU_Q) |
+| goodreads_interactions_poetry.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EaKjuHy_5xpFna9Det1Z-REBMW72FQ4IHpZdp7vCGjqzpw) |
+| goodreads_reviews_poetry.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EYwV48GcIbxAoLucY0I5z6MBNTqWf2w9-JiEaOg18s-Z7w) |
 
 - Genre.Romance:
 
 | Collection | Keys | Link |
 | -------- | -------- | -------- |
-| goodreads_books_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXOgdqrOhqZPu1taZwal4MoBwKseTSHPkvwiswho5ou9pQ) |
-| goodreads_interactions_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Edsym-cw63lIkNdOBjCx_IIBGbjzIGRcMYSjT8STYzqLBA) |
-| goodreads_reviews_romance.json | Column | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZSupfmDNy5Lg6feaWiIM-gBzLnvs9XEGQ4B5x9ZToFqGg) |
+| goodreads_books_romance.json | isbn | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EXOgdqrOhqZPu1taZwal4MoBwKseTSHPkvwiswho5ou9pQ) |
+| goodreads_interactions_romance.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/Edsym-cw63lIkNdOBjCx_IIBGbjzIGRcMYSjT8STYzqLBA) |
+| goodreads_reviews_romance.json | user_id, book_id, and review_id | [Link](https://demontfortuniversity-my.sharepoint.com/:u:/g/personal/p2652259_my365_dmu_ac_uk/EZSupfmDNy5Lg6feaWiIM-gBzLnvs9XEGQ4B5x9ZToFqGg) |
 
 - Genre.Young Adult:
 
