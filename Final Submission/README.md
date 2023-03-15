@@ -244,6 +244,9 @@ Extract all books matching your assignedGroup from books collection into a new c
 Extract all matching reviews of books in pxxxxxxx_books to a collection named pxxxxxxx_reviews. <b>[1 mark]</b>
 
     db.reviews.find({ book_id: { $in: db.p2652259_books.distinct("book_id") } }).forEach(function(doc) {db.p2652259_reviews.insertOne(doc)})
+    
+
+    
 
 </li>
 <li>
