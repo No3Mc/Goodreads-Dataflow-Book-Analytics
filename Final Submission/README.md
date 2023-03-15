@@ -198,7 +198,45 @@ Genre.Romance:</b> | <b>=========</b> | <b>=========</b> | <b>=========</b> | <b
 <li>
 Extract all books matching your assignedGroup from books collection into a new collection named pxxxxxxx_books where pxxxxxxx is replaced with your p-number. <b>[2 mark]</b>
 
+1 Meth.
+
     db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})
+
+2 Meth.
+
+    db.books.aggregate([
+      { $match: { assignedGroup: 100 } },
+      { $out: "p2652259_books" }
+    ])
+    
+3 Meth. 
+
+    var docs = db.books.find({ assignedGroup: 100 }).toArray();
+    db.p2652259_books.insertMany(docs);
+
+4 Meth.
+
+    var cursor = db.books.find({ assignedGroup: 100 });
+    while (cursor.hasNext()) {
+      var doc = cursor.next();
+      db.p2652259_books.insertOne(doc);
+    }
+
+5 Meth.
+
+    db.books.aggregate([
+      { $match: { assignedGroup: 100 } },
+      { $merge: { into: "p2652259_books" } }
+    ])
+
+6 Meth.
+
+    db.books.find({ assignedGroup: 100 }).copyTo("p2652259_books")
+
+7 Meth.
+
+    mongo --eval 'db.books.find({ assignedGroup: 100 }).forEach(function(doc) {db.p2652259_books.insertOne(doc)})' dbname
+
 
 </li>
 <li>
