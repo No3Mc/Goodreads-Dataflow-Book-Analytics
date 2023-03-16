@@ -433,6 +433,28 @@ all the marks available for a question.
 <li> Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
 price, and average rating. <b>[5 marks]</b></li> 
 
+    db.books.aggregate([
+    { $match: { is_ebook: "false", average_rating: { $gt: "3.5" } } },
+    {
+    $group: {
+      _id: { book_id: "$book_id", title: "$title", price: "$price" },
+      avg_rating: { $avg: { $toDouble: "$average_rating" } },
+    },
+    },
+    { $sort: { avg_rating: -1 } },
+    { $limit: 3 },
+    {
+    $project: {
+      _id: "$_id.book_id",
+      title: "$_id.title",
+      price: "$_id.price",
+      avg_rating: 1,
+    },
+    },
+    ])
+
+    
+    
 <li> Who is the most famous reviewer in your dataset? Most famous reviewer have the highest number 
 of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
 n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b></li> 
