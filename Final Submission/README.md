@@ -437,6 +437,21 @@ price, and average rating. <b>[5 marks]</b></li>
 of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
 n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b></li> 
 
+    db.reviews.aggregate([
+    { $match: { rating: 5 } },
+    { $group: {
+      _id: "$user_id",
+      avg_rating: { $avg: "$rating" },
+      avg_votes: { $avg: "$n_votes" },
+      total_comments: { $sum: "$n_comments" },
+      total_reviews: { $sum: 1 }
+    } },
+    { $sort: { total_reviews: -1 } },
+    { $limit: 1 }
+    ])
+
+    
+    
 <li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
 most_famous and set its value to true. <b>[4 mark]</b></li> 
 
