@@ -44,11 +44,23 @@ Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu
 
 1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
 
-
 Books:
+- Identifying key: book_id
+- Example: "book_id": 5333265
+
+Authors:
+- Identifying key: author_id
+- Example: "author_id": "604031"
+
+Genres:
+- Identifying key: composite key of book_id and genres.k fields
+- Example: "book_id": 5333265, "genres": [{"k": "history, historical fiction, biography", "v": 1}]
+
+Reviews:
+- Identifying key: review_id
+- Example: "review_id": "5cd416f3efc3f944fce4ce2db2290d5e"
 
 
-- Books.json:
 
 
 
