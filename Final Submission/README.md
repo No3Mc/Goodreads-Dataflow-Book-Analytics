@@ -73,7 +73,14 @@ Reviews:
 Complete the table below based on 2(a) and 2(b).
 
 
-    
+    | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
+|------------|----------|--------------|-----------------------------|------------------|
+| authors   | field      | Format      | Examples     | Solution Plan |
+| books   | field      | Format      | Examples     | Solution Plan |
+| genres   | field      | Format      | Examples     | Solution Plan |
+| reviews   | field      | Format      | Examples     | Solution Plan |
+
+
     
     
     
