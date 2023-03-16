@@ -476,7 +476,15 @@ n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b
     
 <li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
 most_famous and set its value to true. <b>[4 mark]</b></li> 
+    
+    db.reviews.updateMany(
+    { user_id: "9c692e44fab3d5ca585cf282344f18e1" },
+    { $set: { most_famous: true } }
+    )
 
+    
+    
+    
 <li> Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
 the most famous reviewer. No other product details are required. <b>[5 marks]</b></li> 
 
