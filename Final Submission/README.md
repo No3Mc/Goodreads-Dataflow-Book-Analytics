@@ -122,37 +122,10 @@ Extract all matching authors of books in pxxxxxxx_books to a collection named px
 <!--     db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insertOne(doc)}) -->
     
     
-    db.p2652259_books.aggregate([
-    {
-      $lookup: {
-         from: "authors",
-         localField: "author_id",
-         foreignField: "author_id",
-         as: "author"
-      }
-    },
-    {
-      $unwind: "$author"
-    },
-    {
-      $group: {
-         _id: "$author.author_id",
-         author_name: { $first: "$author.author_name" },
-         books: { $push: "$$ROOT" }
-      }
-    },
-    {
-      $project: {
-         _id: 0,
-         author_id: "$_id",
-         author_name: 1,
-         books: 1
-      }
-    },
-    {
-      $out: "p2652259_authors"
-    }
-    ])
+    db.authors.aggregate([
+    { $match: { author_id: { $in: db.p2652259_books.distinct("authors") } } },
+    { $out: "p2652259_authors" }
+    ]);
 
     
 
@@ -162,13 +135,9 @@ Extract all matching authors of books in pxxxxxxx_books to a collection named px
 Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. <b>[1 mark]</b>
 
     db.genres.aggregate([
-      {
-        $match: {
-          book_id: { $in: db.p2652259_books.distinct("book_id") }
-        }
-      },
-      { $out: "p2652259_genres" }
-    ])
+    { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
+    { $out: "p2652259_genres" }
+    ]);
     
 </li>
 </ol>
