@@ -1,6 +1,7 @@
 Questions to ask:
 
 1. In 2 how do I need to enter the details for anomalies and how can I add the examples if they have null or nothing as a value inside it. For example:
+
 ![Screenshot from 2023-03-19 07-44-20](https://user-images.githubusercontent.com/41834061/226161116-e8da1d63-5635-46b8-aa47-62021496993f.png)
 
 2. 
