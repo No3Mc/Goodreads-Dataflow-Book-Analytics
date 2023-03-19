@@ -1,3 +1,13 @@
+Questions to ask:
+
+1.
+2.
+3.
+4.
+5.
+
+
+
 Solutions:
 
 [Week 1](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%201/Week%201.txt)
