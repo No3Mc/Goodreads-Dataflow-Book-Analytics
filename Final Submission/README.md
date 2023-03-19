@@ -14,7 +14,7 @@ For example:
 | p2652259_books   | publisher   | Null      | ![Screenshot from 2023-03-19 07-54-30](https://user-images.githubusercontent.com/41834061/226161546-b7e39fd9-b531-4b7a-9090-45a4eb2f730d.png)     | Solution Plan |
 | p2652259_books   | num_pages   | Null      | ![Screenshot from 2023-03-19 07-54-48](https://user-images.githubusercontent.com/41834061/226161560-c420f5dc-8729-4392-80f3-a246a88c93f8.png)     | Solution Plan |
 
-4. Is this [correct](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks) or do I need to add the solutions there?
+4. Is this [correct](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks) or do I need to add the solutions from weeks there?
 5.
 6.
 7.
