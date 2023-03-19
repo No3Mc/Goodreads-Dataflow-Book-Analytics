@@ -189,147 +189,22 @@ p2652259_books:
 
 p2652259_books:
 
-        db.p2652259_books.update(
-          { $or: [
-            { isbn: { $in: ["", null] } },
-            { text_reviews_count: { $in: ["", null] } },
-            { country_code: { $in: ["", null] } },
-            { is_ebook: { $in: ["", null] } },
-            { average_rating: { $in: ["", null] } },
-            { similar_books: { $size: 0 } },
-            { similar_books: { $exists: false } },
-            { description: { $in: ["", null] } },
-            { format: { $in: ["", null] } },
-            { link: { $in: ["", null] } },
-            { authors: { $in: ["", null] } },
-            { publisher: { $in: ["", null] } },
-            { num_pages: { $in: ["", null] } },
-            { publication_day: { $in: ["", null] } },
-            { publication_month: { $in: ["", null] } },
-            { edition_information: { $in: ["", null] } },
-            { publication_year: { $in: ["", null] } },
-            { url: { $in: ["", null] } },
-            { image_url: { $in: ["", null] } },
-            { book_id: { $in: ["", null] } },
-            { ratings_count: { $in: ["", null] } },
-            { title: { $in: ["", null] } },
-            { unixDateAdded: { $in: ["", null] } },
-            { assignedGroup: { $in: ["", null] } },
-            { price: { $in: ["", null] } },
-            { author_id: { $in: ["", null] } },
-          ] },
-          { $set: {
-            isbn: { $ifNull: [ "$isbn", "Not Specified" ] },
-            text_reviews_count: { $ifNull: [ "$text_reviews_count", "Not Specified" ] },
-            country_code: { $ifNull: [ "$country_code", "Not Specified" ] },
-            is_ebook: { $ifNull: [ "$is_ebook", "Not Specified" ] },
-            average_rating: { $ifNull: [ "$average_rating", "Not Specified" ] },
-            similar_books: { $ifNull: [ "$similar_books", [ "Not Specified" ] ] },
-            description: { $ifNull: [ "$description", "Not Specified" ] },
-            format: { $ifNull: [ "$format", "Not Specified" ] },
-            link: { $ifNull: [ "$link", "Not Specified" ] },
-            authors: { $ifNull: [ "$authors", "Not Specified" ] },
-            publisher: { $ifNull: [ "$publisher", "Not Specified" ] },
-            num_pages: { $ifNull: [ "$num_pages", "Not Specified" ] },
-            publication_day: { $ifNull: [ "$publication_day", "Not Specified" ] },
-            publication_month: { $ifNull: [ "$publication_month", "Not Specified" ] },
-            edition_information: { $ifNull: [ "$edition_information", "Not Specified" ] },
-            publication_year: { $ifNull: [ "$publication_year", "Not Specified" ] },
-            url: { $ifNull: [ "$url", "Not Specified" ] },
-            image_url: { $ifNull: [ "$image_url", "Not Specified" ] },
-            book_id: { $ifNull: [ "$book_id", "Not Specified" ] },
-            ratings_count: { $ifNull: [ "$ratings_count", "Not Specified" ] },
-            title: { $ifNull: [ "$title", "Not Specified" ] },
-            unixDateAdded: { $ifNull: [ "$unixDateAdded", "Not Specified" ] },
-            assignedGroup: { $ifNull: [ "$assignedGroup", "Not Specified" ] },
-            price: { $ifNull: [ "$price", "Not Specified" ] },
-            author_id: { $ifNull: [ "$author_id", "Not Specified" ] },
-          } },
-          { multi: true }
-        )
-
+    
 
 
 
 p2652259_reviews:
 
-        db.p2652259_reviews.update(
-          { $or: [ 
-            { review_text: { $in: ["", null] } }, 
-            { review_text: { $type: 10 } },
-            { user_id: { $in: ["", null] } },
-            { user_id: { $type: 10 } },
-            { book_id: { $in: ["", null] } },
-            { book_id: { $type: 6 } },
-            { review_id: { $in: ["", null] } },
-            { review_id: { $type: 10 } },
-            { rating: { $in: ["", null] } },
-            { rating: { $type: 16 } },
-            { date_added: { $in: ["", null] } },
-            { date_added: { $type: 10 } },
-            { date_updated: { $in: ["", null] } },
-            { date_updated: { $type: 10 } },
-            { read_at: { $in: ["", null] } },
-            { read_at: { $type: 10 } },
-            { started_at: { $in: ["", null] } },
-            { started_at: { $type: 10 } },
-            { n_votes: { $in: ["", null] } },
-            { n_votes: { $type: 16 } },
-            { n_comments: { $in: ["", null] } },
-            { n_comments: { $type: 16 } },
-          ] },
-          { $set: { 
-            user_id: { $ifNull: [ "$user_id", "Not Specified" ] },
-            book_id: { $ifNull: [ "$book_id", "Not Specified" ] },
-            review_id: { $ifNull: [ "$review_id", "Not Specified" ] },
-            rating: { $ifNull: [ "$rating", "Not Specified" ] },
-            review_text: { $ifNull: [ "$review_text", "Not Specified" ] },
-            date_added: { $ifNull: [ "$date_added", "Not Specified" ] },
-            date_updated: { $ifNull: [ "$date_updated", "Not Specified" ] },
-            read_at: { $ifNull: [ "$read_at", "Not Specified" ] },
-            started_at: { $ifNull: [ "$started_at", "Not Specified" ] },
-            n_votes: { $ifNull: [ "$n_votes", "Not Specified" ] },
-            n_comments: { $ifNull: [ "$n_comments", "Not Specified" ] }
-          } },
-          { multi: true }
-        )
+ 
+
 
 p2652259_genres:
 
-        db.p2652259_genres.update(
-          { $or: [
-            { book_id: { $in: ["", null] } },
-            { book_id: { $type: 16 } },
-            { genres: { $in: ["", null] } },
-            { genres: { $size: 0 } },
-            { genres: { $exists: false } }
-          ] },
-          { $set: {
-            book_id: { $ifNull: [ "$book_id", "Not Specified" ] },
-            genres: { $ifNull: [ "$genres", [ "Not Specified" ] ] }
-          } },
-          { multi: true }
-        )
+
 
 p2652259_authors:
 
-        db.p2652259_authors.update(
-          { $or: [
-            { average_rating: { $in: ["", null] } },
-            { author_id: { $in: ["", null] } },
-            { text_reviews_count: { $in: ["", null] } },
-            { name: { $in: ["", null] } },
-            { ratings_count: { $in: ["", null] } },
-          ] },
-          { $set: {
-            average_rating: { $ifNull: [ "$average_rating", "Not Specified" ] },
-            author_id: { $ifNull: [ "$author_id", "Not Specified" ] },
-            text_reviews_count: { $ifNull: [ "$text_reviews_count", "Not Specified" ] },
-            name: { $ifNull: [ "$name", "Not Specified" ] },
-            ratings_count: { $ifNull: [ "$ratings_count", "Not Specified" ] },
-          } },
-          { multi: true }
-        )
+
 
 
 
