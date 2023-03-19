@@ -4,7 +4,7 @@ Questions to ask:
 
 ![Screenshot from 2023-03-19 07-44-20](https://user-images.githubusercontent.com/41834061/226161116-e8da1d63-5635-46b8-aa47-62021496993f.png)
 
-2. In [this](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) table for 2a and 2b can there be one collection used to define all the table?
+2. In [this](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) table for 2a and 2b can there be one collection used to define all the table? Also Do I need to have multiple similar examples added as examples?
 For example:
 
 | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
