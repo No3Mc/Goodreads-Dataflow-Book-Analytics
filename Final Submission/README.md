@@ -98,7 +98,7 @@ Complete the table below based on 2(a) and 2(b).
 
 | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
 |------------|----------|--------------|-----------------------------|------------------|
-| authors   | field      | Anomaly      | Examples     | Solution Plan |
+| authors   | field      | Anomaly      | ![Screenshot from 2023-03-28 13-50-54](https://user-images.githubusercontent.com/41834061/228241758-d9435d3d-49e8-4955-863a-6d99a24c701f.png)     | Solution Plan |
 | books   | field      | Anomaly      | Examples     | Solution Plan |
 | genres   | field      | Anomaly      | Examples     | Solution Plan |
 | reviews   | field      | Anomaly      | Examples     | Solution Plan |
