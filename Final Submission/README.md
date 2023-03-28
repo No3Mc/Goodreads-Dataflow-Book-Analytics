@@ -105,8 +105,26 @@ Complete the table below based on 2(a) and 2(b).
 
 
     
-    
-    
+ To find authors:
+
+     db.authors.find({
+      $or: [
+        { average_rating: { $not: { $type: "double" } } },
+        { text_reviews_count: { $not: { $type: "int" } } }
+      ]
+    }).limit(10).toArray(function(err, docs) {
+      if (err) throw err;
+      if (docs.length > 0) {
+        print("Found " + docs.length + " anomalies in the authors collection:");
+        printjson(docs);
+      } else {
+        print("No anomalies found in the authors collection");
+      }
+    });
+
+The first document has an "average_rating" value of '3.98', which is a string instead of a double. Similarly, the second document has a "text_reviews_count" value of '28716', which is also a string instead of an integer.
+
+
     
     
 
