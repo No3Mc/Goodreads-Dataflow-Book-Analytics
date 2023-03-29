@@ -99,9 +99,9 @@ Complete the table below based on 2(a) and 2(b).
 | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
 |------------|----------|--------------|-----------------------------|------------------|
 | authors   | field      | Anomaly      | ![Screenshot from 2023-03-28 13-50-54](https://user-images.githubusercontent.com/41834061/228241758-d9435d3d-49e8-4955-863a-6d99a24c701f.png)     | Solution Plan |
-| books   | field      | Anomaly      | ![Screenshot from 2023-03-28 13-52-10](https://user-images.githubusercontent.com/41834061/228242101-fbc7279d-9644-4906-a66e-e8024cf3c4e7.png)     | Solution Plan |
+| books   | field      | Null      | ![Screenshot from 2023-03-28 13-52-10](https://user-images.githubusercontent.com/41834061/228242101-fbc7279d-9644-4906-a66e-e8024cf3c4e7.png)     | Solution Plan |
 | genres   | field      | Anomaly      | Examples     | Solution Plan |
-| reviews   | field      | Anomaly      | ![Screenshot from 2023-03-29 13-38-31](https://user-images.githubusercontent.com/41834061/228537627-cbde868b-6fdd-42ac-9b68-c641412834d0.png)     | Solution Plan |
+| reviews   | field      | Null      | ![Screenshot from 2023-03-29 13-38-31](https://user-images.githubusercontent.com/41834061/228537627-cbde868b-6fdd-42ac-9b68-c641412834d0.png)     | Solution Plan |
 
 
     
