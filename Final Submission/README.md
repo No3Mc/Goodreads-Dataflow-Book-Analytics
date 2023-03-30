@@ -241,7 +241,7 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 <br>
 
-p2652259_books:
+p2652259_books:<br>
 
 ![Screenshot from 2023-03-30 04-31-57](https://user-images.githubusercontent.com/41834061/228721633-a2e2ef8a-f5b9-476d-aba4-78685f98b3b1.png)<br>
 ![Screenshot from 2023-03-30 04-32-55](https://user-images.githubusercontent.com/41834061/228721733-9336b3da-1763-4f04-8b57-d0bc6ea287c7.png)<br>
@@ -249,7 +249,7 @@ p2652259_books:
 ![Screenshot from 2023-03-30 04-33-52](https://user-images.githubusercontent.com/41834061/228721854-1b3d33cc-c38d-4d32-b857-7ea9700de807.png)
 
 
-p2652259_reviews:
+p2652259_reviews:<br>
 
 ![Screenshot from 2023-03-30 04-35-17](https://user-images.githubusercontent.com/41834061/228722078-a2e64ae6-4cf5-4430-bbde-ee77e2e1112d.png)<br>
 ![Screenshot from 2023-03-30 04-35-53](https://user-images.githubusercontent.com/41834061/228722147-0a68dc10-0ad1-4861-904b-aa48c0b2abe9.png)<br>
@@ -257,16 +257,19 @@ p2652259_reviews:
 ![Screenshot from 2023-03-30 04-36-46](https://user-images.githubusercontent.com/41834061/228722289-dd3bdd83-4793-4f97-886b-67613ab15992.png)
 
 
-p2652259_genres:
+p2652259_genres:<br>
 
 ![Screenshot from 2023-03-30 04-30-47](https://user-images.githubusercontent.com/41834061/228721504-18965b37-b350-4827-85d1-7571f416aa87.png)
 
 
-p2652259_authors:
-
+p2652259_authors:<br>
+{name: 'nise7465'}
 ![Screenshot from 2023-03-30 04-39-07](https://user-images.githubusercontent.com/41834061/228722663-a68250d6-1ad3-4501-9464-282c0f40fb42.png)<br>
+{name: 'fdy `dl@'}
 ![Screenshot from 2023-03-30 04-40-52](https://user-images.githubusercontent.com/41834061/228722871-5eaa0fdf-9914-47e0-8403-9a9e490d2b0d.png)<br>
+{name: 'Susan    Scott'}
 ![Screenshot from 2023-03-30 04-42-06](https://user-images.githubusercontent.com/41834061/228723024-b922507f-8049-4e05-ac69-9e14120590bf.png)<br>
+
 ![Screenshot from 2023-03-30 04-28-54](https://user-images.githubusercontent.com/41834061/228721301-eaec0cc7-d146-424e-a6d2-9670fc0d9534.png)
 
 
