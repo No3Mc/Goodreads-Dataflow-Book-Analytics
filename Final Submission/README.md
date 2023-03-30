@@ -98,9 +98,9 @@ Complete the table below based on 2(a) and 2(b).
 
 | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
 |------------|----------|--------------|-----------------------------|------------------|
-| authors   | field      | Anomaly      | ![Screenshot from 2023-03-30 03-58-17](https://user-images.githubusercontent.com/41834061/228716941-8db8dad6-56bf-40b0-ade6-e4c856e03145.png)     | Solution Plan |
-| books   | field      | Null      | ![Screenshot from 2023-03-28 13-52-10](https://user-images.githubusercontent.com/41834061/228242101-fbc7279d-9644-4906-a66e-e8024cf3c4e7.png)     | Solution Plan |
-| genres   | field      | Mis-Categorization      | ![Screenshot from 2023-03-30 03-50-55](https://user-images.githubusercontent.com/41834061/228715827-16651f72-0243-41d5-93ff-fc80234218b5.png)     | Solution Plan |
+| authors   | name      | Anomaly      | ![Screenshot from 2023-03-30 03-58-17](https://user-images.githubusercontent.com/41834061/228716941-8db8dad6-56bf-40b0-ade6-e4c856e03145.png)     | Solution Plan |
+| books   | num-pages      | Null      | ![Screenshot from 2023-03-28 13-52-10](https://user-images.githubusercontent.com/41834061/228242101-fbc7279d-9644-4906-a66e-e8024cf3c4e7.png)     | Solution Plan |
+| genres   | fiction      | Mis-Categorization      | ![Screenshot from 2023-03-30 03-50-55](https://user-images.githubusercontent.com/41834061/228715827-16651f72-0243-41d5-93ff-fc80234218b5.png)     | Solution Plan |
 | reviews   | field      | Null      | ![Screenshot from 2023-03-29 13-38-31](https://user-images.githubusercontent.com/41834061/228537627-cbde868b-6fdd-42ac-9b68-c641412834d0.png)     | Solution Plan |
 
 
