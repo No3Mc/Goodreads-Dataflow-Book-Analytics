@@ -245,14 +245,21 @@ p2652259_books:<br>
 {_id: ObjectId("63e1223417028313a427fa45")}<br>
 ![Screenshot from 2023-03-30 04-31-57](https://user-images.githubusercontent.com/41834061/228721633-a2e2ef8a-f5b9-476d-aba4-78685f98b3b1.png)<br>
 
-    db.p2652259_books.updateOne(
-      { _id: ObjectId("63e1223417028313a427fa45") },
-      { $set: {
-        num_pages: { $ifNull: [ { $trim: { input: "$num_pages" } }, null ] },
-        publication_year: { $ifNull: [ { $trim: { input: "$publication_year" } }, null ] },
-        publisher: { $ifNull: [ { $trim: { input: "$publisher" } }, null ] },
-      }}
-    );
+    db.collection.update(
+      {_id: ObjectId("63e1223417028313a427fa45")},
+      {
+        $set: {
+          description: "No description available",
+          format: "Unknown format",
+          publisher: "Unknown publisher",
+          num_pages: 0,
+          publication_day: 0,
+          publication_month: 0,
+          publication_year: 0
+        }
+      }
+    )
+
 
 
 {_id: ObjectId("63e1223417028313a427fa78")}<br>
