@@ -339,20 +339,22 @@ p2652259_reviews:<br>
 
 p2652259_genres:<br>
 
-{_id: ObjectId("63e132e817028313a450372f")}<br>
+{_id: ObjectId("63e132e817028313a450372f")} <br>
 ![Screenshot from 2023-03-30 04-30-47](https://user-images.githubusercontent.com/41834061/228721504-18965b37-b350-4827-85d1-7571f416aa87.png)
 
 
 p2652259_authors:<br>
 
-{name: 'nise7465'}<br>
+{name: 'nise7465'} <br>
 ![Screenshot from 2023-03-30 04-39-07](https://user-images.githubusercontent.com/41834061/228722663-a68250d6-1ad3-4501-9464-282c0f40fb42.png)<br>
-{name: 'fdy `dl@'}<br>
 
+{name: 'fdy `dl@'} <br>
 ![Screenshot from 2023-03-30 04-40-52](https://user-images.githubusercontent.com/41834061/228722871-5eaa0fdf-9914-47e0-8403-9a9e490d2b0d.png)<br>
-{name: 'Susan    Scott'}<br>
+
+{name: 'Susan    Scott'} <br>
 ![Screenshot from 2023-03-30 04-42-06](https://user-images.githubusercontent.com/41834061/228723024-b922507f-8049-4e05-ac69-9e14120590bf.png)<br>
-{name: 'hwyd s`yd'}<br>
+
+{name: 'hwyd s`yd'} <br>
 ![Screenshot from 2023-03-30 04-28-54](https://user-images.githubusercontent.com/41834061/228721301-eaec0cc7-d146-424e-a6d2-9670fc0d9534.png)
 
 
