@@ -100,7 +100,7 @@ Complete the table below based on 2(a) and 2(b).
 |------------|----------|--------------|-----------------------------|------------------|
 | authors   | field      | Anomaly      | ![Screenshot from 2023-03-28 13-50-54](https://user-images.githubusercontent.com/41834061/228241758-d9435d3d-49e8-4955-863a-6d99a24c701f.png)     | Solution Plan |
 | books   | field      | Null      | ![Screenshot from 2023-03-28 13-52-10](https://user-images.githubusercontent.com/41834061/228242101-fbc7279d-9644-4906-a66e-e8024cf3c4e7.png)     | Solution Plan |
-| genres   | field      | Anomaly      | Examples     | Solution Plan |
+| genres   | field      | Mis-Categorization      | ![Screenshot from 2023-03-30 03-50-55](https://user-images.githubusercontent.com/41834061/228715827-16651f72-0243-41d5-93ff-fc80234218b5.png)     | Solution Plan |
 | reviews   | field      | Null      | ![Screenshot from 2023-03-29 13-38-31](https://user-images.githubusercontent.com/41834061/228537627-cbde868b-6fdd-42ac-9b68-c641412834d0.png)     | Solution Plan |
 
 
@@ -125,7 +125,14 @@ Complete the table below based on 2(a) and 2(b).
 The first document has an "average_rating" value of '3.98', which is a string instead of a double. Similarly, the second document has a "text_reviews_count" value of '28716', which is also a string instead of an integer.
 
 
-    
+ To find genres:
+
+    db.genres.find({ "genres.k": "fiction" }).sort({ "genres.v": -1 }).limit(1)
+    db.genres.find({ "genres.k": "fiction" }).sort({ "genres.v": 1 }).limit(1)
+
+ The anomaly in this document is the negative value of -87 for the "fiction" genre. This means that there are 87 fewer books categorized under the "fiction" genre for this document than there should be. This could be due to a mis-categorization of the book or a data entry mistake.
+
+
     
 
  
