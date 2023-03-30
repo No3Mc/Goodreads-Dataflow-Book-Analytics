@@ -265,11 +265,39 @@ p2652259_books:<br>
 {_id: ObjectId("63e1223417028313a427fa78")} <br>
 ![Screenshot from 2023-03-30 04-32-55](https://user-images.githubusercontent.com/41834061/228721733-9336b3da-1763-4f04-8b57-d0bc6ea287c7.png)<br>
 
+    db.collection.update(
+      {_id: ObjectId("63e1223417028313a427fa78")},
+      {$set: {isbn: "N/A"}}
+    )
+
+
 {_id: ObjectId("63e1223417028313a427fafd")} <br>
 ![Screenshot from 2023-03-30 04-33-13](https://user-images.githubusercontent.com/41834061/228721829-bbb1179a-7ce0-4afb-aea9-10775e1963ce.png)<br>
 
+
+    db.collection.update(
+      {_id: ObjectId("63e1223417028313a427fafd")},
+      {$set: {edition_information: "N/A"}}
+    )
+
+
 {_id: ObjectId("63e1223417028313a427fb42")} <br>
 ![Screenshot from 2023-03-30 04-33-52](https://user-images.githubusercontent.com/41834061/228721854-1b3d33cc-c38d-4d32-b857-7ea9700de807.png)
+
+    db.collection.update(
+      {_id: ObjectId("63e1223417028313a427fa45")},
+      {
+        $set: {
+          description: "No description available",
+          format: "Unknown format",
+          publisher: "Unknown publisher",
+          num_pages: 0,
+          publication_day: 0,
+          publication_month: 0,
+          publication_year: 0
+        }
+      }
+    )
 
 
 p2652259_reviews:<br>
