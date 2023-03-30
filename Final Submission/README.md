@@ -213,7 +213,7 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 <ol type="a">
 <li> Take screenshots of sample documents with the anomaly before it is corrected.</li>
 
-
+<br>
 
 p2652259_books:
 
@@ -229,7 +229,7 @@ p2652259_authors:
 
 <li> Show the query/queries used to address this anomaly.</li>
 
-
+<br>
 
 p2652259_books:
 
