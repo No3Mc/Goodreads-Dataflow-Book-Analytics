@@ -304,6 +304,12 @@ p2652259_reviews:<br>
 {_id: ObjectId("63e12b4117028313a44c0879")} <br>
 ![Screenshot from 2023-03-30 04-35-17](https://user-images.githubusercontent.com/41834061/228722078-a2e64ae6-4cf5-4430-bbde-ee77e2e1112d.png)<br>
 
+    db.collection.updateOne(
+       { "_id": ObjectId("63e12b4117028313a44c0879") },
+       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
+    )
+
+
 {_id: ObjectId("63e12b4117028313a44c106b")} <br>
 ![Screenshot from 2023-03-30 04-35-53](https://user-images.githubusercontent.com/41834061/228722147-0a68dc10-0ad1-4861-904b-aa48c0b2abe9.png)<br>
 
