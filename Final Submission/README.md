@@ -243,6 +243,11 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 p2652259_books:
 
+![Screenshot from 2023-03-30 04-31-57](https://user-images.githubusercontent.com/41834061/228721633-a2e2ef8a-f5b9-476d-aba4-78685f98b3b1.png)<br>
+![Screenshot from 2023-03-30 04-32-55](https://user-images.githubusercontent.com/41834061/228721733-9336b3da-1763-4f04-8b57-d0bc6ea287c7.png)<br>
+![Screenshot from 2023-03-30 04-33-13](https://user-images.githubusercontent.com/41834061/228721829-bbb1179a-7ce0-4afb-aea9-10775e1963ce.png)<br>
+![Screenshot from 2023-03-30 04-33-52](https://user-images.githubusercontent.com/41834061/228721854-1b3d33cc-c38d-4d32-b857-7ea9700de807.png)
+
 
 p2652259_reviews:
 
