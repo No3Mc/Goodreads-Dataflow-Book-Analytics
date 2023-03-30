@@ -253,7 +253,9 @@ p2652259_genres:
 p2652259_authors:
 
 ![Screenshot from 2023-03-30 04-14-28](https://user-images.githubusercontent.com/41834061/228720701-e399133f-f3c0-40e1-bac8-690b756b6548.png)<br>
-![Screenshot from 2023-03-30 04-12-14](https://user-images.githubusercontent.com/41834061/228720726-04d02eca-7a68-4f12-99f7-58e395fe57b1.png)
+![Screenshot from 2023-03-30 04-12-14](https://user-images.githubusercontent.com/41834061/228720726-04d02eca-7a68-4f12-99f7-58e395fe57b1.png)<br>
+![Screenshot from 2023-03-30 04-27-46](https://user-images.githubusercontent.com/41834061/228721160-c21c65bc-6c6b-4e15-8a2a-23b861939690.png)<br>
+![Screenshot from 2023-03-30 04-28-54](https://user-images.githubusercontent.com/41834061/228721301-eaec0cc7-d146-424e-a6d2-9670fc0d9534.png)
 
 
 <li> Show the query/queries used to address this anomaly.</li>
