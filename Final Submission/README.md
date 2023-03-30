@@ -251,6 +251,8 @@ p2652259_genres:
 
 
 p2652259_authors:
+![Screenshot from 2023-03-30 04-14-28](https://user-images.githubusercontent.com/41834061/228720701-e399133f-f3c0-40e1-bac8-690b756b6548.png)
+![Screenshot from 2023-03-30 04-12-14](https://user-images.githubusercontent.com/41834061/228720726-04d02eca-7a68-4f12-99f7-58e395fe57b1.png)
 
 
 <li> Show the query/queries used to address this anomaly.</li>
