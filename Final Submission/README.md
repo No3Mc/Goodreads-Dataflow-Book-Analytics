@@ -315,17 +315,26 @@ p2652259_reviews:<br>
 
     db.collection.updateOne(
       { "_id": ObjectId("63e12b4117028313a44c106b") },
-      { "$set": { "started_at": null } }
+      { "$set": { "started_at": "Not Known" } }
     );
 
 
 {_id: ObjectId("63e12b4117028313a44c11e5")} <br>
 ![Screenshot from 2023-03-30 04-36-06](https://user-images.githubusercontent.com/41834061/228722186-09937da5-72c4-4fcb-8bfb-a17357d12dc9.png)<br>
 
+    db.collection.updateOne(
+       { "review_id": "42ea1874bf4c32fbaee703161e598177" },
+       { "$set": { "started_at": "Not Known" } }
+    )
 
 
 {_id: ObjectId("63e12b4217028313a44c128d")} <br>
 ![Screenshot from 2023-03-30 04-36-46](https://user-images.githubusercontent.com/41834061/228722289-dd3bdd83-4793-4f97-886b-67613ab15992.png)
+
+    db.collection.update(
+      { "_id": ObjectId("63e12b4217028313a44c128d") },
+      { "$set": { "started_at": "Not Known" } }
+    )
 
 
 p2652259_genres:<br>
