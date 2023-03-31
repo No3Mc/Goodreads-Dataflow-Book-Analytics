@@ -354,8 +354,20 @@ p2652259_authors:<br>
 {name: 'nise7465'} <br>
 ![Screenshot from 2023-03-30 04-39-07](https://user-images.githubusercontent.com/41834061/228722663-a68250d6-1ad3-4501-9464-282c0f40fb42.png)<br>
 
+    db.collection.update(
+       { _id: ObjectId("63e1320417028313a4450356") },
+       { $set: { name: "Nism" } }
+    )
+
+
 {name: 'fdy `dl@'} <br>
 ![Screenshot from 2023-03-30 04-40-52](https://user-images.githubusercontent.com/41834061/228722871-5eaa0fdf-9914-47e0-8403-9a9e490d2b0d.png)<br>
+
+    db.collection.update(
+       { _id: ObjectId("63e131f517028313a43e557b") },
+       { $set: { name: "fdy dlat" } }
+    )
+
 
 {name: 'Susan    Scott'} <br>
 ![Screenshot from 2023-03-30 04-42-06](https://user-images.githubusercontent.com/41834061/228723024-b922507f-8049-4e05-ac69-9e14120590bf.png)<br>
