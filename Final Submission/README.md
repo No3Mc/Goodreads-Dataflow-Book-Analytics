@@ -405,8 +405,8 @@ p2652259_books:
           description: "No description available",
           format: "Unknown format",
           publisher: "Unknown publisher",
-          num_pages: 0,
-          publication_day: 0,
+          num_pages: "N/A",
+          publication_day: "N/A",
           publication_month: 0,
           publication_year: 0
         }
