@@ -339,8 +339,14 @@ p2652259_reviews:<br>
 
 p2652259_genres:<br>
 
-{_id: ObjectId("63e132e817028313a450372f")} <br>
-![Screenshot from 2023-03-30 04-30-47](https://user-images.githubusercontent.com/41834061/228721504-18965b37-b350-4827-85d1-7571f416aa87.png)
+{_id: ObjectId("63e132d117028313a448d433")} <br>
+![Screenshot from 2023-03-31 05-19-52](https://user-images.githubusercontent.com/41834061/229021793-4d101976-10c7-4005-b48e-d384ad47ec9b.png)<br>
+
+    db.collection.updateOne(
+       { _id: "63e132d117028313a448d433" },
+       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
+    )
+    
 
 
 p2652259_authors:<br>
