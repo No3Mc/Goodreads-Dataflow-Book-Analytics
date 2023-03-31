@@ -579,27 +579,7 @@ p2652259_authors:
 </ol>
 <ol>
 2. Create a new field publication_date in the format YYYY-MM-DD that merges publication_day, publication_month, and publication_year <b>[2 marks]</b>
-    
-            db.p2652259_books.updateMany(
-          {},
-          [
-            {
-              $set: {
-                publication_date: {
-                  $dateFromParts: {
-                    year: { $toInt: "$publication_year" },
-                    month: { $toInt: "$publication_month" },
-                    day: { $toInt: "$publication_day" }
-                  }
-                }
-              }
-            }
-          ]
-        )
 
- 
-
-<br>
 Due to the change of N/A the following query should work: <br>
 
 
