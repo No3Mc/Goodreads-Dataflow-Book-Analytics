@@ -502,7 +502,7 @@ p2652259_authors:
 
     db.p2652259_authors.update(
        { _id: ObjectId("63e1320417028313a4450356") },
-       { $set: { name: "Nism" } }
+       { $set: { name: "Nise" } }
     )
 
 
@@ -511,7 +511,7 @@ p2652259_authors:
 
     db.p2652259_authors.update(
        { _id: ObjectId("63e131f517028313a43e557b") },
-       { $set: { name: "fdy dlat" } }
+       { $set: { name: "Fdy Dl" } }
     )
 
 
@@ -529,7 +529,7 @@ p2652259_authors:
 
     db.p2652259_authors.update(
        { _id: ObjectId("63e131ff17028313a4429338") },
-       { $set: { name: "hwyd syd" } }
+       { $set: { name: "Hwyd Syd" } }
     )
 
 
