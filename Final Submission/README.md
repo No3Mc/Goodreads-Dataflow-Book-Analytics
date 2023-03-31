@@ -604,64 +604,21 @@ Due to the change of N/A the following query should work: <br>
 
 
     db.p2652259_books.updateMany(
-      {},
+      {
+        $and: [
+          { publication_day: { $not: { $in: ["", "N/A"] } } },
+          { publication_month: { $not: { $in: ["", "N/A"] } } },
+          { publication_year: { $not: { $in: ["", "N/A"] } } }
+        ]
+      },
       [
         {
           $set: {
             publication_date: {
-              $cond: {
-                if: {
-                  $or: [
-                    { $eq: ["$publication_day", "N/A"] },
-                    { $eq: ["$publication_month", "N/A"] },
-                    { $eq: ["$publication_year", "N/A"] },
-                    { $gt: [{ $toInt: "$publication_year" }, 9999] }
-                  ]
-                },
-                then: null,
-                else: {
-                  $dateFromParts: {
-                    year: {
-                      $cond: [
-                        { $eq: ["$publication_year", "N/A"] },
-                        null,
-                        {
-                          $cond: [
-                            { $eq: ["$publication_year", ""] },
-                            null,
-                            { $toInt: "$publication_year" }
-                          ]
-                        }
-                      ]
-                    },
-                    month: {
-                      $cond: [
-                        { $eq: ["$publication_month", "N/A"] },
-                        null,
-                        {
-                          $cond: [
-                            { $eq: ["$publication_month", ""] },
-                            null,
-                            { $toInt: "$publication_month" }
-                          ]
-                        }
-                      ]
-                    },
-                    day: {
-                      $cond: [
-                        { $eq: ["$publication_day", "N/A"] },
-                        null,
-                        {
-                          $cond: [
-                            { $eq: ["$publication_day", ""] },
-                            null,
-                            { $toInt: "$publication_day" }
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                }
+              $dateFromParts: {
+                year: { $toInt: "$publication_year" },
+                month: { $toInt: "$publication_month" },
+                day: { $toInt: "$publication_day" }
               }
             }
           }
