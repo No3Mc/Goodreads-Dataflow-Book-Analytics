@@ -367,7 +367,7 @@ p2652259_authors:<br>
 
     db.p2652259_authors.update(
        { _id: ObjectId("63e131f517028313a43e557b") },
-       { $set: { name: "fdy dlat" } }
+       { $set: { name: "fdy dl" } }
     )
 
 
