@@ -7,6 +7,11 @@ Weekly Journals:
 
 [1.0 INTRODUCTION](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 [2.0 SCENARIO](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
+
+Goodreads has a web page for each book e.g. https://www.goodreads.com/book/show/5333265
+or each review e.g., https://www.goodreads.com/review/show/2410025795
+
+
 [3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) <br>
 
 - [3.1 Connecting to DMU MongoDB server.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#31-connecting-to-dmu-mongodb-server) <br>
