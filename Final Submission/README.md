@@ -288,7 +288,7 @@ p2652259_books:<br>
       {_id: ObjectId("63e1223417028313a427fb42")},
       {
         $set: {
-          isbn: "N/A"
+          isbn: "N/A",
           description: "No description available",
           format: "Unknown format",
           publisher: "Unknown publisher",
