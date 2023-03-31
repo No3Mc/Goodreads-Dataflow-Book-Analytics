@@ -655,7 +655,7 @@ all the marks available for a question.
 <li> Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
 price, and average rating. <b>[5 marks]</b></li> 
 
-    db.books.aggregate([
+    db.p2652259_books.aggregate([
     { $match: { is_ebook: "false", average_rating: { $gt: "3.5" } } },
     {
     $group: {
@@ -681,7 +681,7 @@ price, and average rating. <b>[5 marks]</b></li>
 of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
 n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b></li> 
 
-    db.reviews.aggregate([
+    db.p2652259_reviews.aggregate([
     { $match: { rating: 5 } },
     { $group: {
       _id: "$user_id",
@@ -699,7 +699,7 @@ n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b
 <li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
 most_famous and set its value to true. <b>[4 mark]</b></li> 
     
-    db.reviews.updateMany(
+    db.p2652259_reviews.updateMany(
     { user_id: "9c692e44fab3d5ca585cf282344f18e1" },
     { $set: { most_famous: true } }
     )
