@@ -5,8 +5,8 @@ Weekly Journals:
 [Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt) ✅
 [Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%205/Week%205.txt) ✅
 
-[1.0 INTRODUCTION](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#imat3104-database-management-and-programming-nosql) <br>
-[2.0 SCENARIO](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#imat3104-database-management-and-programming-nosql) <br>
+[1.0 INTRODUCTION](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
+[2.0 SCENARIO](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 [3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) <br>
 [3.1 Connecting to DMU MongoDB server.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#31-connecting-to-dmu-mongodb-server) <br>
 [3.2 Understanding the data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) <br>
