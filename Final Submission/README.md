@@ -710,6 +710,33 @@ most_famous and set its value to true. <b>[4 mark]</b></li>
 <li> Using reviews and books collections, find the title and price of 3 most expensive books reviewed by 
 the most famous reviewer. No other product details are required. <b>[5 marks]</b></li> 
 
+
+
+    db.p2652259_reviews.aggregate([
+      { $match: { user_id: "9c692e44fab3d5ca585cf282344f18e1" } },
+      {
+        $lookup: {
+          from: "p2652259_books",
+          localField: "book_id",
+          foreignField: "book_id",
+          as: "book"
+        }
+      },
+      { $unwind: "$book" },
+      {
+        $project: {
+          _id: 0,
+          title: "$book.title",
+          price: "$book.price"
+        }
+      },
+      { $sort: { price: -1 } },
+      { $limit: 3 }
+    ])
+
+    
+    
+    
 </ol>
 
 
