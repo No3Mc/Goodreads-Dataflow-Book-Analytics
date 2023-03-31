@@ -407,8 +407,8 @@ p2652259_books:
           publisher: "Unknown publisher",
           num_pages: "N/A",
           publication_day: "N/A",
-          publication_month: 0,
-          publication_year: 0
+          publication_month: "N/A",
+          publication_year: "N/A"
         }
       }
     )
@@ -437,13 +437,15 @@ p2652259_books:
       {_id: ObjectId("63e1223417028313a427fb42")},
       {
         $set: {
+          isbn: "N/A",
           description: "No description available",
           format: "Unknown format",
           publisher: "Unknown publisher",
-          num_pages: 0,
-          publication_day: 0,
-          publication_month: 0,
-          publication_year: 0
+          edition_information: "N/A",
+          num_pages: "N/A",
+          publication_day: "N/A",
+          publication_month: "N/A",
+          publication_year: "N/A"
         }
       }
     )
