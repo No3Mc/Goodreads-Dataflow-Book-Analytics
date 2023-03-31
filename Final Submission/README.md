@@ -543,6 +543,10 @@ p2652259_books:
 
 p2652259_reviews:
     
+![Screenshot from 2023-03-31 16-07-19](https://user-images.githubusercontent.com/41834061/229158551-e5a99f53-3d5d-402e-9d21-032bcd2e6e91.png)
+![Screenshot from 2023-03-31 16-08-02](https://user-images.githubusercontent.com/41834061/229158666-d13aa62a-b427-4da9-9568-fd2818e48174.png)
+![Screenshot from 2023-03-31 16-08-34](https://user-images.githubusercontent.com/41834061/229158791-886af0df-484b-4f90-89e0-b8851e85e049.png)
+![Screenshot from 2023-03-31 16-09-23](https://user-images.githubusercontent.com/41834061/229158977-09b9e2fb-9ea7-4d52-9d8d-00f99e53ceb0.png)
 
 
 p2652259_genres:
