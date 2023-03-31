@@ -285,7 +285,7 @@ p2652259_books:<br>
 ![Screenshot from 2023-03-30 04-33-52](https://user-images.githubusercontent.com/41834061/228721854-1b3d33cc-c38d-4d32-b857-7ea9700de807.png)
 
     db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa45")},
+      {_id: ObjectId("63e1223417028313a427fb42")},
       {
         $set: {
           description: "No description available",
@@ -432,7 +432,7 @@ p2652259_books:
   
 
     db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa45")},
+      {_id: ObjectId("63e1223417028313a427fb42")},
       {
         $set: {
           description: "No description available",
@@ -530,6 +530,26 @@ p2652259_authors:
 
 
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
+
+p2652259_books:
+
+![Screenshot from 2023-03-31 15-52-49](https://user-images.githubusercontent.com/41834061/229155151-f29dac9b-1551-4a09-9b33-a473f4bbcab1.png)
+![Screenshot from 2023-03-31 15-55-19](https://user-images.githubusercontent.com/41834061/229155659-8fbfe53c-03c0-435d-9589-c38fafd75626.png)
+![Screenshot from 2023-03-31 15-56-18](https://user-images.githubusercontent.com/41834061/229155934-e6f79919-8cf2-43b6-ae6b-768af6ef4542.png)
+
+
+
+p2652259_reviews:
+    
+
+
+p2652259_genres:
+    
+
+
+p2652259_authors:
+
+    
 </ol>
 </ol>
 <ol>
