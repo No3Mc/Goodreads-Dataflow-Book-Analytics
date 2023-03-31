@@ -612,23 +612,20 @@ Due to the change of N/A the following query should work: <br>
 3. Create another field in the books collection unix_publication_date that converts
 publication_date to Unix format. <b>[2 marks]</b>
     
-        db.p2652259_books.updateMany(
-          {}, // Filter all documents
-          [
-            {
-              $set: {
-                unix_publication_date: {
-                  $toLong: {
-                    $multiply: [
-                      { $toLong: "$publication_date" },
-                      1000
-                    ]
-                  }
-                }
-              }
+    db.p2652259_books.updateMany(
+      {
+        publication_date: { $exists: true }
+      },
+      [
+        {
+          $set: {
+            unix_publication_date: {
+              $toLong: { $multiply: [ { $toLong: "$publication_date" }, 1000 ] }
             }
-          ]
-        )
+          }
+        }
+      ]
+    )
 
     
     
