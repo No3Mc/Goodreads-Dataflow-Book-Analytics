@@ -252,10 +252,10 @@ p2652259_books:<br>
           description: "No description available",
           format: "Unknown format",
           publisher: "Unknown publisher",
-          num_pages: 0,
-          publication_day: 0,
-          publication_month: 0,
-          publication_year: 0
+          num_pages: "N/A",
+          publication_day: "N/A",
+          publication_month: "N/A",
+          publication_year: "N/A"
         }
       }
     )
@@ -292,10 +292,11 @@ p2652259_books:<br>
           description: "No description available",
           format: "Unknown format",
           publisher: "Unknown publisher",
-          num_pages: 0,
-          publication_day: 0,
-          publication_month: 0,
-          publication_year: 0
+          edition_information: "N/A",
+          num_pages: "N/A",
+          publication_day: "N/A",
+          publication_month: "N/A",
+          publication_year: "N/A"
         }
       }
     )
