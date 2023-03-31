@@ -588,8 +588,8 @@ p2652259_authors:
 
  
 
-
-Due to the change of N/A the following query should work:
+<br>
+Due to the change of N/A the following query should work: <br>
 
 
 db.p2652259_books.updateMany(
