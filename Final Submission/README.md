@@ -358,7 +358,7 @@ p2652259_authors:<br>
 
     db.p2652259_authors.update(
        { _id: ObjectId("63e1320417028313a4450356") },
-       { $set: { name: "Nism" } }
+       { $set: { name: "Nise" } }
     )
 
 
