@@ -8,9 +8,11 @@ Weekly Journals:
 [1.0 INTRODUCTION](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 [2.0 SCENARIO](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 [3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) <br>
-[3.1 Connecting to DMU MongoDB server.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#31-connecting-to-dmu-mongodb-server) <br>
-[3.2 Understanding the data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) <br>
-[3.3 Getting your personalized data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#33-getting-your-personalized-data) <br>
+
+- [3.1 Connecting to DMU MongoDB server.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#31-connecting-to-dmu-mongodb-server) <br>
+- [3.2 Understanding the data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) <br>
+- [3.3 Getting your personalized data.](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#33-getting-your-personalized-data) <br>
+
 [4.0 CLEANING THE COLLECTIONS [20 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#40-cleaning-the-collections-20-marks) <br>
 [5.0 QUERYING THE COLLECTIONS [20 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#50-querying-the-collections-20-marks) <br>
 [6.0 IMPLEMENT AND EXPLAIN INDEX FOR THE DATABASE [15 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks) <br>
