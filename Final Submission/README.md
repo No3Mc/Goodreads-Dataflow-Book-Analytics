@@ -418,15 +418,19 @@ p2652259_books:
       {$set: {isbn: "N/A"}}
     )
 
+
 3.
+
 
     db.p2652259_books.update(
       {_id: ObjectId("63e1223417028313a427fafd")},
       {$set: {edition_information: "N/A"}}
     )
     
+
 4.
   
+
     db.p2652259_books.update(
       {_id: ObjectId("63e1223417028313a427fa45")},
       {
@@ -446,31 +450,38 @@ p2652259_reviews:
 
 1. 
 
+
     db.p2652259_reviews.updateOne(
        { "_id": ObjectId("63e12b4117028313a44c0879") },
        { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
     )
-    
+
+
 2.
 
     db.p2652259_reviews.updateOne(
       { "_id": ObjectId("63e12b4117028313a44c106b") },
       { "$set": { "started_at": "Not Known" } }
     );
-    
+
+
 3.  
-    
+
+
     db.p2652259_reviews.updateOne(
        { "review_id": "42ea1874bf4c32fbaee703161e598177" },
        { "$set": { "started_at": "Not Known" } }
     )
 
+
 4.
-    
+
+
     db.p2652259_reviews.update(
       { "_id": ObjectId("63e12b4217028313a44c128d") },
       { "$set": { "started_at": "Not Known" } }
     )
+
 
 p2652259_genres:
 
@@ -479,35 +490,44 @@ p2652259_genres:
        { $set: { genres: [ { k: "unknown", v: 0 } ] } }
     )
 
+
 p2652259_authors:
      
 1.
-    
+
+
     db.p2652259_authors.update(
        { _id: ObjectId("63e1320417028313a4450356") },
        { $set: { name: "Nism" } }
     )
-  
+
+
 2.
-    
+
+
     db.p2652259_authors.update(
        { _id: ObjectId("63e131f517028313a43e557b") },
        { $set: { name: "fdy dlat" } }
     )
-  
+
+
 3.
-    
+
+
     db.p2652259_authors.update(
        { _id: ObjectId("63e1320117028313a443aecd") },
        { $set: { name: "Susan Scott" } }
     )
-  
+
+
 4.
-  
+
+
     db.p2652259_authors.update(
        { _id: ObjectId("63e131ff17028313a4429338") },
        { $set: { name: "hwyd syd" } }
     )
+
 
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
 </ol>
