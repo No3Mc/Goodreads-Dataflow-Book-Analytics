@@ -372,8 +372,20 @@ p2652259_authors:<br>
 {name: 'Susan    Scott'} <br>
 ![Screenshot from 2023-03-30 04-42-06](https://user-images.githubusercontent.com/41834061/228723024-b922507f-8049-4e05-ac69-9e14120590bf.png)<br>
 
+    db.collection.update(
+       { _id: ObjectId("63e1320117028313a443aecd") },
+       { $set: { name: "Susan Scott" } }
+    )
+
+
 {name: 'hwyd s`yd'} <br>
 ![Screenshot from 2023-03-30 04-28-54](https://user-images.githubusercontent.com/41834061/228721301-eaec0cc7-d146-424e-a6d2-9670fc0d9534.png)
+
+    db.collection.update(
+       { _id: ObjectId("63e131ff17028313a4429338") },
+       { $set: { name: "hwyd syd" } }
+    )
+
 
 
 <li> Show the query/queries used to address this anomaly.</li>
