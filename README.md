@@ -8,8 +8,10 @@ Weekly Journals:
 [1.0 INTRODUCTION](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 [2.0 SCENARIO](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#mongodb-coursework-2022-2023) <br>
 
-Goodreads has a web page for each book e.g. https://www.goodreads.com/book/show/5333265
-or each review e.g., https://www.goodreads.com/review/show/2410025795
+- Goodreads has a web page for each book e.g. https://www.goodreads.com/book/show/5333265
+- or each review e.g., https://www.goodreads.com/review/show/2410025795
+
+A subset of Goodreads data has been selected for this coursework. There is data on books, reviews, authors, and genre. Permission was granted to use the data for this coursework from https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home on condition that the authors’ research papers are referenced (Mengting W. and Julian J. M 2018), (Mengting W et al. 2019). It is not necessary to read these papers to complete this coursework.
 
 
 [3.0 CONNECT, EXTRACT, TRANSFORM AND LOAD DATA (CETL) [15 marks]](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#30-connect-extract-transform-and-load-data-cetl-15-marks) <br>
