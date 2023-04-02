@@ -1,25 +1,3 @@
-Questions to ask:
-
-1. In [this](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) table for 2a and 2b how do I need to enter the details for anomalies and how can I add the examples if they have null or nothing as a value inside it. For example:
-
-![Screenshot from 2023-03-19 07-44-20](https://user-images.githubusercontent.com/41834061/226161116-e8da1d63-5635-46b8-aa47-62021496993f.png)
-
-2. In [this](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) table for 2a and 2b can there be one collection used to define all the table? Also Do I need to have multiple similar examples added as examples?
-For example:
-
-| Collection | Field    | Anomaly      | Examples                   | Solution Plan |
-|------------|----------|--------------|-----------------------------|------------------|
-| p2652259_books   | description | Null      | ![Screenshot from 2023-03-19 07-53-32](https://user-images.githubusercontent.com/41834061/226161519-e606f513-f13a-4383-b438-46d25503b5bb.png)     | Solution Plan |
-| p2652259_books   | format      | Null      | ![Screenshot from 2023-03-19 07-54-00](https://user-images.githubusercontent.com/41834061/226161532-cdaaff4e-0aa3-46a3-bd93-3d04b6db1a8d.png)     | Solution Plan |
-| p2652259_books   | publisher   | Null      | ![Screenshot from 2023-03-19 07-54-30](https://user-images.githubusercontent.com/41834061/226161546-b7e39fd9-b531-4b7a-9090-45a4eb2f730d.png)     | Solution Plan |
-| p2652259_books   | num_pages   | Null      | ![Screenshot from 2023-03-19 07-54-48](https://user-images.githubusercontent.com/41834061/226161560-c420f5dc-8729-4392-80f3-a246a88c93f8.png)     | Solution Plan |
-
-4. Is this [correct](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#80-weekly-journals-10-marks) or do I need to add the solutions from weeks there?
-5.
-6.
-7.
-
-
 
 Weekly journals:
 
