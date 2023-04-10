@@ -8,7 +8,7 @@ Work left:
 
 Questions:
 
-Do the solution plans have to be the solution to solve the problem from occuring in the future? Or just the solution for the current problem?
+Do the [solution plans](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#32-understanding-the-data) have to be the solution to solve the problem from occuring in the future? Or just the solution for the current problem?
 
 | Weekly journals:                                             | 
 |-------------------------------------------------------------|
