@@ -8,10 +8,24 @@ Work left:
 
 Weekly journals:
 
+Deadline: 26 January 2023
+Posted by   Syed Naqvi  at Thursday, 26 January 2023 13:55:51
 [Week 1](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%201/Week%201.txt)
+
+Deadline: 3 February 2023
+Posted by   Syed Naqvi  at Friday, 3 February 2023 00:02:50
 [Week 2](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%202/Week%202.txt)
+
+Deadline: 14 February 2023
+Posted by   Syed Naqvi  at Tuesday, 14 February 2023 11:47:47
 [Week 3](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%203/Week%203.txt)
+
+Deadline: 17 February 2023
+Posted by   Syed Naqvi  at Friday, 17 February 2023 09:49:10
 [Week 4](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%204/Week%204.txt)
+
+Deadline: 23 February 2023
+Posted by   Syed Naqvi  at Thursday, 23 February 2023 20:55:17
 [Week 5](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Journals/Week%205/Week%205.txt)
 
 ## IMAT3104 DATABASE MANAGEMENT AND PROGRAMMING NOSQL
