@@ -1,3 +1,7 @@
+Work left:
+
+https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks
+
 
 Weekly journals:
 
