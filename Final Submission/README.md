@@ -6,6 +6,10 @@ Work left:
 
 [Q7 | Some queries are not done yet and some need alternate solutions to improve the query's speed](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#70-re-design-the-database-using-aggregate-data-modelling-20-marks)
 
+Questions:
+
+Do the solution plans have to be the solution to solve the problem from occuring in the future? Or just the solution for the current problem?
+
 | Weekly journals:                                             | 
 |-------------------------------------------------------------|
 | Deadline: 26 January 2023                                    |
