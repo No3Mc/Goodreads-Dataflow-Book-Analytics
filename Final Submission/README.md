@@ -2,9 +2,9 @@ Work left:
 
 [Q4 | Review images as some of them are invalid although all the queries are completed](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#40-cleaning-the-collections-20-marks)
 
-[Q6 | Some queries are not done yet](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks)
+[Q6 | Queries are not done yet](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks)
 
-[Q7](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#70-re-design-the-database-using-aggregate-data-modelling-20-marks)
+[Q7 | Some queries are not done yet and some need alternate solutions to improve the query's speed](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#70-re-design-the-database-using-aggregate-data-modelling-20-marks)
 
 Weekly journals:
 
