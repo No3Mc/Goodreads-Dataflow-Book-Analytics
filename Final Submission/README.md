@@ -1,6 +1,7 @@
 Work left:
 
 [Q4 | Review images as some of them are invalid although all the queries are completed](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#40-cleaning-the-collections-20-marks)
+
 [Q6](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#60-implement-and-explain-index-for-the-database-15-marks)
 
 [Q7](https://github.com/No3Mc/NOSQL-DMnP/blob/main/Final%20Submission/README.md#70-re-design-the-database-using-aggregate-data-modelling-20-marks)
