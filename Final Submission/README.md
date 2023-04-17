@@ -193,6 +193,28 @@ Extract all matching genres of books in pxxxxxxx_books to a new collection named
     { $out: "p2652259_genres" }
     ]);
     
+
+
+Suitable for me:
+
+    db.genres.aggregate([
+      { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
+      { $out: "p2652259_genres" }
+    ]);
+
+    db.p2652259_genres.find().forEach(function(doc) {
+       var newGenres = {};
+       doc.genres.forEach(function(genre) {
+          if (genre.k && genre.v) {
+             newGenres[genre.k] = genre.v;
+          }
+       });
+       db.p2652259_genres.update({_id: doc._id}, {$set: {genres: newGenres}});
+    });
+
+
+    
+    
 </li>
 </ol>
 
