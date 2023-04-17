@@ -922,54 +922,58 @@ collection of books. This requires the following tasks:
  genres using pxxxxxxx_books collection. Track the speed of the query. <b>[3 marks]</b>
 
 
-    db.p2652259_books.aggregate([
-      {
-        $lookup: {
-          from: "p2652259_authors",
-          localField: "authors",
-          foreignField: "author_id",
-          as: "authors"
-        }
-      },
-      {
-        $lookup: {
-          from: "p2652259_genres",
-          localField: "book_id",
-          foreignField: "book_id",
-          as: "genres"
-        }
-      },
-      {
-        $sample: { size: db.p2652259_books.count() / 2 }
-      }
-    ]).explain("executionStats")
+
+        db.p2652259_books.aggregate([
+          {
+            $lookup: {
+              from: "p2652259_authors",
+              localField: "authors",
+              foreignField: "author_id",
+              as: "authors"
+            }
+          },
+          {
+            $lookup: {
+              from: "p2652259_genres",
+              localField: "book_id",
+              foreignField: "book_id",
+              as: "genres"
+            }
+          },
+          {
+            $sample: { size: db.p2652259_books.count() / 2 }
+          }
+        ]).explain("executionStats")
+
 
 
  6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
  of the query. <b>[3 marks]</b>
 
 
-    db.p2652259_books_adm.aggregate([
-      {
-        $lookup: {
-          from: "p2652259_authors",
-          localField: "authors.author_id",
-          foreignField: "author_id",
-          as: "authors"
-        }
-      },
-      {
-        $lookup: {
-          from: "p2652259_genres",
-          localField: "book_id",
-          foreignField: "book_id",
-          as: "genres"
-        }
-      },
-      {
-        $sample: { size: db.p2652259_books_adm.count() / 2 }
-      }
-    ])
+
+        db.p2652259_books_adm.aggregate([
+          {
+            $lookup: {
+              from: "p2652259_authors",
+              localField: "authors.author_id",
+              foreignField: "author_id",
+              as: "authors"
+            }
+          },
+          {
+            $lookup: {
+              from: "p2652259_genres",
+              localField: "book_id",
+              foreignField: "book_id",
+              as: "genres"
+            }
+          },
+          {
+            $sample: { size: db.p2652259_books_adm.count() / 2 }
+          }
+        ])
+
 
 
 
