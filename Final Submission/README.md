@@ -827,6 +827,41 @@ collection of books. This requires the following tasks:
  3. To verify that the changes to the new products collection were successful, display the title,
  authors, and genre of the book with highest number of pages. <b>[1 mark]</b>
 
+    db.p2652259_books_adm.aggregate([
+      {
+        $lookup: {
+          from: "p2652259_authors",
+          localField: "authors.author_id",
+          foreignField: "author_id",
+          as: "authors"
+        }
+      },
+      {
+        $lookup: {
+          from: "p2652259_genres",
+          localField: "book_id",
+          foreignField: "book_id",
+          as: "genres"
+        }
+      },
+      {
+        $sort: {
+          num_pages: -1
+        }
+      },
+      {
+        $limit: 1
+      },
+      {
+        $project: {
+          _id: 0,
+          title: 1,
+          authors: "$authors.name",
+          genres: "$genres.genres"
+        }
+      }
+    ])
+
 
 
  4. Note that there is no longer need to reference the book_id inside each genre or author_id inside
