@@ -1,4 +1,4 @@
-P2630030
+p2630030
 
 Questions:
 
@@ -120,7 +120,7 @@ Extract all books matching your assignedGroup from books collection into a new c
 
     db.books.aggregate([
       { $match: { assignedGroup: 100 } },
-      { $out: "p2652259_books" }
+      { $out: "p2630030_books" }
     ])
 
 
@@ -132,7 +132,7 @@ Extract all matching reviews of books in pxxxxxxx_books to a collection named px
     
     db.reviews.aggregate([
     { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
-    { $out: "p2652259_reviews" }
+    { $out: "p2630030_reviews" }
     ]);
  
 
@@ -142,12 +142,12 @@ Extract all matching reviews of books in pxxxxxxx_books to a collection named px
     
 Extract all matching authors of books in pxxxxxxx_books to a collection named pxxxxxxx_authors. <b>[1 mark]</b>
 
-<!--     db.authors.find({ author_id: { $in: db.p2652259_books.distinct("author_id") } }).forEach(function(doc) {db.p2652259_authors.insertOne(doc)}) -->
+<!--     db.authors.find({ author_id: { $in: db.p2630030_books.distinct("author_id") } }).forEach(function(doc) {db.p2630030_authors.insertOne(doc)}) -->
     
     
     db.authors.aggregate([
-    { $match: { author_id: { $in: db.p2652259_books.distinct("authors") } } },
-    { $out: "p2652259_authors" }
+    { $match: { author_id: { $in: db.p2630030_books.distinct("authors") } } },
+    { $out: "p2630030_authors" }
     ]);
 
     
@@ -158,8 +158,8 @@ Extract all matching authors of books in pxxxxxxx_books to a collection named px
 Extract all matching genres of books in pxxxxxxx_books to a new collection named pxxxxxxx_genres. <b>[1 mark]</b>
 
     db.genres.aggregate([
-    { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
-    { $out: "p2652259_genres" }
+    { $match: { book_id: { $in: db.p2630030_books.distinct("book_id") } } },
+    { $out: "p2630030_genres" }
     ]);
     
 
@@ -167,11 +167,11 @@ Extract all matching genres of books in pxxxxxxx_books to a new collection named
 Suitable for me:
 
     db.genres.aggregate([
-      { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
-      { $out: "p2652259_genres" }
+      { $match: { book_id: { $in: db.p2630030_books.distinct("book_id") } } },
+      { $out: "p2630030_genres" }
     ]);
 
-    db.p2652259_genres.find().forEach(function(doc) {
+    db.p2630030_genres.find().forEach(function(doc) {
        var newGenres = {};
        doc.genres.forEach(function(genre) {
           if (genre.k && genre.v) {
@@ -201,9 +201,9 @@ this is the time to move back to your PC!
 4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data
 was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
 
- To find p2652259_authors:
+ To find p2630030_authors:
 
-    db.p2652259_authors.aggregate([
+    db.p2630030_authors.aggregate([
       {
         $group: {
           _id: "$name",
@@ -223,10 +223,10 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 
 
- To find p2652259_genres:
+ To find p2630030_genres:
 
-    db.p2652259_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": -1 }).limit(1)
-    db.p2652259_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": 1 }).limit(1)
+    db.p2630030_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": -1 }).limit(1)
+    db.p2630030_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": 1 }).limit(1)
     
 <ol>
 1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
@@ -236,19 +236,19 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 <br>
 
-p2652259_books:<br>
+p2630030_books:<br>
     
 
 
-p2652259_reviews:<br>
+p2630030_reviews:<br>
 
 
-p2652259_genres:<br>
+p2630030_genres:<br>
 
     
 
 
-p2652259_authors:<br>
+p2630030_authors:<br>
 
 
 
@@ -257,105 +257,55 @@ p2652259_authors:<br>
 
 <br>
 
-p2652259_books:
+p2630030_books:
 
 1.
 
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa45")},
-      {
-        $set: {
-          description: "No description available",
-          format: "Unknown format",
-          publisher: "Unknown publisher",
-          num_pages: "N/A",
-          publication_day: "N/A",
-          publication_month: "N/A",
-          publication_year: "N/A"
-        }
-      }
-    )
+
 
 2.
 
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa78")},
-      {$set: {isbn: "N/A"}}
-    )
+
 
 
 3.
 
 
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fafd")},
-      {$set: {edition_information: "N/A"}}
-    )
+
     
 
 4.
   
 
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fb42")},
-      {
-        $set: {
-          isbn: "N/A",
-          description: "No description available",
-          format: "Unknown format",
-          publisher: "Unknown publisher",
-          edition_information: "N/A",
-          num_pages: "N/A",
-          publication_day: "N/A",
-          publication_month: "N/A",
-          publication_year: "N/A"
-        }
-      }
-    )
 
-p2652259_reviews:
+
+p2630030_reviews:
 
 1. 
 
 
-    db.p2652259_reviews.updateOne(
-       { "_id": ObjectId("63e12b4117028313a44c0879") },
-       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
-    )
+
 
 
 2.
 
-    db.p2652259_reviews.updateOne(
-      { "_id": ObjectId("63e12b4117028313a44c106b") },
-      { "$set": { "started_at": "Not Known" } }
-    );
+
 
 
 3.  
 
 
-    db.p2652259_reviews.updateOne(
-       { "review_id": "42ea1874bf4c32fbaee703161e598177" },
-       { "$set": { "started_at": "Not Known" } }
-    )
+
 
 
 4.
 
 
-    db.p2652259_reviews.update(
-      { "_id": ObjectId("63e12b4217028313a44c128d") },
-      { "$set": { "started_at": "Not Known" } }
-    )
 
 
 p2652259_genres:
 
-    db.p2652259_genres.updateOne(
-       { _id: "63e132d117028313a448d433" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
-    )
+
 
 
 p2652259_authors:
@@ -363,37 +313,24 @@ p2652259_authors:
 1.
 
 
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e1320417028313a4450356") },
-       { $set: { name: "Nise" } }
-    )
+
 
 
 2.
 
 
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e131f517028313a43e557b") },
-       { $set: { name: "Fdy Dl" } }
-    )
+
 
 
 3.
 
 
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e1320117028313a443aecd") },
-       { $set: { name: "Susan Scott" } }
-    )
+
 
 
 4.
 
 
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e131ff17028313a4429338") },
-       { $set: { name: "Hwyd Syd" } }
-    )
 
 
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
