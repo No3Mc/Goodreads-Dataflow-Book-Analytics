@@ -131,7 +131,7 @@ Extract all matching reviews of books in pxxxxxxx_books to a collection named px
 
     
     db.reviews.aggregate([
-    { $match: { book_id: { $in: db.p2652259_books.distinct("book_id") } } },
+    { $match: { book_id: { $in: db.p2630030_books.distinct("book_id") } } },
     { $out: "p2630030_reviews" }
     ]);
  
@@ -178,7 +178,7 @@ Suitable for me:
              newGenres[genre.k] = genre.v;
           }
        });
-       db.p2652259_genres.update({_id: doc._id}, {$set: {genres: newGenres}});
+       db.p2630030_genres.update({_id: doc._id}, {$set: {genres: newGenres}});
     });
 
 
@@ -303,12 +303,12 @@ p2630030_reviews:
 
 
 
-p2652259_genres:
+p2630030_genres:
 
 
 
 
-p2652259_authors:
+p2630030_authors:
      
 1.
 
@@ -335,22 +335,22 @@ p2652259_authors:
 
 <li> Take screenshots of samples of documents after the anomaly has been corrected.</li>
 
-p2652259_books:
+p2630030_books:
 
 
 
 
 
-p2652259_reviews:
+p2630030_reviews:
     
 
 
 
-p2652259_genres:
+p2630030_genres:
     
 
 
-p2652259_authors:
+p2630030_authors:
 
 
 
@@ -363,7 +363,7 @@ p2652259_authors:
 Due to the change of N/A the following query should work: <br>
 
 
-    db.p2652259_books.updateMany(
+    db.p2630030_books.updateMany(
       {
         $and: [
           { publication_day: { $not: { $in: ["", "N/A"] } } },
@@ -392,7 +392,7 @@ Due to the change of N/A the following query should work: <br>
 3. Create another field in the books collection unix_publication_date that converts
 publication_date to Unix format. <b>[2 marks]</b>
     
-    db.p2652259_books.updateMany(
+    db.p2630030_books.updateMany(
       {
         publication_date: { $exists: true }
       },
@@ -435,7 +435,7 @@ all the marks available for a question.
 <li> Find top 3 books with highest average rating above 3.5 and are not e-books. Display only book id, title, 
 price, and average rating. <b>[5 marks]</b></li> 
 
-    db.p2652259_books.aggregate([
+    db.p2630030_books.aggregate([
     { $match: { is_ebook: "false", average_rating: { $gt: "3.5" } } },
     {
     $group: {
@@ -461,7 +461,7 @@ price, and average rating. <b>[5 marks]</b></li>
 of 5-rated reviews in your datasets. Display the user_id, average rating, average n_votes, total 
 n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b></li> 
 
-    db.p2652259_reviews.aggregate([
+    db.p2630030_reviews.aggregate([
     { $match: { rating: 5 } },
     { $group: {
       _id: "$user_id",
@@ -479,7 +479,7 @@ n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b
 <li> Update all reviews written by the most famous reviewer from Q2 by adding a new field named 
 most_famous and set its value to true. <b>[4 mark]</b></li> 
     
-    db.p2652259_reviews.updateMany(
+    db.p2630030_reviews.updateMany(
     { user_id: "9c692e44fab3d5ca585cf282344f18e1" },
     { $set: { most_famous: true } }
     )
@@ -492,7 +492,7 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
 
 
 
-    db.p2652259_reviews.aggregate([
+    db.p2630030_reviews.aggregate([
       { $match: { user_id: "9c692e44fab3d5ca585cf282344f18e1" } },
       {
         $lookup: {
@@ -543,15 +543,15 @@ collection of books. This requires the following tasks:
 
  1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. <b>[1 mark]</b>
 
-        db.p2652259_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
+        db.p2630030_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
 
  2. Embed all the authors and genres of books into their corresponding book using the new
  pxxxxxx_books_adm collection. <b>[6 marks]</b>
 
-        db.p2652259_books.aggregate([
+        db.p2630030_books.aggregate([
           {
             $lookup: {
-              from: "p2652259_authors",
+              from: "p2630030_authors",
               localField: "authors",
               foreignField: "author_id",
               as: "authors"
@@ -559,7 +559,7 @@ collection of books. This requires the following tasks:
           },
           {
             $lookup: {
-              from: "p2652259_genres",
+              from: "p2630030_genres",
               localField: "book_id",
               foreignField: "book_id",
               as: "genres"
@@ -596,7 +596,7 @@ collection of books. This requires the following tasks:
             }
           },
           {
-            $out: "p2652259_books_adm"
+            $out: "p2630030_books_adm"
           }
         ])
 
@@ -604,10 +604,10 @@ collection of books. This requires the following tasks:
  authors, and genre of the book with highest number of pages. <b>[1 mark]</b>
 
 
-        db.p2652259_books_adm.aggregate([
+        db.p2630030_books_adm.aggregate([
           {
             $lookup: {
-              from: "p2652259_authors",
+              from: "p2630030_authors",
               localField: "authors.author_id",
               foreignField: "author_id",
               as: "authors"
@@ -615,7 +615,7 @@ collection of books. This requires the following tasks:
           },
           {
             $lookup: {
-              from: "p2652259_genres",
+              from: "p2630030_genres",
               localField: "book_id",
               foreignField: "book_id",
               as: "genres"
@@ -649,7 +649,7 @@ collection of books. This requires the following tasks:
 
 - Genres:
 
-        db.p2652259_genres.bulkWrite([
+        db.p2630030_genres.bulkWrite([
           { 
             updateMany: { 
               filter: {}, 
@@ -661,7 +661,7 @@ collection of books. This requires the following tasks:
 
 - Authors:
 
-        db.p2652259_authors.bulkWrite([
+        db.p2630030_authors.bulkWrite([
           { 
             updateMany: { 
               filter: {}, 
@@ -677,10 +677,10 @@ collection of books. This requires the following tasks:
 
 
 
-        db.p2652259_books.aggregate([
+        db.p2630030_books.aggregate([
           {
             $lookup: {
-              from: "p2652259_authors",
+              from: "p2630030_authors",
               localField: "authors",
               foreignField: "author_id",
               as: "authors"
@@ -688,14 +688,14 @@ collection of books. This requires the following tasks:
           },
           {
             $lookup: {
-              from: "p2652259_genres",
+              from: "p2630030_genres",
               localField: "book_id",
               foreignField: "book_id",
               as: "genres"
             }
           },
           {
-            $sample: { size: db.p2652259_books.count() / 2 }
+            $sample: { size: db.p2630030_books.count() / 2 }
           }
         ]).explain("executionStats")
 
@@ -716,10 +716,10 @@ collection of books. This requires the following tasks:
  of the query. <b>[3 marks]</b>
 
 
-        db.p2652259_books_adm.aggregate([
+        db.p2630030_books_adm.aggregate([
           {
             $lookup: {
-              from: "p2652259_authors",
+              from: "p2630030_authors",
               localField: "authors",
               foreignField: "author_id",
               as: "authors"
@@ -727,14 +727,14 @@ collection of books. This requires the following tasks:
           },
           {
             $lookup: {
-              from: "p2652259_genres",
+              from: "p2630030_genres",
               localField: "book_id",
               foreignField: "book_id",
               as: "genres"
             }
           },
           {
-            $sample: { size: db.p2652259_books_adm.count() / 2 }
+            $sample: { size: db.p2630030_books_adm.count() / 2 }
           }
         ]).explain("executionStats")
 
