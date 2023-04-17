@@ -924,6 +924,32 @@ collection of books. This requires the following tasks:
  6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
  of the query. <b>[3 marks]</b>
 
+
+    db.p2652259_books.aggregate([
+      {
+        $lookup: {
+          from: "p2652259_authors",
+          localField: "authors",
+          foreignField: "author_id",
+          as: "authors"
+        }
+      },
+      {
+        $lookup: {
+          from: "p2652259_genres",
+          localField: "book_id",
+          foreignField: "book_id",
+          as: "genres"
+        }
+      },
+      {
+        $sample: { size: db.p2652259_books.count() / 2 }
+      }
+    ]).explain("executionStats")
+
+
+
+
  7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
  results. <b>[4 marks]</b>
 
