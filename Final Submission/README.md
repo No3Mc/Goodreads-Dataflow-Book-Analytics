@@ -574,19 +574,13 @@ p2652259_authors:
 
 p2652259_books:
 
-![Screenshot from 2023-03-31 15-52-49](https://user-images.githubusercontent.com/41834061/229155151-f29dac9b-1551-4a09-9b33-a473f4bbcab1.png)
-![Screenshot from 2023-03-31 15-55-19](https://user-images.githubusercontent.com/41834061/229155659-8fbfe53c-03c0-435d-9589-c38fafd75626.png)
-![Screenshot from 2023-03-31 15-56-18](https://user-images.githubusercontent.com/41834061/229155934-e6f79919-8cf2-43b6-ae6b-768af6ef4542.png)
-![Screenshot from 2023-03-31 16-29-57](https://user-images.githubusercontent.com/41834061/229164318-d2916e0f-c042-446a-bf3d-aece3298114e.png)
+
 
 
 
 p2652259_reviews:
     
-![Screenshot from 2023-03-31 16-07-19](https://user-images.githubusercontent.com/41834061/229158551-e5a99f53-3d5d-402e-9d21-032bcd2e6e91.png)
-![Screenshot from 2023-03-31 16-08-02](https://user-images.githubusercontent.com/41834061/229158666-d13aa62a-b427-4da9-9568-fd2818e48174.png)
-![Screenshot from 2023-03-31 16-08-34](https://user-images.githubusercontent.com/41834061/229158791-886af0df-484b-4f90-89e0-b8851e85e049.png)
-![Screenshot from 2023-03-31 16-09-23](https://user-images.githubusercontent.com/41834061/229158977-09b9e2fb-9ea7-4d52-9d8d-00f99e53ceb0.png)
+
 
 
 p2652259_genres:
@@ -595,10 +589,7 @@ p2652259_genres:
 
 p2652259_authors:
 
-![Screenshot from 2023-03-31 16-15-16](https://user-images.githubusercontent.com/41834061/229160430-0dc6e0dc-4975-4e6e-9cd8-d5c8fc96ad49.png)
-![Screenshot from 2023-03-31 16-23-26](https://user-images.githubusercontent.com/41834061/229162849-c901aeeb-ff83-4bdf-b6e7-1be18d529f60.png)
-![Screenshot from 2023-03-31 16-19-33](https://user-images.githubusercontent.com/41834061/229161744-9a714e14-5947-4488-a1e9-956d297153f7.png)
-![Screenshot from 2023-03-31 16-22-05](https://user-images.githubusercontent.com/41834061/229162371-863bdc32-25b2-4889-8c6c-1dbaaa45a156.png)
+
 
     
 </ol>
