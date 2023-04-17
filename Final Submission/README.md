@@ -979,6 +979,9 @@ collection of books. This requires the following tasks:
 
 
 
+
+
+
  7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
  results. <b>[4 marks]</b>
 
