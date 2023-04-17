@@ -921,9 +921,6 @@ collection of books. This requires the following tasks:
  5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
  genres using pxxxxxxx_books collection. Track the speed of the query. <b>[3 marks]</b>
 
- 6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
- of the query. <b>[3 marks]</b>
-
 
     db.p2652259_books.aggregate([
       {
@@ -947,6 +944,32 @@ collection of books. This requires the following tasks:
       }
     ]).explain("executionStats")
 
+
+ 6. Using the pxxxxxx_books_adm collection, fetch the same information as above. Track the speed
+ of the query. <b>[3 marks]</b>
+
+
+    db.p2652259_books_adm.aggregate([
+      {
+        $lookup: {
+          from: "p2652259_authors",
+          localField: "authors.author_id",
+          foreignField: "author_id",
+          as: "authors"
+        }
+      },
+      {
+        $lookup: {
+          from: "p2652259_genres",
+          localField: "book_id",
+          foreignField: "book_id",
+          as: "genres"
+        }
+      },
+      {
+        $sample: { size: db.p2652259_books_adm.count() / 2 }
+      }
+    ])
 
 
 
