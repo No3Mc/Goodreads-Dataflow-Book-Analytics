@@ -238,161 +238,18 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 p2652259_books:<br>
     
-    
-    
-    db.p2652259_books.updateOne(
-       { "_id": ObjectId("63e126d117028313a444d583") },
-       { $set: { "publication_year": "2017" } }
-    )
-
-    
-    
-    
-{_id: ObjectId("63e1223417028313a427fa45")}<br>
-![Screenshot from 2023-03-30 04-31-57](https://user-images.githubusercontent.com/41834061/228721633-a2e2ef8a-f5b9-476d-aba4-78685f98b3b1.png)<br>
-
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa45")},
-      {
-        $set: {
-          description: "No description available",
-          format: "Unknown format",
-          publisher: "Unknown publisher",
-          num_pages: "N/A",
-          publication_day: "N/A",
-          publication_month: "N/A",
-          publication_year: "N/A"
-        }
-      }
-    )
-
-
-
-{_id: ObjectId("63e1223417028313a427fa78")} <br>
-![Screenshot from 2023-03-30 04-32-55](https://user-images.githubusercontent.com/41834061/228721733-9336b3da-1763-4f04-8b57-d0bc6ea287c7.png)<br>
-
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fa78")},
-      {$set: {isbn: "N/A"}}
-    )
-
-
-{_id: ObjectId("63e1223417028313a427fafd")} <br>
-![Screenshot from 2023-03-30 04-33-13](https://user-images.githubusercontent.com/41834061/228721829-bbb1179a-7ce0-4afb-aea9-10775e1963ce.png)<br>
-
-
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fafd")},
-      {$set: {edition_information: "N/A"}}
-    )
-
-
-{_id: ObjectId("63e1223417028313a427fb42")} <br>
-![Screenshot from 2023-03-30 04-33-52](https://user-images.githubusercontent.com/41834061/228721854-1b3d33cc-c38d-4d32-b857-7ea9700de807.png)
-
-    db.p2652259_books.update(
-      {_id: ObjectId("63e1223417028313a427fb42")},
-      {
-        $set: {
-          isbn: "N/A",
-          description: "No description available",
-          format: "Unknown format",
-          publisher: "Unknown publisher",
-          edition_information: "N/A",
-          num_pages: "N/A",
-          publication_day: "N/A",
-          publication_month: "N/A",
-          publication_year: "N/A"
-        }
-      }
-    )
 
 
 p2652259_reviews:<br>
-{_id: ObjectId("63e12b4117028313a44c0879")} <br>
-![Screenshot from 2023-03-30 04-35-17](https://user-images.githubusercontent.com/41834061/228722078-a2e64ae6-4cf5-4430-bbde-ee77e2e1112d.png)<br>
-
-    db.p2652259_reviews.updateOne(
-       { "_id": ObjectId("63e12b4117028313a44c0879") },
-       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
-    )
-
-
-{_id: ObjectId("63e12b4117028313a44c106b")} <br>
-![Screenshot from 2023-03-30 04-35-53](https://user-images.githubusercontent.com/41834061/228722147-0a68dc10-0ad1-4861-904b-aa48c0b2abe9.png)<br>
-
-    db.p2652259_reviews.updateOne(
-      { "_id": ObjectId("63e12b4117028313a44c106b") },
-      { "$set": { "started_at": "Not Known" } }
-    );
-
-
-{_id: ObjectId("63e12b4117028313a44c11e5")} <br>
-![Screenshot from 2023-03-30 04-36-06](https://user-images.githubusercontent.com/41834061/228722186-09937da5-72c4-4fcb-8bfb-a17357d12dc9.png)<br>
-
-    db.p2652259_reviews.updateOne(
-       { "review_id": "42ea1874bf4c32fbaee703161e598177" },
-       { "$set": { "started_at": "Not Known" } }
-    )
-
-
-{_id: ObjectId("63e12b4217028313a44c128d")} <br>
-![Screenshot from 2023-03-30 04-36-46](https://user-images.githubusercontent.com/41834061/228722289-dd3bdd83-4793-4f97-886b-67613ab15992.png)
-
-    db.p2652259_reviews.update(
-      { "_id": ObjectId("63e12b4217028313a44c128d") },
-      { "$set": { "started_at": "Not Known" } }
-    )
 
 
 p2652259_genres:<br>
 
-{_id: ObjectId("63e132d117028313a448d433")} <br>
-![Screenshot from 2023-03-31 05-19-52](https://user-images.githubusercontent.com/41834061/229021793-4d101976-10c7-4005-b48e-d384ad47ec9b.png)<br>
-
-    db.p2652259_genres.updateOne(
-       { _id: "63e132d117028313a448d433" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
-    )
     
 
 
 p2652259_authors:<br>
 
-{name: 'nise7465'} <br>
-![Screenshot from 2023-03-30 04-39-07](https://user-images.githubusercontent.com/41834061/228722663-a68250d6-1ad3-4501-9464-282c0f40fb42.png)<br>
-
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e1320417028313a4450356") },
-       { $set: { name: "Nise" } }
-    )
-
-
-{name: 'fdy `dl@'} <br>
-![Screenshot from 2023-03-30 04-40-52](https://user-images.githubusercontent.com/41834061/228722871-5eaa0fdf-9914-47e0-8403-9a9e490d2b0d.png)<br>
-
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e131f517028313a43e557b") },
-       { $set: { name: "Fdy Dl" } }
-    )
-
-
-{name: 'Susan    Scott'} 4 char space<br>
-![Screenshot from 2023-03-30 04-42-06](https://user-images.githubusercontent.com/41834061/228723024-b922507f-8049-4e05-ac69-9e14120590bf.png)<br>
-
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e1320117028313a443aecd") },
-       { $set: { name: "Susan Scott" } }
-    )
-
-
-{name: 'hwyd s`yd'} <br>
-![Screenshot from 2023-03-30 04-28-54](https://user-images.githubusercontent.com/41834061/228721301-eaec0cc7-d146-424e-a6d2-9670fc0d9534.png)
-
-    db.p2652259_authors.update(
-       { _id: ObjectId("63e131ff17028313a4429338") },
-       { $set: { name: "Hwyd Syd" } }
-    )
 
 
 
