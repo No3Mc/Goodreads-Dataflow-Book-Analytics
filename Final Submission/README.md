@@ -953,12 +953,11 @@ collection of books. This requires the following tasks:
  of the query. <b>[3 marks]</b>
 
 
-
         db.p2652259_books_adm.aggregate([
           {
             $lookup: {
               from: "p2652259_authors",
-              localField: "authors.author_id",
+              localField: "authors",
               foreignField: "author_id",
               as: "authors"
             }
@@ -974,9 +973,7 @@ collection of books. This requires the following tasks:
           {
             $sample: { size: db.p2652259_books_adm.count() / 2 }
           }
-        ])
-
-
+        ]).explain("executionStats")
 
 
 
