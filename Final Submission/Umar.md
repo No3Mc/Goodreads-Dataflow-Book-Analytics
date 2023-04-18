@@ -220,7 +220,8 @@ p2630030_books:<br>
       {_id: ObjectId("63e1223417028313a427fd09")},
       {
         $set: {
-          isbn: "Not Known"
+          isbn: "Not Known",
+          edition_information: "Not Known"
         }
       }
     )
