@@ -238,7 +238,55 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 p2630030_books:<br>
     
+    db.p2630030_books.update(
+      {_id: ObjectId("63e1223417028313a427faf6")},
+      {
+        $set: {
+          isbn: "Not Known",
+          description: "Not Known",
+          publication_day: "Not Known",
+          publication_month: "Not Known",
+          publication_year: "Not Known",
+          edition_information: "Not Known"
+        }
+      }
+    )
 
+
+    db.p2630030_books.update(
+      {_id: ObjectId("63e1223417028313a427fca1")},
+      {
+        $set: {
+          isbn: "Not Known",
+          publisher: "Not Known",
+          publication_day: "Not Known",
+          publication_month: "Not Known",
+          publication_year: "Not Known" 
+        }
+      }
+    )
+
+    db.p2630030_books.update(
+      {_id: ObjectId("63e1223417028313a427fd09")},
+      {
+        $set: {
+          isbn: "Not Known"
+        }
+      }
+    )
+
+    db.p2630030_books.update(
+      {_id: ObjectId("63e1223417028313a427fd6b")},
+      {
+        $set: {
+          isbn: "Not Known",
+          publication_day: "Not Known",
+          publication_month: "Not Known",
+          publication_year: "Not Known",
+          edition_information: "Not Known"
+        }
+      }
+    )
 
 p2630030_reviews:<br>
 
