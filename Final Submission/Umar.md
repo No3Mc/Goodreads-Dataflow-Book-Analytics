@@ -523,7 +523,7 @@ n_comments and total number of reviews written by this reviewer. <b>[6 marks]</b
 most_famous and set its value to true. <b>[4 mark]</b></li> 
     
     db.p2630030_reviews.updateMany(
-    { user_id: "9c692e44fab3d5ca585cf282344f18e1" },
+    { user_id: "8e7e5b546a63cb9add8431ee6914cf59" },
     { $set: { most_famous: true } }
     )
 
