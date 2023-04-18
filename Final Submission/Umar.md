@@ -728,6 +728,7 @@ collection of books. This requires the following tasks:
  of the query. <b>[3 marks]</b>
 
 
+
         db.p2630030_books_adm.aggregate([
           {
             $lookup: {
@@ -740,8 +741,8 @@ collection of books. This requires the following tasks:
           {
             $lookup: {
               from: "p2630030_genres",
-              localField: "book_id",
-              foreignField: "book_id",
+              localField: "genres.k",
+              foreignField: "genres.k",
               as: "genres"
             }
           },
@@ -749,9 +750,6 @@ collection of books. This requires the following tasks:
             $sample: { size: db.p2630030_books_adm.count() / 2 }
           }
         ]).explain("executionStats")
-
-
-
 
 
  7. Compare the performance results of 7(5) & 7(6) above and write a brief discussion about the
