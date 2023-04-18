@@ -311,28 +311,28 @@ p2630030_genres:<br>
  
     db.p2652259_genres.updateOne(
        { _id: "63e132d117028313a448d4e4" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
+       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
     )
 
 1.
 
     db.p2652259_genres.updateOne(
        { _id: "63e132d117028313a448d87e" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
+       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
     )
 
 1.
 
     db.p2652259_genres.updateOne(
        { _id: "63e132d117028313a448de82" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
+       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
     )
 
 1.
 
     db.p2652259_genres.updateOne(
        { _id: "63e132d117028313a448e1ec" },
-       { $set: { genres: [ { k: "unknown", v: 0 } ] } }
+       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
     )   
     
 
@@ -409,9 +409,9 @@ Due to the change of N/A the following query should work: <br>
     db.p2630030_books.updateMany(
       {
         $and: [
-          { publication_day: { $not: { $in: ["", "N/A"] } } },
-          { publication_month: { $not: { $in: ["", "N/A"] } } },
-          { publication_year: { $not: { $in: ["", "N/A"] } } }
+          { publication_day: { $not: { $in: ["", "Not Known"] } } },
+          { publication_month: { $not: { $in: ["", "Not Known"] } } },
+          { publication_year: { $not: { $in: ["", "Not Known"] } } }
         ]
       },
       [
