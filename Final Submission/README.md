@@ -765,12 +765,28 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
  1. Identify the chosen query from Section 5 and explain/justify your choice of index. Why do you think
  indexing could improve the query. <b>[5 marks]</b>
 
+        I have identified query Q3 as the chosen query from Section 5.
+        
+        To optimize this query, I would create a compound index on the fields used for filtering and joining (original_publication_year, authors, and book_id) as well as the field used for sorting (reviews_count). This would allow the query optimizer to perform the filtering, sorting, and joining operations in a more efficient manner, by reducing the number of documents examined, eliminating the need for sorting at an early stage, and allowing the optimizer to make better use of available resources.
+        
+        The reason why indexing can improve the query is that without an index, MongoDB would have to perform a collection scan to filter and join the data, which can be slow and resource-intensive, especially for large collections. By creating an index, we can provide MongoDB with a more efficient way to access and retrieve the data, which can significantly improve query performance. Additionally, the index can reduce the amount of data that needs to be transferred between nodes, which can further improve query performance in distributed environments.
+
  2. Implement one index that would improve the querying of the database based on one of the queries
  (Q1-Q4). <b>[2 marks]</b>
+
+    db.p2652259_books.createIndex({
+      original_publication_year: 1,
+      authors: 1,
+      book_id: 1,
+      reviews_count: -1
+    })
+
 
  3. Present the execution plan of the selected query before the index and after the index has been
  created. Compare and discuss the execution plans to support your choice and summarise your
  findings. <b>[8 marks]</b>
+
+
 
 ## 7.0 RE-DESIGN THE DATABASE USING AGGREGATE DATA MODELLING <b>[20 marks]</b>
 
