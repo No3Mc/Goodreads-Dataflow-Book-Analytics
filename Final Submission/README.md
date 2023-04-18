@@ -774,12 +774,14 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
  2. Implement one index that would improve the querying of the database based on one of the queries
  (Q1-Q4). <b>[2 marks]</b>
 
-    db.p2652259_books.createIndex({
-      original_publication_year: 1,
-      authors: 1,
-      book_id: 1,
-      reviews_count: -1
-    })
+
+        db.p2652259_books.createIndex({
+          original_publication_year: 1,
+          authors: 1,
+          book_id: 1,
+          reviews_count: -1
+        })
+
 
 
  3. Present the execution plan of the selected query before the index and after the index has been
