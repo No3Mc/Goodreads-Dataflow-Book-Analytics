@@ -678,7 +678,7 @@ collection of books. This requires the following tasks:
               returnNewDocument: true
             } 
           }
-        ])
+        ]);
         db.p2630030_genres.findOne()
 
 - Books
@@ -691,7 +691,7 @@ collection of books. This requires the following tasks:
               returnNewDocument: true
             } 
           }
-        ])
+        ]);
         db.p2630030_books.findOne()
 
 
