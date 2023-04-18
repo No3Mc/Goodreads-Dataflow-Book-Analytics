@@ -43,16 +43,16 @@ Study all the collections (read more here: https://sites.google.com/eng.ucsd.edu
 1. What is/are the unique/identifying key(s) of the documents of each collection? <b>[4 marks]</b>
 
 Books:
-- key: book_id : 2008911
+- book_id : 2008911
 
 Authors:
-- key: author_id : "137561"
+- author_id : "137561"
 
 Genres:
-- key:  "book_id": 21401188, "genres": [{"k": "fiction", "v": 7}]
+- book_id: 21401188, genres: [{"k": "fiction", "v": 7}]
 
 Reviews:
-- key: "review_id": "ef77b0cd7d5db0a85aa64f291d63d450"
+- review_id: "ef77b0cd7d5db0a85aa64f291d63d450"
 
 
 
