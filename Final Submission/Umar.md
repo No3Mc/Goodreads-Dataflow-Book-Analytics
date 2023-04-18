@@ -163,26 +163,6 @@ Extract all matching genres of books in pxxxxxxx_books to a new collection named
     { $match: { book_id: { $in: db.p2630030_books.distinct("book_id") } } },
     { $out: "p2630030_genres" }
     ]);
-    
-
-
-Suitable for me:
-
-    db.genres.aggregate([
-      { $match: { book_id: { $in: db.p2630030_books.distinct("book_id") } } },
-      { $out: "p2630030_genres" }
-    ]);
-
-    db.p2630030_genres.find().forEach(function(doc) {
-       var newGenres = {};
-       doc.genres.forEach(function(genre) {
-          if (genre.k && genre.v) {
-             newGenres[genre.k] = genre.v;
-          }
-       });
-       db.p2630030_genres.update({_id: doc._id}, {$set: {genres: newGenres}});
-    });
-
 
     
     
@@ -221,14 +201,6 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
       }
     ])
 
-
-
-
-
- To find p2630030_genres:
-
-    db.p2630030_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": -1 }).limit(1)
-    db.p2630030_genres.find({ "genres.k": "fiction" }).sort({ "genres.v": 1 }).limit(1)
     
 <ol>
 1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
