@@ -69,10 +69,10 @@ Complete the table below based on 2(a) and 2(b).
 
 | Collection | Field    | Anomaly      | Examples                   | Solution Plan |
 |------------|----------|--------------|-----------------------------|------------------|
-| authors   | Field      | Anomaly     | {name: "'ndry@ brw"}   | Solution Plan |
-| books   | Field     | Anomaly      | {_id: ObjectId('63e1223417028313a427f9c5')}    | Solution Plan |
-| genres   | Field      | Anomaly      | {_id: ObjectId(63e132d117028313a448d3ab)}     | Solution Plan |
-| reviews   | Field     | Anomaly      | {_id: ObjectId('63e12b4117028313a44bff12')}     | Solution Plan |
+| authors   | "name"      | Type Error     | {name: "'ndry@ brw"}   | Update the "name" of the document |
+| books   | "format", "publisher", "num_pages", "publication_day", "publication_month", "edition_information", "publication_year"     | Null      | {_id: ObjectId('63e1223417028313a427f9c5')}    | update the "format", "publisher", "num_pages", "publication_day", "publication_month", "edition_information", "publication_year"  of the document |
+| genres   | "genre"      | Null      | {_id: ObjectId('63e132d117028313a448d3ab')}     | update the "genre" objects of the document |
+| reviews   | "started_at"     | Null      | {_id: ObjectId('63e12b4117028313a44bff12')}     | update the "started_at" to "Not known" of the document |
 
   
 
