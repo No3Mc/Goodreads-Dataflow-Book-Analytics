@@ -679,6 +679,7 @@ collection of books. This requires the following tasks:
             } 
           }
         ])
+        db.p2630030_genres.findOne()
 
 - Books
 
@@ -691,6 +692,7 @@ collection of books. This requires the following tasks:
             } 
           }
         ])
+        db.p2630030_books.findOne()
 
 
  5. Using $lookup operator, fetch the complete information of 50% of books with their authors and
