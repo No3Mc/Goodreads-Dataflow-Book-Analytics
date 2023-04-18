@@ -680,9 +680,9 @@ collection of books. This requires the following tasks:
           }
         ])
 
-- Authors:
+- Books
 
-        db.p2630030_authors.bulkWrite([
+        db.p2630030_books.bulkWrite([
           { 
             updateMany: { 
               filter: {}, 
