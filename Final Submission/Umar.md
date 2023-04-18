@@ -582,7 +582,7 @@ collection of books. This requires the following tasks:
 
  1. Make new copy of the pxxxxxx_books collection and name it pxxxxxx_books_adm. <b>[1 mark]</b>
 
-        db.p2630030_books.aggregate([{$match:{}},{$out:"p2652259_books_adm"}])
+        db.p2630030_books.aggregate([{$match:{}},{$out:"p2630030_books_adm"}])
 
  2. Embed all the authors and genres of books into their corresponding book using the new
  pxxxxxx_books_adm collection. <b>[6 marks]</b>
@@ -737,17 +737,6 @@ collection of books. This requires the following tasks:
             $sample: { size: db.p2630030_books.count() / 2 }
           }
         ]).explain("executionStats")
-
-- The first stage of the pipeline, which uses a collection scan to retrieve all documents from the p2652259_books collection, returned 10975 documents and took 26223 milliseconds to execute.
-
-- The second stage of the pipeline uses the $sample operator to randomly select 50% of the documents from the previous stage. It returned 5487 documents and took 13 milliseconds to execute.
-
-- The third stage of the pipeline uses the $lookup operator to join the p2652259_authors collection with the pxxxxxxx_books collection on the author_id field. It returned 5487 documents and took an estimated 11783 milliseconds to execute, examining a total of 54,046,950 documents in the p2652259_authors collection.
-
-- The fourth and final stage of the pipeline uses the $lookup operator to join the p2652259_genres collection with the pxxxxxxx_books collection on the book_id field. It returned 5487 documents and took an estimated 26222 milliseconds to execute, examining a total of 60,219,825 documents in the p2652259_genres collection.
-
-
-
 
 
 
