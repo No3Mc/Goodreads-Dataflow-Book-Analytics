@@ -178,6 +178,30 @@ was only scrapped from the internet and incomplete or not in proper format. Reme
 
 <br>
 
+p2630030_books:
+
+
+
+
+
+p2630030_reviews:
+    
+
+
+
+p2630030_genres:
+    
+
+
+p2630030_authors:
+
+
+
+
+<li> Show the query/queries used to address this anomaly.</li>
+
+<br>
+
 p2630030_books:<br>
     
 1.
@@ -348,85 +372,6 @@ p2630030_authors:<br>
        { _id: ObjectId("63e1320217028313a443e1ff") },
        { $set: { name: "Ron Clark" } }
     )
-
-
-
-<li> Show the query/queries used to address this anomaly.</li>
-
-<br>
-
-p2630030_books:
-
-1.
-
-
-
-2.
-
-
-
-
-3.
-
-
-
-    
-
-4.
-  
-
-
-
-p2630030_reviews:
-
-1. 
-
-
-
-
-
-2.
-
-
-
-
-3.  
-
-
-
-
-
-4.
-
-
-
-
-p2630030_genres:
-
-
-
-
-p2630030_authors:
-     
-1.
-
-
-
-
-
-2.
-
-
-
-
-
-3.
-
-
-
-
-
-4.
 
 
 
