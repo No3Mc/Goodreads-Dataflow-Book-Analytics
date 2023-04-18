@@ -712,8 +712,8 @@ collection of books. This requires the following tasks:
           {
             $lookup: {
               from: "p2630030_genres",
-              localField: "book_id",
-              foreignField: "book_id",
+              localField: "genres.k",
+              foreignField: "genres.k",
               as: "genres"
             }
           },
