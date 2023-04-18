@@ -119,7 +119,7 @@ Extract all books matching your assignedGroup from books collection into a new c
 
 
     db.books.aggregate([
-      { $match: { assignedGroup: 100 } },
+      { $match: { assignedGroup: 134 } },
       { $out: "p2630030_books" }
     ])
 
