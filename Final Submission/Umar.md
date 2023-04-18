@@ -78,39 +78,7 @@ Complete the table below based on 2(a) and 2(b).
 | genres   | Field      | Anomaly      | Example     | Solution Plan |
 | reviews   | Field     | Anomaly      | Example     | Solution Plan |
 
-
-    
- To find authors:
-
-    db.authors.aggregate([
-      {
-        $group: {
-          _id: "$name",
-          avgRating: { $avg: { $toDouble: "$average_rating" } },
-          ratingsCount: { $sum: { $toInt: "$ratings_count" } }
-        }
-      },
-      {
-        $match: {
-          avgRating: { $gt: 4.5 },
-          ratingsCount: { $lt: 100 }
-        }
-      }
-    ])
-
-
-
-
-
- To find genres:
-
-    db.genres.find({ "genres.k": "fiction" }).sort({ "genres.v": -1 }).limit(1)
-    db.genres.find({ "genres.k": "fiction" }).sort({ "genres.v": 1 }).limit(1)
-
- The anomaly in this document is the negative value of -87 for the "fiction" genre. This means that there are 87 fewer books categorized under the "fiction" genre for this document than there should be. This could be due to a mis-categorization of the book or a data entry mistake.
-
-
-    
+  
 
  
 
@@ -346,7 +314,10 @@ p2630030_genres:<br>
 
 p2630030_authors:<br>
 
-    {name: 'Julia   Blake'} {name: 'Brooke   Lynn'} {name: 'Theresa Zomick a/k/a Theresa St. Vincent'} {name: 'Ron    Clark'}
+    {name: 'Julia   Blake'}
+    {name: 'Brooke   Lynn'}
+    {name: 'Theresa Zomick a/k/a Theresa St. Vincent'}
+    {name: 'Ron    Clark'}
 
 
 <li> Show the query/queries used to address this anomaly.</li>
