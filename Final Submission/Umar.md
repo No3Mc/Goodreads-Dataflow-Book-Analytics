@@ -146,25 +146,6 @@ this is the time to move back to your PC!
 
 4.1 Have a quick look at the collections on MongoDB Compass, you will realise that some of the data
 was only scrapped from the internet and incomplete or not in proper format. Remember, in Section 3.2, you identified some anomalies on the dataset. For each anomaly that happens to be in your personalized dataset:
-
- To find p2630030_authors:
-
-    db.p2630030_authors.aggregate([
-      {
-        $group: {
-          _id: "$name",
-          avgRating: { $avg: { $toDouble: "$average_rating" } },
-          ratingsCount: { $sum: { $toInt: "$ratings_count" } }
-        }
-      },
-      {
-        $match: {
-          avgRating: { $gt: 4.5 },
-          ratingsCount: { $lt: 100 }
-        }
-      }
-    ])
-
     
 <ol>
 1. Provide for a minimum of four (4) anomalies. <b>[4 marks each]</b>
