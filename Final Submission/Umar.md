@@ -72,7 +72,7 @@ Complete the table below based on 2(a) and 2(b).
 | authors   | Field      | Anomaly     | {name: "'ndry@ brw"}   | Solution Plan |
 | books   | Field     | Anomaly      | {_id: ObjectId('63e1223417028313a427f9c5')}    | Solution Plan |
 | genres   | Field      | Anomaly      | {_id: ObjectId(63e132d117028313a448d3ab)}     | Solution Plan |
-| reviews   | Field     | Anomaly      | Example     | Solution Plan |
+| reviews   | Field     | Anomaly      | {_id: ObjectId('63e12b4117028313a44bff12')}     | Solution Plan |
 
   
 
