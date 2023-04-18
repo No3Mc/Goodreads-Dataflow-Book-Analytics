@@ -187,12 +187,12 @@ p2630030_books:<br>
       {_id: ObjectId("63e1223417028313a427faf6")},
       {
         $set: {
-          isbn: "Not Known",
-          description: "Not Known",
-          publication_day: "Not Known",
-          publication_month: "Not Known",
-          publication_year: "Not Known",
-          edition_information: "Not Known"
+          isbn: "Uncertain",
+          description: "Uncertain",
+          publication_day: "Uncertain",
+          publication_month: "Uncertain",
+          publication_year: "Uncertain",
+          edition_information: "Uncertain"
         }
       }
     )
@@ -204,11 +204,11 @@ p2630030_books:<br>
       {_id: ObjectId("63e1223417028313a427fca1")},
       {
         $set: {
-          isbn: "Not Known",
-          publisher: "Not Known",
-          publication_day: "Not Known",
-          publication_month: "Not Known",
-          publication_year: "Not Known" 
+          isbn: "Uncertain",
+          publisher: "Uncertain",
+          publication_day: "Uncertain",
+          publication_month: "Uncertain",
+          publication_year: "Uncertain" 
         }
       }
     )
@@ -220,8 +220,8 @@ p2630030_books:<br>
       {_id: ObjectId("63e1223417028313a427fd09")},
       {
         $set: {
-          isbn: "Not Known",
-          edition_information: "Not Known"
+          isbn: "Uncertain",
+          edition_information: "Uncertain"
         }
       }
     )
@@ -232,11 +232,11 @@ p2630030_books:<br>
       {_id: ObjectId("63e1223417028313a427fd6b")},
       {
         $set: {
-          isbn: "Not Known",
-          publication_day: "Not Known",
-          publication_month: "Not Known",
-          publication_year: "Not Known",
-          edition_information: "Not Known"
+          isbn: "Uncertain",
+          publication_day: "Uncertain",
+          publication_month: "Uncertain",
+          publication_year: "Uncertain",
+          edition_information: "Uncertain"
         }
       }
     )
@@ -248,7 +248,7 @@ p2630030_reviews:<br>
 
     db.p2630030_reviews.updateOne(
        { "_id": ObjectId("63e12b4117028313a44bffc9") },
-       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
+       { $set: { "read_at": "Not Known", "started_at": "Uncertain" } }
     )
 
 
@@ -257,7 +257,7 @@ p2630030_reviews:<br>
 
     db.p2630030_reviews.updateOne(
        { "_id": ObjectId("63e12b4117028313a44c04e7") },
-       { "$set": { "started_at": "Not Known" } }
+       { "$set": { "started_at": "Uncertain" } }
 
 
 1.
@@ -265,7 +265,7 @@ p2630030_reviews:<br>
 
     db.p2630030_reviews.updateOne(
        { "_id": ObjectId("63e12b4117028313a44c08a6") },
-       { "$set": { "started_at": "Not Known" } }
+       { "$set": { "started_at": "Uncertain" } }
 
 
 1.
@@ -273,7 +273,7 @@ p2630030_reviews:<br>
 
     db.p2630030_reviews.updateOne(
        { "_id": ObjectId("63e12b4117028313a44c0c52") },
-       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
+       { $set: { "read_at": "Uncertain", "started_at": "Uncertain" } }
     )
 
 
@@ -289,28 +289,28 @@ p2630030_genres:<br>
  
     db.p2630030_genres.updateOne(
        { _id: "63e132d117028313a448d4e4" },
-       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
+       { $set: { genres: [ { k: "Uncertain", v: 0 } ] } }
     )
 
 1.
 
     db.p2630030_genres.updateOne(
        { _id: "63e132d117028313a448d87e" },
-       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
+       { $set: { genres: [ { k: "Uncertain", v: 0 } ] } }
     )
 
 1.
 
     db.p2630030_genres.updateOne(
        { _id: "63e132d117028313a448de82" },
-       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
+       { $set: { genres: [ { k: "Uncertain", v: 0 } ] } }
     )
 
 1.
 
     db.p2630030_genres.updateOne(
        { _id: "63e132d117028313a448e1ec" },
-       { $set: { genres: [ { k: "Not Known", v: 0 } ] } }
+       { $set: { genres: [ { k: "Uncertain", v: 0 } ] } }
     )   
     
 
@@ -387,9 +387,9 @@ Due to the change of N/A the following query should work: <br>
     db.p2630030_books.updateMany(
       {
         $and: [
-          { publication_day: { $not: { $in: ["", "Not Known"] } } },
-          { publication_month: { $not: { $in: ["", "Not Known"] } } },
-          { publication_year: { $not: { $in: ["", "Not Known"] } } }
+          { publication_day: { $not: { $in: ["", "Uncertain"] } } },
+          { publication_month: { $not: { $in: ["", "Uncertain"] } } },
+          { publication_year: { $not: { $in: ["", "Uncertain"] } } }
         ]
       },
       [
