@@ -301,6 +301,33 @@ p2630030_books:<br>
 
 p2630030_reviews:<br>
 
+1.
+
+    db.p2630030_reviews.updateOne(
+       { "_id": ObjectId("63e12b4117028313a44bffc9") },
+       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
+    )
+
+1.
+
+    db.p2630030_reviews.updateOne(
+       { "_id": ObjectId("63e12b4117028313a44c04e7") },
+       { $set: { "started_at": "Not Known" } }
+
+1.
+
+    db.p2630030_reviews.updateOne(
+       { "_id": ObjectId("63e12b4117028313a44c08a6") },
+       { $set: { "started_at": "Not Known" } }
+
+1.
+
+    db.p2630030_reviews.updateOne(
+       { "_id": ObjectId("63e12b4117028313a44c0c52") },
+       { $set: { "read_at": "Not Known", "started_at": "Not Known" } }
+    )
+
+
 
 p2630030_genres:<br>
 
