@@ -536,10 +536,10 @@ the most famous reviewer. No other product details are required. <b>[5 marks]</b
 
 
     db.p2630030_reviews.aggregate([
-      { $match: { user_id: "9c692e44fab3d5ca585cf282344f18e1" } },
+      { $match: { user_id: "8e7e5b546a63cb9add8431ee6914cf59" } },
       {
         $lookup: {
-          from: "p2652259_books",
+          from: "p2630030_books",
           localField: "book_id",
           foreignField: "book_id",
           as: "book"
