@@ -319,6 +319,37 @@ p2630030_authors:<br>
     {name: 'Theresa Zomick a/k/a Theresa St. Vincent'}
     {name: 'Ron    Clark'}
 
+    
+1.
+
+db.p2652259_authors.update(
+   { _id: ObjectId("63e131fc17028313a44118a6") },
+   { $set: { name: "Julia Blake" } }
+)
+
+
+1.
+
+db.p2652259_authors.update(
+   { _id: ObjectId("63e131fa17028313a4406d17") },
+   { $set: { name: "Brooke Lynn" } }
+)
+
+1.
+
+db.p2652259_authors.update(
+   { _id: ObjectId("63e1320417028313a4453276") },
+   { $set: { name: "Theresa Zomick" } }
+)
+
+1.
+
+db.p2652259_authors.update(
+   { _id: ObjectId("63e1320217028313a443e1ff") },
+   { $set: { name: "Ron Clark" } }
+)
+
+
 
 <li> Show the query/queries used to address this anomaly.</li>
 
