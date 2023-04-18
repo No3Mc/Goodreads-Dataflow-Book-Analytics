@@ -346,7 +346,7 @@ p2630030_genres:<br>
 
 p2630030_authors:<br>
 
-    'Julia   Blake' 'Brooke   Lynn' 'Theresa Zomick a/k/a Theresa St. Vincent' 'Ron    Clark'
+    {name: 'Julia   Blake'} {name: 'Brooke   Lynn'} {name: 'Theresa Zomick a/k/a Theresa St. Vincent'} {name: 'Ron    Clark'}
 
 
 <li> Show the query/queries used to address this anomaly.</li>
