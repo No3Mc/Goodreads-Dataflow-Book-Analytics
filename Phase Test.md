@@ -142,19 +142,21 @@ SQL:
 
 Let's say you have a company that stores employee data, and you want to create a database to manage this data. Here's an example of how you could represent this data in a SQL database:
 
-Table: Employees
-CREATE TABLE Employees (
-    id INT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    department VARCHAR(255) NOT NULL,
-    job_title VARCHAR(255) NOT NULL,
-    salary DECIMAL(10, 2) NOT NULL
-);
+    Table: Employees
+    CREATE TABLE Employees (
+        id INT PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        department VARCHAR(255) NOT NULL,
+        job_title VARCHAR(255) NOT NULL,
+        salary DECIMAL(10, 2) NOT NULL
+    );
 
-INSERT INTO Employees (id, name, department, job_title, salary)
-VALUES (1, 'Alice', 'Sales', 'Sales Rep', 50000),
-       (2, 'Bob', 'Marketing', 'Marketing Specialist', 60000),
-       (3, 'Carol', 'Sales', 'Sales Manager', 80000);
+Insertion
+
+    INSERT INTO Employees (id, name, department, job_title, salary)
+    VALUES (1, 'Alice', 'Sales', 'Sales Rep', 50000),
+           (2, 'Bob', 'Marketing', 'Marketing Specialist', 60000),
+           (3, 'Carol', 'Sales', 'Sales Manager', 80000);
 
 
 
@@ -163,50 +165,51 @@ NoSQL:
 
 Here's an example of how the same employee data could be represented in a NoSQL database, specifically a document-based database like MongoDB:
 
-Collection: Employees
-{
-    "_id": ObjectId("6092f7c920d4c809de4bb4c1"),
-    "name": "Alice",
-    "department": "Sales",
-    "job_title": "Sales Rep",
-    "salary": 50000
-},
-{
-    "_id": ObjectId("6092f7c920d4c809de4bb4c2"),
-    "name": "Bob",
-    "department": "Marketing",
-    "job_title": "Marketing Specialist",
-    "salary": 60000
-},
-{
-    "_id": ObjectId("6092f7c920d4c809de4bb4c3"),
-    "name": "Carol",
-    "department": "Sales",
-    "job_title": "Sales Manager",
-    "salary": 80000
-}
-
-
-db.Employees.insertMany([
+    Collection: Employees
     {
-        name: "Alice",
-        department: "Sales",
-        job_title: "Sales Rep",
-        salary: 50000
+        "_id": ObjectId("6092f7c920d4c809de4bb4c1"),
+        "name": "Alice",
+        "department": "Sales",
+        "job_title": "Sales Rep",
+        "salary": 50000
     },
     {
-        name: "Bob",
-        department: "Marketing",
-        job_title: "Marketing Specialist",
-        salary: 60000
+        "_id": ObjectId("6092f7c920d4c809de4bb4c2"),
+        "name": "Bob",
+        "department": "Marketing",
+        "job_title": "Marketing Specialist",
+        "salary": 60000
     },
     {
-        name: "Carol",
-        department: "Sales",
-        job_title: "Sales Manager",
-        salary: 80000
+        "_id": ObjectId("6092f7c920d4c809de4bb4c3"),
+        "name": "Carol",
+        "department": "Sales",
+        "job_title": "Sales Manager",
+        "salary": 80000
     }
-])
+
+Insertion
+
+    db.Employees.insertMany([
+        {
+            name: "Alice",
+            department: "Sales",
+            job_title: "Sales Rep",
+            salary: 50000
+        },
+        {
+            name: "Bob",
+            department: "Marketing",
+            job_title: "Marketing Specialist",
+            salary: 60000
+        },
+        {
+            name: "Carol",
+            department: "Sales",
+            job_title: "Sales Manager",
+            salary: 80000
+        }
+    ])
 
 
 SQL and NoSQL databases are used for different purposes and have different data models. Here are some examples of data that are suitable for insertion in SQL and NoSQL databases:
