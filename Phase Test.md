@@ -490,81 +490,81 @@ NoSQL data can be structured in JSON format:
 
 Document Store:
 
-{
-   "title": "The Great Gatsby",
-   "author": "F. Scott Fitzgerald",
-   "publishedYear": 1925,
-   "genres": ["fiction", "classic", "romance"],
-   "ratings": {
-      "average": 4.2,
-      "count": 1234
-   },
-   "reviews": [
-      {
-         "username": "jane_doe",
-         "rating": 5,
-         "comment": "This book is a masterpiece!"
-      },
-      {
-         "username": "john_smith",
-         "rating": 3,
-         "comment": "It's okay, not my favorite."
-      }
-   ]
-}
+    {
+       "title": "The Great Gatsby",
+       "author": "F. Scott Fitzgerald",
+       "publishedYear": 1925,
+       "genres": ["fiction", "classic", "romance"],
+       "ratings": {
+          "average": 4.2,
+          "count": 1234
+       },
+       "reviews": [
+          {
+             "username": "jane_doe",
+             "rating": 5,
+             "comment": "This book is a masterpiece!"
+          },
+          {
+             "username": "john_smith",
+             "rating": 3,
+             "comment": "It's okay, not my favorite."
+          }
+       ]
+    }
 
 
 Key-Value Store:
 
-{
-   "product_id": "ABC123",
-   "name": "Smartphone",
-   "price": 599.99,
-   "description": "A high-end smartphone with cutting-edge features.",
-   "color": "black",
-   "in_stock": true
-}
+    {
+       "product_id": "ABC123",
+       "name": "Smartphone",
+       "price": 599.99,
+       "description": "A high-end smartphone with cutting-edge features.",
+       "color": "black",
+       "in_stock": true
+    }
 
 
 Wide Column Store:
 
-{
-   "user_id": "12345",
-   "name": "John Smith",
-   "email": "john.smith@example.com",
-   "phone_numbers": {
-      "home": "123-456-7890",
-      "work": "987-654-3210"
-   },
-   "addresses": {
-      "home": {
-         "street": "123 Main St",
-         "city": "Anytown",
-         "state": "CA",
-         "zip": "12345"
-      },
-      "work": {
-         "street": "456 Park Ave",
-         "city": "Othertown",
-         "state": "CA",
-         "zip": "54321"
-      }
-   },
-   "orders": [
-      {
-         "order_id": "ORD123",
-         "total_amount": 99.99,
-         "items": [
-            {
-               "product_id": "ABC123",
-               "name": "Smartphone",
-               "quantity": 1,
-               "price": 599.99
-            }
-         ]
-      }
-   ]
-}
+    {
+       "user_id": "12345",
+       "name": "John Smith",
+       "email": "john.smith@example.com",
+       "phone_numbers": {
+          "home": "123-456-7890",
+          "work": "987-654-3210"
+       },
+       "addresses": {
+          "home": {
+             "street": "123 Main St",
+             "city": "Anytown",
+             "state": "CA",
+             "zip": "12345"
+          },
+          "work": {
+             "street": "456 Park Ave",
+             "city": "Othertown",
+             "state": "CA",
+             "zip": "54321"
+          }
+       },
+       "orders": [
+          {
+             "order_id": "ORD123",
+             "total_amount": 99.99,
+             "items": [
+                {
+                   "product_id": "ABC123",
+                   "name": "Smartphone",
+                   "quantity": 1,
+                   "price": 599.99
+                }
+             ]
+          }
+       ]
+    }
 
 
 The flexibility of NoSQL allows for a variety of data structures to fit different use cases.
@@ -652,29 +652,31 @@ Document example and syntax:
 A document is a record or entry in a collection that contains one or more fields with associated values. 
 In a document-oriented database system like MongoDB, a document is represented using JSON-like syntax. 
 For example, a document representing a customer record might look like this:
-{
-   "firstName": "John",
-   "lastName": "Doe",
-   "email": "johndoe@example.com",
-   "address": {
-      "street": "123 Main St",
-      "city": "Anytown",
-      "state": "CA",
-      "zip": "12345"
-   },
-   "orders": [
-      {
-         "orderId": 1234,
-         "orderDate": "2022-01-01",
-         "totalAmount": 50.0
-      },
-      {
-         "orderId": 5678,
-         "orderDate": "2022-02-01",
-         "totalAmount": 100.0
-      }
-   ]
-}
+
+    {
+       "firstName": "John",
+       "lastName": "Doe",
+       "email": "johndoe@example.com",
+       "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+       },
+       "orders": [
+          {
+             "orderId": 1234,
+             "orderDate": "2022-01-01",
+             "totalAmount": 50.0
+          },
+          {
+             "orderId": 5678,
+             "orderDate": "2022-02-01",
+             "totalAmount": 100.0
+          }
+       ]
+    }
+
 Document ID and relationships:
 In MongoDB, every document is assigned a unique identifier called the _id field. 
 This field is automatically generated by the database system when a new document is inserted into a collection. 
@@ -693,8 +695,13 @@ MongoDB query language:
 MongoDB uses a query language called the MongoDB Query Language (MQL) to retrieve and manipulate data. 
 MQL is similar to SQL in many ways, but it is designed specifically for working with document-oriented databases. Some examples of MQL queries include:
 
-db.customers.find({firstName: "John"}): This query retrieves all documents from the customers collection where the firstName field is equal to "John".
-db.orders.aggregate([{ $group: { _id: "$customerId", totalAmount: { $sum: "$totalAmount" } } }]): This query uses the MongoDB Aggregation Framework to group orders by customer and calculate the total amount spent by each customer.
+    db.customers.find({firstName: "John"})
+
+This query retrieves all documents from the customers collection where the firstName field is equal to "John".
+
+    db.orders.aggregate([{ $group: { _id: "$customerId", totalAmount: { $sum: "$totalAmount" } } }])
+
+This query uses the MongoDB Aggregation Framework to group orders by customer and calculate the total amount spent by each customer.
 
 CRUD stands for Create, Read, Update, and Delete, which are the four basic operations used in most database systems. Here are the explanations with examples:
 
@@ -702,11 +709,11 @@ Insert Document:
 Inserting a document is the 'Create' operation in CRUD. In MongoDB, we use the insertOne() or insertMany() method to insert a document into a collection. 
 Here's an example of inserting a document into a "users" collection:
 
-db.users.insertOne({
-  name: "John",
-  age: 30,
-  email: "john@example.com"
-})
+    db.users.insertOne({
+      name: "John",
+      age: 30,
+      email: "john@example.com"
+    })
 
 Find: Selection and Projection:
 The 'Read' operation in CRUD is used to retrieve data from the database. 
@@ -714,37 +721,37 @@ In MongoDB, we use the find() method to query a collection.
 We can also use the projection parameter to specify which fields to include or exclude from the result. 
 Here's an example:
 
-// Select all documents in the "users" collection
-db.users.find()
+    // Select all documents in the "users" collection
+    db.users.find()
 
-// Select documents where the name is "John"
-db.users.find({ name: "John" })
+    // Select documents where the name is "John"
+    db.users.find({ name: "John" })
 
-// Select only the name and email fields
-db.users.find({}, { name: 1, email: 1, _id: 0 })
+    // Select only the name and email fields
+    db.users.find({}, { name: 1, email: 1, _id: 0 })
 
 Collection of Documents:
 A collection is a group of documents stored in a database. 
 In MongoDB, collections are similar to tables in traditional relational databases. 
 Here's an example of creating a "users" collection:
 
-db.createCollection("users")
+    db.createCollection("users")
 
 MongoDB is a document database:
 MongoDB is a NoSQL document database that stores data in BSON format. 
 BSON is a binary representation of JSON that is optimized for efficient storage and retrieval of data. 
 Here's an example of connecting to a MongoDB database:
 
-const MongoClient = require('mongodb').MongoClient;
+    const MongoClient = require('mongodb').MongoClient;
 
-const uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
+    const uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/test?retryWrites=true&w=majority";
+    const client = new MongoClient(uri, { useNewUrlParser: true });
 
-client.connect(err => {
-  const collection = client.db("test").collection("users");
-  // perform actions on the collection object
-  client.close();
-});
+    client.connect(err => {
+      const collection = client.db("test").collection("users");
+      // perform actions on the collection object
+      client.close();
+    });
 
 
 Data is stored internally in BSON (Binary JSON) format but users work with it in JSON:
@@ -752,41 +759,41 @@ As mentioned earlier, MongoDB stores data internally in BSON format, which is a 
 However, users interact with MongoDB using JSON format, which is more human-readable and easy to work with. 
 Here's an example of a BSON document and its JSON representation:
 
-// BSON document
-{
-  "_id": ObjectId("60a47a7e1f6d8e7d72676b5f"),
-  "name": "John",
-  "age": 30,
-  "email": "john@example.com"
-}
+    // BSON document
+    {
+      "_id": ObjectId("60a47a7e1f6d8e7d72676b5f"),
+      "name": "John",
+      "age": 30,
+      "email": "john@example.com"
+    }
 
-// JSON representation
-{
-  "name": "John",
-  "age": 30,
-  "email": "john@example.com"
-}
+    // JSON representation
+    {
+      "name": "John",
+      "age": 30,
+      "email": "john@example.com"
+    }
 
 Documents are JSON objects and are organized in collections:
 In MongoDB, data is stored in documents, which are JSON objects with field-value pairs. 
 Documents are organized in collections, which are groups of related documents. Collections are similar to tables in relational databases, but with more flexibility in terms of schema design. 
 Here's an example of a "users" collection with two documents:
 
-// users collection
-[
-  {
-    "_id": ObjectId("60a47a7e1f6d8e7d72676b5f"),
-    "name": "John",
-    "age": 30,
-    "email": "john@example.com"
-  },
-  {
-    "_id": ObjectId("60a47a7e1f6d8e7d72676b60"),
-    "name": "Jane",
-    "age": 25,
-    "email": "jane@example.com"
-  }
-]
+    // users collection
+    [
+      {
+        "_id": ObjectId("60a47a7e1f6d8e7d72676b5f"),
+        "name": "John",
+        "age": 30,
+        "email": "john@example.com"
+      },
+      {
+        "_id": ObjectId("60a47a7e1f6d8e7d72676b60"),
+        "name": "Jane",
+        "age": 25,
+        "email": "jane@example.com"
+      }
+    ]
 
 This query is a representation of a MongoDB collection called "users" that contains two documents, each with their own set of key-value pairs. 
 The documents are represented as JSON objects and contain the following fields:
@@ -821,16 +828,16 @@ JSON is a lightweight and easy-to-read format that is used for exchanging data b
 It consists of key-value pairs separated by commas, and enclosed in curly braces. 
 For example, a JSON document in MongoDB might look like this:
 
-{
-   "name": "John Smith",
-   "age": 30,
-   "address": {
-      "street": "123 Main St",
-      "city": "Anytown",
-      "state": "CA",
-      "zip": "12345"
-   }
-}
+    {
+       "name": "John Smith",
+       "age": 30,
+       "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+       }
+    }
 
 Document Identity:
 Each document in MongoDB is identified by a unique key, which is automatically generated by MongoDB or can be specified by the user. 
@@ -853,15 +860,15 @@ A relational schema is a blueprint or design for a relational database.
 It defines the structure of the database and the relationships between the tables. 
 The relational schema is typically represented using a collection of table definitions, each of which specifies the columns (or attributes) of the table and any constraints or relationships with other tables.
 
-CREATE TABLE Book (
-    isbn        VARCHAR(8) NOT NULL,
-    pub_code    VARCHAR(4) NOT NULL,
-    title       VARCHAR(40),
-    pub_date    DATE,
-    now_price   NUMBER(9,2),
-    CONSTRAINT Book_PK PRIMARY KEY (isbn),
-    CONSTRAINT Book_Publisher_FK FOREIGN KEY (pub_code) REFERENCES publisher (pub_code)
-);
+    CREATE TABLE Book (
+        isbn        VARCHAR(8) NOT NULL,
+        pub_code    VARCHAR(4) NOT NULL,
+        title       VARCHAR(40),
+        pub_date    DATE,
+        now_price   NUMBER(9,2),
+        CONSTRAINT Book_PK PRIMARY KEY (isbn),
+        CONSTRAINT Book_Publisher_FK FOREIGN KEY (pub_code) REFERENCES publisher (pub_code)
+    );
 
 In the given example, we have a relational schema for a table named "Book". 
 The table has six columns or attributes: isbn, pub_code, title, pub_date, and now_price. 
@@ -924,24 +931,24 @@ Insert Document:
 To insert a document in MongoDB, a JSON object is defined with the document fields and their values. 
 For example, to insert a book document with the name "The Unnatural Nature of Science" and author "Lewis Wolpert", the following JSON object can be defined:
 
-doc = {name: "The Unnatural Nature of Science", author: "Lewis Wolpert"}
+    doc = {name: "The Unnatural Nature of Science", author: "Lewis Wolpert"}
 
 Insert into (and create) collection:
 To insert the book document into a collection (and create the collection if it doesn't already exist), the insert method can be used. 
 For example, to insert the doc object into a books collection, the following code can be used:
 
-db.books.insert(doc)
+    db.books.insert(doc)
 
 Aliases b=db.books b.insert(doc):
 To simplify the code, an alias can be created for the books collection, and the insert method can be called on the alias. 
 For example, the following code creates an alias b for the books collection and inserts the doc object:
 
-b = db.books
-b.insert(doc)
+    b = db.books
+    b.insert(doc)
 
 Alternatively, the insert method can be called directly on the books collection without creating an alias:
 
-db.books.insert(doc)
+    db.books.insert(doc)
 
 Flexible data modelling:
 One of the advantages of using a schema-less document database like MongoDB is that it allows for flexible data modeling. 
@@ -952,21 +959,21 @@ Update Document:
 To update a document in MongoDB, the update method can be used. 
 For example, to update the author of the book document with the name "The Unnatural Nature of Science" to "Lewis Wolpert FRS", the following code can be used:
 
-db.books.update({name: "The Unnatural Nature of Science"}, {$set: {author: "Lewis Wolpert FRS"}})
+    db.books.update({name: "The Unnatural Nature of Science"}, {$set: {author: "Lewis Wolpert FRS"}})
 
 This code finds the document with the name "The Unnatural Nature of Science" and updates the author field to "Lewis Wolpert FRS".
 
 Delete Document:
 To delete a document in MongoDB, the remove method can be used. For example, to delete the book document with the name "The Unnatural Nature of Science", the following code can be used:
 
-db.books.remove({name: "The Unnatural Nature of Science"})
+    db.books.remove({name: "The Unnatural Nature of Science"})
 
 This code finds the document with the name "The Unnatural Nature of Science" and removes it from the books collection.
 
 Query Document:
 To query a MongoDB database, the find method can be used. For example, to find all books in the books collection, the following code can be used:
 
-db.books.find()
+    db.books.find()
 
 This code returns all documents in the books collection.
 
@@ -977,40 +984,40 @@ The MongoDB find() method is used to query documents from a collection. Here are
 Find All Documents:
 The following query finds all documents in the books collection:
 
-db.books.find()
+    db.books.find()
 
 SQL equivalent:
 
-SELECT * FROM books;
+    SELECT * FROM books;
 
 Selection vs Projection:
 In MongoDB, selection means to find documents that match certain criteria, while projection means to retrieve only certain fields of the documents. Here are two examples:
 Find documents with a specific value:
 The following query finds all documents in the books collection where the name field is "Hamlet":
 
-db.books.find({name: "Hamlet"})
+    db.books.find({name: "Hamlet"})
 
 Find only some fields:
 The following query finds all documents in the books collection, but only returns the author field for each document:
 
-db.books.find({}, {author:1})
+    db.books.find({}, {author:1})
 
 Selection and Projection:
 The following query combines selection and projection. It finds documents where the name field is "Hamlet", and returns only the author field (excluding the _id field):
 
-db.books.find({name: "Hamlet"}, {author:1, _id:0})
+    db.books.find({name: "Hamlet"}, {author:1, _id:0})
 
 Querying Child Objects:
 In MongoDB, you can query nested objects using dot notation. Here is an example:
 
-{ 
-    Country : "China",  
-    Capital : { Name : "Beijing", Population : 21000000 }  
-} 
+    { 
+        Country : "China",  
+        Capital : { Name : "Beijing", Population : 21000000 }  
+    } 
 
 To query the population of the capital, you can use the following query:
 
-db.countries.find({}, {"Capital.Population":1})
+    db.countries.find({}, {"Capital.Population":1})
 
 Operators:
 MongoDB has several operators that you can use in queries. Operators are words prefixed with $. Here is an example:
@@ -1018,37 +1025,37 @@ MongoDB has several operators that you can use in queries. Operators are words p
 Find documents with a specific field:
 The following query finds all documents in the books collection that have an editor field:
 
-db.books.find({editor:{ "$exists":"true"}})
+    db.books.find({editor:{ "$exists":"true"}})
 
 Includes where the field is NULL:
 The above query will also include documents where the editor field is null. If you want to exclude such documents, you can modify the query as follows:
 
-db.books.find({editor:{ "$exists":true, "$ne": null}})
+    db.books.find({editor:{ "$exists":true, "$ne": null}})
 
 Comparison Operators:
 MongoDB also supports comparison operators like $eq, $gt, $gte, $lt, $lte, $ne. Here is an example:
 Find books with a price less than or equal to 10:
 
-db.books.find({price: {$lte: 10}})
+    db.books.find({price: {$lte: 10}})
 
 
 Logical Operators:
 MongoDB provides logical operators like $and, $or, and $not. Here is an example:
 Find books with a price less than 10 or published before 2010:
 
-db.books.find({$or: [{price: {$lt: 10}}, {published_year: {$lt: 2010}}]})
+    db.books.find({$or: [{price: {$lt: 10}}, {published_year: {$lt: 2010}}]})
 
 Regular Expression:
 MongoDB allows you to use regular expressions in queries using the $regex operator. Here is an example:
 Find books with a title starting with "The":
 
-db.books.find({title: {$regex: /^The/}})
+    db.books.find({title: {$regex: /^The/}})
 
 Sorting:
 You can sort the results of a query using the sort() method. Here is an example:
 Find books with a price less than 10, sorted by title:
 
-db.books.find({price: {$lt: 10}}).sort({title: 1})
+    db.books.find({price: {$lt: 10}}).sort({title: 1})
 
 
 The 1 indicates ascending order, while -1 indicates descending order.
@@ -1057,11 +1064,11 @@ Limit and Skip:
 You can limit the number of results returned by a query using the limit() method, and you can skip a certain number of results using the skip() method. Here is an example:
 Find books with a price less than 10, sorted by title, and return only the first 10 results:
 
-db.books.find({price: {$lt: 10}}).sort({title: 1}).limit(10)
+    db.books.find({price: {$lt: 10}}).sort({title: 1}).limit(10)
 
 To skip the first 10 results and return the next 10, you can modify the query as follows:
 
-db.books.find({price: {$lt: 10}}).sort({title: 1}).skip(10).limit(10)
+    db.books.find({price: {$lt: 10}}).sort({title: 1}).skip(10).limit(10)
 
 Aggregation:
 MongoDB provides an aggregation framework for performing advanced data analysis. 
@@ -1069,9 +1076,9 @@ The aggregation pipeline allows you to perform multiple operations on a collecti
 Here is an example:
 Find the total sales for each product category:
 
-db.sales.aggregate([
-   { $group: { _id: "$category", total_sales: { $sum: "$amount" } } }
-])
+    db.sales.aggregate([
+       { $group: { _id: "$category", total_sales: { $sum: "$amount" } } }
+    ])
 
 This query groups the sales collection by the category field, and computes the sum of the amount field for each group.
 
@@ -1081,34 +1088,34 @@ You can create indexes on one or more fields using the createIndex() method.
 Here is an example:
 Create an index on the name field of the books collection:
 
-db.books.createIndex({ name: 1 })
+    db.books.createIndex({ name: 1 })
 
 
 Aggregation:
 MongoDB provides an aggregation framework for performing advanced data analysis. The aggregation pipeline allows you to perform multiple operations on a collection, such as filtering, grouping, sorting, and computing aggregate values. Here is an example:
 Find the total sales for each product category:
 
-php
-Copy code
-db.sales.aggregate([
-   { $group: { _id: "$category", total_sales: { $sum: "$amount" } } }
-])
+
+
+    db.sales.aggregate([
+       { $group: { _id: "$category", total_sales: { $sum: "$amount" } } }
+    ])
+
 This query groups the sales collection by the category field, and computes the sum of the amount field for each group.
 
 Indexing:
 Indexes in MongoDB improve query performance by allowing the server to quickly locate the documents that match a query. You can create indexes on one or more fields using the createIndex() method. Here is an example:
 Create an index on the name field of the books collection:
 
-css
-Copy code
-db.books.createIndex({ name: 1 })
+
+    db.books.createIndex({ name: 1 })
 This query creates an ascending index on the name field.
 
 Text Search:
 MongoDB supports text search on string fields using the $text operator. Here is an example:
 Search for books that contain the word "science":
 
-db.books.find({ $text: { $search: "science" } })
+    db.books.find({ $text: { $search: "science" } })
 
 
 This query searches the books collection for documents that contain the word "science" in any indexed string field.
@@ -1119,15 +1126,15 @@ You can use the $geoNear operator to find documents that are near a specified po
 Here is an example:
 Find the nearest restaurants to a specified location:
 
-db.restaurants.aggregate([
-   {
-      $geoNear: {
-         near: { type: "Point", coordinates: [ -73.9667, 40.78 ] },
-         distanceField: "distance",
-         spherical: true
-      }
-   }
-])
+    db.restaurants.aggregate([
+       {
+          $geoNear: {
+             near: { type: "Point", coordinates: [ -73.9667, 40.78 ] },
+             distanceField: "distance",
+             spherical: true
+          }
+       }
+    ])
 
 This query searches the restaurants collection for documents that are near the point (-73.9667, 40.78), and returns the distance of each document from the point in the distance field. 
 The spherical parameter indicates that the query should use spherical geometry to calculate distances.
@@ -1140,26 +1147,26 @@ Here are some examples of different types of queries that can be used with the d
 Find numbers in a range: The $lt, $gt, $lte, $gte and $ne are comparison operators used to find documents with fields that meet certain criteria. 
 For example, the following query will return all documents where the price field is less than 30:
 
-db.books.find({price:{$lt:30}})
+    db.books.find({price:{$lt:30}})
 
 
 Sort results: The sort() function is used to sort the results of a query. The function takes a sort object as a parameter, which specifies the field to sort on and the sort order (ascending or descending). 
 For example, the following query will return all documents sorted in ascending order based on the price field:
 
-db.books.find({}).sort({price:1})
+    db.books.find({}).sort({price:1})
 
 
 Limit output: The limit() function is used to limit the number of results returned by a query. 
 For example, the following query will return the first document in the collection, sorted in ascending order based on the price field:
 
-db.books.find({}).sort({price:1}).limit(1)
+    db.books.find({}).sort({price:1}).limit(1)
 
 
 Regular expressions: MongoDB supports regular expressions for more flexible searching. The regular expression can be used to match values in a field that contain a certain pattern. 
 For example, the following query will return all documents where the name field contains the letters "at" anywhere:
 
 
-db.books.find({name: /at/})
+    db.books.find({name: /at/})
 
 
 The /at/ part is a regular expression pattern that matches any string that contains the letters "at" anywhere.
@@ -1168,7 +1175,7 @@ Nearest SQL equivalent: In SQL, the LIKE operator is used for pattern matching. 
 For example, the following query will return all documents where the name field starts with the letter "T", ignoring case:
 
 
-db.books.find({name: /^T/i})
+    db.books.find({name: /^T/i})
 
 
 
@@ -1177,7 +1184,7 @@ The /^T/i part is a regular expression pattern that matches any string that star
 Similarly, the following query will return all documents where the name field contains the letters "a", "b", or "c" anywhere:
 
 
-db.books.find({name: /[abc]/})
+    db.books.find({name: /[abc]/})
 
 
 The [abc] part is a regular expression pattern that matches any string that contains the letters "a", "b", or "c" anywhere.
@@ -1185,7 +1192,7 @@ The [abc] part is a regular expression pattern that matches any string that cont
 Finally, the following query will return all documents where the name field ends with some numbers:
 
 
-db.books.find({name: /\w{1,}\d{1,}/})
+    db.books.find({name: /\w{1,}\d{1,}/})
 
 
 The /\w{1,}\d{1,}/ part is a regular expression pattern that matches any string that ends with one or more digits.
@@ -1194,14 +1201,14 @@ Inequality operator: MongoDB provides the $ne operator to search for documents w
 For example, the following query will return all documents where the status field is not equal to "available":
 
 
-db.books.find({status: {$ne: "available"}})
+    db.books.find({status: {$ne: "available"}})
 
 
 Logical operators: MongoDB also provides logical operators such as $and, $or, and $not to combine multiple conditions in a single query. 
 For example, the following query will return all documents where the price field is greater than 20 and less than 50:
 
 
-db.books.find({$and: [{price: {$gt: 20}}, {price: {$lt: 50}}]})
+    db.books.find({$and: [{price: {$gt: 20}}, {price: {$lt: 50}}]})
 
 
 
@@ -1212,7 +1219,7 @@ For example, the following query will return all documents where the tags field 
 
 
 
-db.books.find({tags: {$in: ["sci-fi"]}})
+    db.books.find({tags: {$in: ["sci-fi"]}})
 
 
 The $in operator is used to match documents where the tags field contains any of the values specified in the array.
@@ -1221,7 +1228,7 @@ Element operators: MongoDB provides element operators such as $exists and $type 
 For example, the following query will return all documents where the publisher field exists:
 
 
-db.books.find({publisher: {$exists: true}})
+    db.books.find({publisher: {$exists: true}})
 
 
 The $exists operator is used to match documents where the publisher field exists.
@@ -1243,41 +1250,41 @@ In MongoDB, the $in operator can be used to search for any values that match any
 For example, the following query searches for books with names that match "Tom", "Dick", "Harry", or 311:
 
 
-db.books.find({name : {$in:["Tom", "Dick", "Harry", 311]}})
+    db.books.find({name : {$in:["Tom", "Dick", "Harry", 311]}})
 
 
 Inserting an array as a value in a document:
 Arrays can be inserted as a value in a document using the insert method. For example, the following inserts an array of likes into a document:
 
-db.col.insert({Likes: ["DMU", "LCFC", "TLC"]})
+    db.col.insert({Likes: ["DMU", "LCFC", "TLC"]})
 
 
 Matching a single term to an array:
 To find documents that contain a single value in an array, you can use the query {field: value}. For example, the following finds documents that contain "LCFC" in the "Likes" array:
 
 
-db.col.find({Likes: "LCFC"})
+    db.col.find({Likes: "LCFC"})
 
 
 Removing all matching values in an array:
 The $pullAll operator can be used to remove all instances of specific values in an array. For example, the following removes all occurrences of 0 and 5 in the "scores" array:
 
 
-{ $pullAll: { scores: [ 0, 5 ] } }
+    { $pullAll: { scores: [ 0, 5 ] } }
 
 
 Removing all matching elements of query:
 The $pull operator can be used to remove all elements that match a query. For example, the following removes all elements greater than or equal to 6 in the "scores" array:
 
 
-{ $pull: { scores: { $gte: 6 } } }
+    { $pull: { scores: { $gte: 6 } } }
 
 
 Adding an item to an array:
 The $push operator can be used to add an item to an array. For example, the following adds the number 9 to the "scores" array:
 
 
-{ $push: { scores: 9 } }
+    { $push: { scores: 9 } }
 
 
 It's important to note that the $in and $nin operators are case sensitive, so searching for "LCFC" will not match "lcfc". 
@@ -1293,17 +1300,17 @@ To insert a document into a collection called "books", you can create a JavaScri
 
 Example:
 
-doc = {name: "Nineteen Eighty-Four", author: "George Orwell"};
-db.books.insert(doc);
+    doc = {name: "Nineteen Eighty-Four", author: "George Orwell"};
+    db.books.insert(doc);
 
 Find documents:
 You can use the "find" method to search for documents in a collection. This returns a cursor object that you can use to iterate through the results.
 
 Example:
 
-var myCursor = db.books.find({});
-var myFirstDocument = myCursor.hasNext() ? myCursor.next() : null;
-print(tojson(myFirstDocument));
+    var myCursor = db.books.find({});
+    var myFirstDocument = myCursor.hasNext() ? myCursor.next() : null;
+    print(tojson(myFirstDocument));
 
 
 Update documents:
@@ -1311,10 +1318,10 @@ You can use the "update" method to modify existing documents in a collection. Th
 
 Example:
 
-db.books.update(
-  {author: "George Orwell"},
-  {$set: {name: "Animal Farm"}}
-)
+    db.books.update(
+      {author: "George Orwell"},
+      {$set: {name: "Animal Farm"}}
+    )
 
 
 Delete documents:
@@ -1322,7 +1329,7 @@ You can use the "remove" method to delete documents from a collection that match
 
 Example:
 
-db.books.remove({editor: /Brono/})
+    db.books.remove({editor: /Brono/})
 
 MongoDB is a document-oriented database that natively supports JavaScript. 
 JavaScript can be used to perform CRUD operations in the MongoDB shell, and these operations involve creating, reading, updating, and deleting documents in collections. 
@@ -1337,18 +1344,18 @@ Collections of documents are commonly used in NoSQL databases, such as MongoDB.
 Document example and syntax:
 Here's an example of a document in JSON syntax:
 
-{
-  "_id": "123456789",
-  "name": "John Smith",
-  "age": 35,
-  "email": "john.smith@example.com",
-  "address": {
-    "street": "123 Main St",
-    "city": "Anytown",
-    "state": "CA",
-    "zip": "12345"
-  }
-}
+    {
+      "_id": "123456789",
+      "name": "John Smith",
+      "age": 35,
+      "email": "john.smith@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      }
+    }
 
 
 In this example, the document contains several key-value pairs, including an ID, name, age, email, and address. The address field itself is a subdocument containing additional key-value pairs.
@@ -1372,11 +1379,11 @@ CRUD stands for Create, Read, Update, and Delete, which are the four basic opera
 Insert document:
 To insert a document into a collection in MongoDB, you can use the insertOne() or insertMany() method. For example, to insert a single document:
 
-db.users.insertOne({
-  "name": "Jane Doe",
-  "age": 27,
-  "email": "jane.doe@example.com"
-})
+    db.users.insertOne({
+      "name": "Jane Doe",
+      "age": 27,
+      "email": "jane.doe@example.com"
+    })
 
 
 This will insert a new document into the users collection with the given fields.
@@ -1386,17 +1393,17 @@ To retrieve documents from a collection in MongoDB, you can use the find() metho
 For example, to find all documents where the age is greater than or equal to 30:
 
 
-db.users.find({ "age": { "$gte": 30 } })
+    db.users.find({ "age": { "$gte": 30 } })
 
 
 You can also specify a projection object to select only certain fields from the matching documents.
 For example, to find all documents where the age is greater than or equal to 30 and return only the name and email fields:
 
 
-db.users.find(
-  { "age": { "$gte": 30 } },
-  { "name": 1, "email": 1, "_id": 0 }
-)
+    db.users.find(
+      { "age": { "$gte": 30 } },
+      { "name": 1, "email": 1, "_id": 0 }
+    )
 
 
 In this example, the projection object { "name": 1, "email": 1, "_id": 0 } specifies that only the name and email fields should be included in the result set, while the _id field should be excluded.
@@ -1404,16 +1411,16 @@ In this example, the projection object { "name": 1, "email": 1, "_id": 0 } speci
 Update and Remove:
 To update a document in MongoDB, you can use the updateOne() or updateMany() method. For example, to update the email address of a document with a specific ID:
 
-db.users.updateOne(
-  { "_id": "123456789" },
-  { "$set": { "email": "new.email@example.com" } }
-)
+    db.users.updateOne(
+      { "_id": "123456789" },
+      { "$set": { "email": "new.email@example.com" } }
+    )
 
 This will update the email address of the document with the ID 123456789.
 
 To remove a document from a collection, you can use the deleteOne() or deleteMany() method. For example, to delete all documents where the age is less than 18:
 
-db.users.deleteMany({ "age": { "$lt": 18 } })
+    db.users.deleteMany({ "age": { "$lt": 18 } })
 
 This will delete all documents in the users collection where the age is less than 18.
 
@@ -1425,7 +1432,7 @@ These methods are commonly used in SQL and NoSQL databases to simplify data proc
 In SQL, aggregation methods are used with the GROUP BY clause to group data according to one or more fields, and then apply an aggregate function to the grouped data. 
 For example, the following SQL query uses the SUM function to calculate the total amount spent by each customer in the "orders" table:
 
-SELECT cust_id, SUM(amount) FROM orders GROUP BY cust_id;
+    SELECT cust_id, SUM(amount) FROM orders GROUP BY cust_id;
 
 In MongoDB, there are two main aggregation methods: single purpose aggregation operations and aggregation pipelining.
 
@@ -1434,17 +1441,17 @@ finding the maximum or minimum value in a field, or calculating the average valu
 These methods are invoked using the aggregate() function, followed by the specific aggregation operation. 
 For example, to count the number of documents in a collection, you would use the following command:
 
-db.collection.aggregate([ { $count: "total" } ])
+    db.collection.aggregate([ { $count: "total" } ])
 
 Aggregation pipelining, on the other hand, is a more flexible and powerful aggregation method that allows you to chain multiple aggregation operations together in a pipeline. 
 Each operation in the pipeline takes the output of the previous operation as input, and applies a specific transformation to the data. 
 For example, the following aggregation pipeline calculates the average rating for each book in a collection, by first filtering out any books with no ratings, and then grouping the remaining books by their book_id:
 
-db.collection.aggregate([
-  { $match: { ratings: { $exists: true, $ne: [] } } },
-  { $unwind: "$ratings" },
-  { $group: { _id: "$book_id", avg_rating: { $avg: "$ratings" } } }
-])
+    db.collection.aggregate([
+      { $match: { ratings: { $exists: true, $ne: [] } } },
+      { $unwind: "$ratings" },
+      { $group: { _id: "$book_id", avg_rating: { $avg: "$ratings" } } }
+    ])
 
 Aggregation methods provide a powerful tool for processing and analyzing data in databases, and can help simplify complex queries into a single, efficient command.
 
@@ -1469,63 +1476,63 @@ Some examples of using field paths in aggregate pipeline:
 
 Using $project to rename a field and extract a subfield:
 
-db.collection.aggregate([
-  { $project: { newField: "$oldField.subfield" } }
-])
+    db.collection.aggregate([
+      { $project: { newField: "$oldField.subfield" } }
+    ])
 
 This pipeline stage uses $project to create a new field called "newField" and sets its value to the contents of the "subfield" field within the "oldField" field. 
 The field path "$oldField.subfield" is used to access the subfield within the document.
 
 Using $group to group documents by a field and calculate an average:
 
-db.collection.aggregate([
-  { $group: { _id: "$category", avgPrice: { $avg: "$price" } } }
-])
+    db.collection.aggregate([
+      { $group: { _id: "$category", avgPrice: { $avg: "$price" } } }
+    ])
 
 This pipeline stage groups documents by the "category" field and calculates the average value of the "price" field within each group. 
 The field path "$category" is used to access the value of the "category" field in each document.
 
 Using $match to filter documents by a subfield:
 
-db.collection.aggregate([
-  { $match: { "address.city": "New York" } }
-])
+    db.collection.aggregate([
+      { $match: { "address.city": "New York" } }
+    ])
 
 This pipeline stage uses $match to filter documents where the value of the "city" field within the "address" field is "New York". 
 The field path "address.city" is used to access the value of the "city" field within the "address" field of each document.
 
 Using $sort to sort documents by a subfield:
 
-db.collection.aggregate([
-  { $sort: { "price": -1 } }
-])
+    db.collection.aggregate([
+      { $sort: { "price": -1 } }
+    ])
 
 
 This pipeline stage uses $sort to sort documents in descending order based on the value of the "price" field. The field path "price" is used to access the value of the "price" field in each document.
 
 Using $limit to limit the number of documents in the output:
 
-db.collection.aggregate([
-  { $limit: 10 }
-])
+    db.collection.aggregate([
+      { $limit: 10 }
+    ])
 
 
 This pipeline stage uses $limit to limit the output to the first 10 documents. No field paths are used in this example.
 
 Using $skip to skip a number of documents in the input:
 
-db.collection.aggregate([
-  { $skip: 5 }
-])
+    db.collection.aggregate([
+      { $skip: 5 }
+    ])
 
 
 This pipeline stage uses $skip to skip the first 5 documents in the input. No field paths are used in this example.
 
 Using $unwind to create a new document for each element in an array field:
 
-db.collection.aggregate([
-  { $unwind: "$tags" }
-])
+    db.collection.aggregate([
+      { $unwind: "$tags" }
+    ])
 
 
 This pipeline stage uses $unwind to create a new document for each element in the "tags" array field. The field path "$tags" is used to access the "tags" array field in each document.
@@ -1533,17 +1540,17 @@ This pipeline stage uses $unwind to create a new document for each element in th
 Using $lookup to perform a left outer join with another collection:
 
 
-db.collection.aggregate([
-  {
-    $lookup:
+    db.collection.aggregate([
       {
-        from: "orders",
-        localField: "customerId",
-        foreignField: "_id",
-        as: "customerOrders"
+        $lookup:
+          {
+            from: "orders",
+            localField: "customerId",
+            foreignField: "_id",
+            as: "customerOrders"
+          }
       }
-  }
-])
+    ])
 
 This pipeline stage uses $lookup to perform a left outer join with the "orders" collection using 
 the "customerId" field in the input collection as the local field and the "_id" field in the "orders" collection as the foreign field. 
@@ -1560,16 +1567,16 @@ The output of one stage is used as the input to the next stage, allowing for com
 In the given example, the pipeline contains two groups. The first $group operator creates new documents for every combination of city and state and calculates the sum of population across all its zip codes. 
 For example, the two documents:
 
-{ "_id" : "01013", "city" : "CHICOPEE", "loc" : [ -72.607962, 42.162046 ], "pop" : 23396, "state" : "MA" } 
-{ "_id" : "01020", "city" : "CHICOPEE", "loc" : [ -72.576142, 42.176443 ], "pop" : 31495, "state" : "MA" }
+    { "_id" : "01013", "city" : "CHICOPEE", "loc" : [ -72.607962, 42.162046 ], "pop" : 23396, "state" : "MA" } 
+    { "_id" : "01020", "city" : "CHICOPEE", "loc" : [ -72.576142, 42.176443 ], "pop" : 31495, "state" : "MA" }
 
 will be grouped into a new document:
 
-{ "_id" : { "city" : "CHICOPEE", "state" : "MA" }, "pop" : 54891 }
+    { "_id" : { "city" : "CHICOPEE", "state" : "MA" }, "pop" : 54891 }
 
 The second $group operator takes the new documents from the first $group as input, groups them by state, and calculates the average city population. For example, the document:
 
-{ "_id" : "MA", "avgCityPop" : 14855.37 }
+    { "_id" : "MA", "avgCityPop" : 14855.37 }
 
 shows the average population of cities in Massachusetts.
 
@@ -1627,33 +1634,33 @@ A new customer record could be inserted into a "customers" collection in a Mongo
 
 The insertOne() method in MongoDB is used to insert a single document into a collection. The syntax for inserting a single document is as follows:
 
-db.collection.insertOne(
-   <document>,
-   {
-      writeConcern: <document>,
-      bypassDocumentValidation: <boolean>,
-      collation: <document>
-   }
-)
+    db.collection.insertOne(
+       <document>,
+       {
+          writeConcern: <document>,
+          bypassDocumentValidation: <boolean>,
+          collation: <document>
+       }
+    )
 
 The <document> parameter represents the document to be inserted, and should be a JSON object.
 The <document> parameter can include any valid BSON data types, including nested documents and arrays.
 
 Example: The following example inserts a new document into a "customers" collection in a MongoDB database:
 
-db.customers.insertOne(
-   {
-      name: "John Doe",
-      email: "johndoe@example.com",
-      age: 35,
-      address: {
-         street: "123 Main St",
-         city: "Anytown",
-         state: "CA",
-         zip: "12345"
-      }
-   }
-)
+    db.customers.insertOne(
+       {
+          name: "John Doe",
+          email: "johndoe@example.com",
+          age: 35,
+          address: {
+             street: "123 Main St",
+             city: "Anytown",
+             state: "CA",
+             zip: "12345"
+          }
+       }
+    )
 
 In this example, a new customer document is inserted into the "customers" collection with a name, email, age, and address field. 
 The address field is a nested document with street, city, state, and zip fields.
@@ -1663,74 +1670,74 @@ However, for inserting large amounts of data, bulk operations such as insertMany
 
 insertMany(): This method is used to insert multiple documents into a collection at once. The syntax for inserting multiple documents is as follows:
 
-db.collection.insertMany(
-   [ <document 1> , <document 2>, ... ],
-   {
-      writeConcern: <document>,
-      ordered: <boolean>,
-      bypassDocumentValidation: <boolean>,
-      collation: <document>
-   }
-)
+    db.collection.insertMany(
+       [ <document 1> , <document 2>, ... ],
+       {
+          writeConcern: <document>,
+          ordered: <boolean>,
+          bypassDocumentValidation: <boolean>,
+          collation: <document>
+       }
+    )
 
 The [<document 1>, <document 2>, ...] parameter represents an array of documents to be inserted. Each document should be a JSON object.
 
 Example: 
 The following example inserts three new documents into a "products" collection in a MongoDB database:
 
-db.products.insertMany([
-   {
-      name: "Product 1",
-      price: 9.99,
-      category: "Electronics"
-   },
-   {
-      name: "Product 2",
-      price: 19.99,
-      category: "Clothing"
-   },
-   {
-      name: "Product 3",
-      price: 29.99,
-      category: "Home Goods"
-   }
-])
+    db.products.insertMany([
+       {
+          name: "Product 1",
+          price: 9.99,
+          category: "Electronics"
+       },
+       {
+          name: "Product 2",
+          price: 19.99,
+          category: "Clothing"
+       },
+       {
+          name: "Product 3",
+          price: 29.99,
+          category: "Home Goods"
+       }
+    ])
 
 In this example, three new documents are inserted into the "products" collection with name, price, and category fields.
 
 bulkWrite(): This method is used to perform bulk write operations on a collection, including inserting multiple documents. 
 The syntax for inserting multiple documents using bulkWrite() is as follows:
 
-db.collection.bulkWrite(
-   [
-      { insertOne :
-         {
-            "document" :
-               {
-                  <field1>: <value1>,
-                  <field2>: <value2>,
-                  ...
-               }
-         }
-      },
-      { insertOne :
-         {
-            "document" :
-               {
-                  <field1>: <value1>,
-                  <field2>: <value2>,
-                  ...
-               }
-         }
-      },
-      ...
-   ],
-   {
-      ordered: <boolean>,
-      bypassDocumentValidation: <boolean>,
-      writeConcern: <document>
-   }
-)
+    db.collection.bulkWrite(
+       [
+          { insertOne :
+             {
+                "document" :
+                   {
+                      <field1>: <value1>,
+                      <field2>: <value2>,
+                      ...
+                   }
+             }
+          },
+          { insertOne :
+             {
+                "document" :
+                   {
+                      <field1>: <value1>,
+                      <field2>: <value2>,
+                      ...
+                   }
+             }
+          },
+          ...
+       ],
+       {
+          ordered: <boolean>,
+          bypassDocumentValidation: <boolean>,
+          writeConcern: <document>
+       }
+    )
 
 
 The [{ insertOne: {...}}, ...] parameter represents an array of insert operations to be performed. Each insertOne operation should contain a document to be inserted.
@@ -1739,35 +1746,35 @@ Example: The following example uses bulkWrite() to insert three new documents in
 
 
 
-db.customers.bulkWrite([
-   {
-      insertOne: {
-         document: {
-            name: "Jane Smith",
-            email: "janesmith@example.com",
-            age: 28
-         }
-      }
-   },
-   {
-      insertOne: {
-         document: {
-            name: "Bob Johnson",
-            email: "bobjohnson@example.com",
-            age: 42
-         }
-      }
-   },
-   {
-      insertOne: {
-         document: {
-            name: "Sara Lee",
-            email: "saralee@example.com",
-            age: 35
-         }
-      }
-   }
-])
+    db.customers.bulkWrite([
+       {
+          insertOne: {
+             document: {
+                name: "Jane Smith",
+                email: "janesmith@example.com",
+                age: 28
+             }
+          }
+       },
+       {
+          insertOne: {
+             document: {
+                name: "Bob Johnson",
+                email: "bobjohnson@example.com",
+                age: 42
+             }
+          }
+       },
+       {
+          insertOne: {
+             document: {
+                name: "Sara Lee",
+                email: "saralee@example.com",
+                age: 35
+             }
+          }
+       }
+    ])
 
 In this example, three new documents are inserted into the "customers" collection with name, email, and age fields.
 
@@ -1779,10 +1786,10 @@ but typically involves specifying a filter to select the documents to be updated
 Example: 
 The following example uses updateOne() to modify the "price" field of a single document in a "products" collection:
 
-db.products.updateOne(
-   { name: "Product 1" },
-   { $set: { price: 14.99 } }
-)
+    db.products.updateOne(
+       { name: "Product 1" },
+       { $set: { price: 14.99 } }
+    )
 
 In this example, the updateOne() method is used to update the "price" field of a document in the "products" collection where the "name" field is equal to "Product 1". 
 The $set operator is used to set the value of the "price" field to 14.99.
@@ -1793,9 +1800,9 @@ but typically involves specifying a filter to select the documents to be deleted
 Example: 
 The following example uses deleteOne() to remove a single document from a "customers" collection:
 
-db.customers.deleteOne(
-   { name: "Jane Smith" }
-)
+    db.customers.deleteOne(
+       { name: "Jane Smith" }
+    )
 
 In this example, the deleteOne() method is used to remove a document from the "customers" collection where the "name" field is equal to "Jane Smith".
 
@@ -1809,21 +1816,21 @@ It provides various ways to insert data into a database, including using the com
 To insert data manually using the command line, we can use the insert method of the db object in the MongoDB shell. 
 For example, to insert a book with the name "Brave New World" and author "Aldous Huxley" into a collection called books, we can use the following command:
 
-db.books.insert({name: "Brave New World", author: "Aldous Huxley"})
+    db.books.insert({name: "Brave New World", author: "Aldous Huxley"})
 
 However, manually inserting a large amount of data can be tedious and error-prone. 
 MongoDB provides a utility called mongoimport to import data from external files in various formats, including JSON, CSV, and TSV. The syntax for importing data is as follows:
 
-mongoimport /d DATABASE_NAME /c COLLECTION_NAME FILE_NAME
+    mongoimport /d DATABASE_NAME /c COLLECTION_NAME FILE_NAME
 
 For example, to import data from a file called books.json into a collection called books in a database called test, we can use the following command:
 
-mongoimport /d test /c books books.json
+    mongoimport /d test /c books books.json
 
 If no collection name is specified, MongoDB creates a collection with the same name as the file name without the extension. 
 For example, the following command imports data from books.json into a collection called books in the test database:
 
-mongoimport /d test books.json
+    mongoimport /d test books.json
 
 When importing CSV or TSV files, we need to specify the field names. We can use the --headerline option to specify that the first line of the file contains the field names. 
 For example, to import a CSV file called books.csv with the fields name and author, we can use the following command:
@@ -1834,7 +1841,7 @@ To update existing data while inserting new data, we can use the upsert mode. We
 By default, MongoDB matches on the _id field. It's important to ensure that the fields used for upserting have indexes to ensure adequate performance. 
 For example, to upsert data from a file called books.json into a collection called books in the test database based on the name field, we can use the following command:
 
-mongoimport /d test /c books --mode upsert --upsertFields name books.json
+    mongoimport /d test /c books --mode upsert --upsertFields name books.json
 
 MongoDB provides various ways to insert data into a database, including using the command line and importing data from external files in various formats. 
 The mongoimport utility supports JSON, CSV, and TSV data formats and provides options to customize the import process.
@@ -1845,12 +1852,12 @@ Without indexes, the database would need to scan every document in a collection 
 To create an index in MongoDB, we can use the createIndex() method on a collection object. 
 For example, to create an index on the name field in a collection called books, we can use the following command:
 
-db.books.createIndex({name: 1})
+    db.books.createIndex({name: 1})
 
 The 1 indicates that the index should be created in ascending order on the name field. We can also create indexes on multiple fields, in which case the order of the fields determines the order of the index. 
 For example, to create an index on both the name and author fields in the books collection, we can use the following command:
 
-db.books.createIndex({name: 1, author: 1})
+    db.books.createIndex({name: 1, author: 1})
 
 This creates a compound index on the name and author fields in ascending order.
 
@@ -1920,24 +1927,24 @@ We want to find all zip codes with a population of less than 50. We can use the 
 
 Without index on pop:
 
-db.zips.explain("allPlansExecution").find({pop:{$lt:50}})
+    db.zips.explain("allPlansExecution").find({pop:{$lt:50}})
 
 Results:
 
-stage: COLLSCAN
-nReturned: 356
-totalDocsExamined: 29353
+    stage: COLLSCAN
+    nReturned: 356
+    totalDocsExamined: 29353
 
 With index on pop:
 
-db.zips.createIndex({pop: 1})
-db.zips.explain("allPlansExecution").find({pop:{$lt:50}})
+    db.zips.createIndex({pop: 1})
+    db.zips.explain("allPlansExecution").find({pop:{$lt:50}})
 
 Results:
 
-stage: IXSCAN
-nReturned: 356
-totalDocsExamined: 356
+    stage: IXSCAN
+    nReturned: 356
+    totalDocsExamined: 356
 
 
 As we can see, adding an index on the "pop" field significantly improves the query performance, reducing the number of documents examined and 
@@ -1953,7 +1960,7 @@ Single Field Index:
 A single field index is an index created on a single field in a collection. 
 For example, if we want to create an index on the "recipeName" field in a "cookbook" collection, we can create a single field index as follows:
 
-db.cookbook.createIndex({recipeName: 1}, {name: "recipeIndex"})
+    db.cookbook.createIndex({recipeName: 1}, {name: "recipeIndex"})
 
 This creates an index on the "recipeName" field and names the index "recipeIndex."
 
@@ -1961,7 +1968,7 @@ Compound Index:
 A compound index is an index created on multiple fields in a collection. 
 For example, if we want to create an index on the "ingredientName" and "recipeName" fields in a "cookbook" collection, we can create a compound index as follows:
 
-db.cookbook.createIndex({ingredientName: 1, recipeName: 1})
+    db.cookbook.createIndex({ingredientName: 1, recipeName: 1})
 
 This creates an index on both the "ingredientName" and "recipeName" fields. The order of the fields in the index is important as it determines the order in which the fields are sorted. 
 In this example, the index sorts first on the "ingredientName" field and then on the "recipeName" field. 
@@ -1978,15 +1985,15 @@ A multikey index allows you to index the values of array fields.
 MongoDB creates separate index entries for every element of the array, and each index entry references the same document. 
 For example, if we have a document that looks like this:
 
-{
-  name: "lawnmower",
-  tags: ["tools", "outdoor", "gardening"]
-}
+    {
+      name: "lawnmower",
+      tags: ["tools", "outdoor", "gardening"]
+    }
 
 
 We can create a multikey index on the "tags" field like this:
 
-db.products.createIndex({tags: 1})
+    db.products.createIndex({tags: 1})
 
 This will create separate index entries for each tag value in the "tags" array.
 
@@ -1994,7 +2001,7 @@ Unique Indexes:
 A unique index ensures that the values in the indexed field are unique, and rejects any duplicate values. 
 For example, we can create a unique index on the "StudentNo" field in a "uni" collection like this:
 
-db.uni.createIndex({StudentNo: 1}, {unique: true})
+    db.uni.createIndex({StudentNo: 1}, {unique: true})
 
 This will reject any new document that contains a duplicate value in the "StudentNo" field.
 
@@ -2003,7 +2010,7 @@ A sparse index only indexes documents that have the indexed field. If a document
 This helps to reduce the size of the index and the amount of memory required to store it. 
 For example, we can create a sparse index on the "Category" field in a "uni" collection like this:
 
-db.uni.createIndex({Category: 1}, {sparse: true})
+    db.uni.createIndex({Category: 1}, {sparse: true})
 
 This index will only contain documents that have a "Category" field. Documents that do not have a "Category" field will not be included in the index.
 
@@ -2011,10 +2018,10 @@ Index Hinting:
 Index hinting is used to force MongoDB to use a specific index for a query. 
 If a query is searching across many fields and more than one field has an index, the hint tells MongoDB's query optimizer which index to use. For example:
 
-db.employees.find(
-  {jobCode:"FT", salary:{$lt:35000}},
-  {name:1}
-).hint("jobCode_1")
+    db.employees.find(
+      {jobCode:"FT", salary:{$lt:35000}},
+      {name:1}
+    ).hint("jobCode_1")
 
 This query will use the index named "jobCode_1" to optimize the search.
 
@@ -2082,55 +2089,55 @@ Embedding involves nesting one document within another document, while referenci
 
 Example: Suppose we have a collection of users and a collection of posts. If we embed the posts within the users' documents, we would have a structure like this:
 
-{
-  _id: ObjectId("user_id"),
-  name: "John Doe",
-  posts: [
-    { title: "My first post", content: "Lorem ipsum..." },
-    { title: "Another post", content: "Dolor sit amet..." }
-  ]
-}
+    {
+      _id: ObjectId("user_id"),
+      name: "John Doe",
+      posts: [
+        { title: "My first post", content: "Lorem ipsum..." },
+        { title: "Another post", content: "Dolor sit amet..." }
+      ]
+    }
 
 On the other hand, if we reference the posts from the users' documents, we would have a structure like this:
 
-// Users collection
-{
-  _id: ObjectId("user_id"),
-  name: "John Doe",
-  posts: [
-    ObjectId("post_id_1"),
-    ObjectId("post_id_2")
-  ]
-}
+    // Users collection
+    {
+      _id: ObjectId("user_id"),
+      name: "John Doe",
+      posts: [
+        ObjectId("post_id_1"),
+        ObjectId("post_id_2")
+      ]
+    }
 
-// Posts collection
-{
-  _id: ObjectId("post_id_1"),
-  title: "My first post",
-  content: "Lorem ipsum..."
-}
+    // Posts collection
+    {
+      _id: ObjectId("post_id_1"),
+      title: "My first post",
+      content: "Lorem ipsum..."
+    }
 
-{
-  _id: ObjectId("post_id_2"),
-  title: "Another post",
-  content: "Dolor sit amet..."
-}
+    {
+      _id: ObjectId("post_id_2"),
+      title: "Another post",
+      content: "Dolor sit amet..."
+    }
 
 Single association embedding:
 Single association embedding involves embedding a single related document within another document.
 
 Example: Suppose we have a collection of users and a collection of addresses. If we embed the user's primary address within the user's document, we would have a structure like this:
 
-{
-  _id: ObjectId("user_id"),
-  name: "John Doe",
-  primary_address: {
-    street: "123 Main St",
-    city: "Anytown",
-    state: "CA",
-    zip: "12345"
-  }
-}
+    {
+      _id: ObjectId("user_id"),
+      name: "John Doe",
+      primary_address: {
+        street: "123 Main St",
+        city: "Anytown",
+        state: "CA",
+        zip: "12345"
+      }
+    }
 
 
 Multiple association embedding:
@@ -2138,18 +2145,18 @@ Multiple association embedding involves embedding multiple related documents wit
 
 Example: Suppose we have a collection of users and a collection of messages. If we embed the user's sent and received messages within the user's document, we would have a structure like this:
 
-{
-  _id: ObjectId("user_id"),
-  name: "John Doe",
-  sent_messages: [
-    { to: "jane@example.com", content: "Hello Jane!" },
-    { to: "bob@example.com", content: "Hey Bob!" }
-  ],
-  received_messages: [
-    { from: "jane@example.com", content: "Hi John, how are you?" },
-    { from: "bob@example.com", content: "What's up John?" }
-  ]
-}
+    {
+      _id: ObjectId("user_id"),
+      name: "John Doe",
+      sent_messages: [
+        { to: "jane@example.com", content: "Hello Jane!" },
+        { to: "bob@example.com", content: "Hey Bob!" }
+      ],
+      received_messages: [
+        { from: "jane@example.com", content: "Hi John, how are you?" },
+        { from: "bob@example.com", content: "What's up John?" }
+      ]
+    }
 
 
 Client-side processing:
@@ -2169,28 +2176,28 @@ Example of manual referencing:
 Suppose we have a collection of users and a collection of posts, and we want to reference the author of each post within the post document. 
 We could add a user_id field to each post document:
 
-{
-  _id: ObjectId("post_id"),
-  title: "My first post",
-  content: "Lorem ipsum...",
-  user_id: ObjectId("user_id")
-}
+    {
+      _id: ObjectId("post_id"),
+      title: "My first post",
+      content: "Lorem ipsum...",
+      user_id: ObjectId("user_id")
+    }
 
 Example of DB referencing: Using the $ref and $id fields in MongoDB, we can store references between documents at the database level:
 
-// Users collection
-{
-  _id: ObjectId("user_id"),
-  name: "John Doe"
-}
+    // Users collection
+    {
+      _id: ObjectId("user_id"),
+      name: "John Doe"
+    }
 
-// Posts collection
-{
-  _id: ObjectId("post_id"),
-  title: "My first post",
-  content: "Lorem ipsum...",
-  author: { $ref: "users", $id: ObjectId("user_id") }
-}
+    // Posts collection
+    {
+      _id: ObjectId("post_id"),
+      title: "My first post",
+      content: "Lorem ipsum...",
+      author: { $ref: "users", $id: ObjectId("user_id") }
+    }
 
 
 NoSQL use cases and philosophy:
@@ -2232,20 +2239,22 @@ EID	Name	MID
 E1	Smith	M1
 E2	Singh	M2
 E3	James	M3
+
 In this table, the EID column is the primary key for the employee table, and the MID column is a foreign key that refers to the machine table. The machine table might look like this:
 
 MID	Make
 M1	Dell
 M2	Toshiba
 M3	HP
+
 In this table, the MID column is the primary key for the machine table.
 
 To retrieve information about an employee and the machine they work on, a query can be constructed that joins the two tables using the foreign key. 
 For example, to retrieve the name of the employee who works on the Dell machine, the following query could be used:
 
-SELECT Name FROM Employee 
-JOIN Machine ON Employee.MID = Machine.MID 
-WHERE Make = 'Dell'
+    SELECT Name FROM Employee 
+    JOIN Machine ON Employee.MID = Machine.MID 
+    WHERE Make = 'Dell'
 
 
 This would return the name 'Smith', since he is the employee who works on the Dell machine.
@@ -2257,21 +2266,21 @@ In this design, each entity (employee or machine) is represented as a single doc
 
 The employee document might look like this:
 
-{
-  "eid": "E1",
-  "name": "Smith",
-  "machine": {
-    "mid": "M1",
-    "make": "Dell"
-  }
-}
+    {
+      "eid": "E1",
+      "name": "Smith",
+      "machine": {
+        "mid": "M1",
+        "make": "Dell"
+      }
+    }
 
 In this document, the employee's ID and name are stored at the top level, while the machine information is nested within a 'machine' field. The machine document might look like this:
 
-{
-  "mid": "M1",
-  "make": "Dell"
-}
+    {
+      "mid": "M1",
+      "make": "Dell"
+    }
 
 
 In this document, only the machine information is stored, since there is no need to store any employee information in this case.
@@ -2279,19 +2288,19 @@ In this document, only the machine information is stored, since there is no need
 To retrieve information about an employee and the machine they work on, a query can be constructed that uses the MongoDB aggregation framework to join the two documents together. 
 For example, to retrieve the name of the employee who works on the Dell machine, the following query could be used:
 
-db.Employee.aggregate([
-  {
-    $lookup: {
-      from: "Machine",
-      localField: "machine.mid",
-      foreignField: "mid",
-      as: "machine"
-    }
-  },
-  {
-    $match: {
-      "machine.make": "Dell"
-    }
+    db.Employee.aggregate([
+      {
+        $lookup: {
+          from: "Machine",
+          localField: "machine.mid",
+          foreignField: "mid",
+          as: "machine"
+        }
+      },
+      {
+        $match: {
+          "machine.make": "Dell"
+        }
  
 
 This query uses the $lookup stage to join the Employee collection with the Machine collection based on the mid field in the machine subdocument. The as option renames the joined documents to machine.
@@ -2304,24 +2313,24 @@ In MongoDB, there are two methods to associate objects: embedding and referencin
 
 Embedded objects are nested within another document, allowing for easy retrieval of related information. For example, the employee document could contain a nested document representing the machine the employee works on:
 
-{
-  "eid": "E1",
-  "name": "Smith",
-  "machine": {
-    "make": "Dell"
-  }
-}
+    {
+      "eid": "E1",
+      "name": "Smith",
+      "machine": {
+        "make": "Dell"
+      }
+    }
 
 
 In this case, the mid field has been removed from the machine subdocument, since it is not needed to retrieve the machine make for a given employee.
 
 Referencing involves storing a reference to another document within a document. For example, the employee document could contain a reference to the mid field in the machine document:
 
-{
-  "eid": "E1",
-  "name": "Smith",
-  "mid": "M1"
-}
+    {
+      "eid": "E1",
+      "name": "Smith",
+      "mid": "M1"
+    }
 
 In this case, the mid field in the employee document refers to the mid field in the machine document, allowing for the retrieval of the machine make when needed.
 
@@ -2349,21 +2358,21 @@ This is generally known as data aggregation, where related data is grouped toget
 
 For example, if we want to retrieve information about an employee and the machine they work on, we can use the MongoDB aggregation framework to retrieve both documents and combine them into a single result:
 
-db.Employee.aggregate([
-  {
-    $lookup: {
-      from: "Machine",
-      localField: "machine.mid",
-      foreignField: "mid",
-      as: "machine"
-    }
-  },
-  {
-    $match: {
-      "name": "Smith"
-    }
-  }
-])
+    db.Employee.aggregate([
+      {
+        $lookup: {
+          from: "Machine",
+          localField: "machine.mid",
+          foreignField: "mid",
+          as: "machine"
+        }
+      },
+      {
+        $match: {
+          "name": "Smith"
+        }
+      }
+    ])
 
 This query retrieves the employee document for Smith and joins it with the machine document using the mid field. The resulting document will have both the employee and machine information in a single document.
 
@@ -2387,17 +2396,17 @@ Embedding documents in MongoDB involves adding one document as a subdocument wit
 
 For example, to embed an Employee document within a Machine document, we can first retrieve the employee document using the findOne method:
 
-var e1 = db.employees.findOne({eid:"E1"});
+    var e1 = db.employees.findOne({eid:"E1"});
 
 We can then use the $push operator to add the employee document to the employees array within the Machine document:
 
-db.machines.update({mid:"M1"},{$push:{employees:e1}});
+    db.machines.update({mid:"M1"},{$push:{employees:e1}});
 
 In this example, the employees array within the Machine document now contains the embedded Employee document.
 
 To access the embedded document, we can use the MongoDB find method with a query that uses dot notation to access the embedded fields:
 
-db.machines.find({"employees.name" : "smith"}, {_id:0, mid:1, make:1})
+    db.machines.find({"employees.name" : "smith"}, {_id:0, mid:1, make:1})
 
 
 This query returns the mid and make fields for all machines that have an employee with the name "smith" embedded within them.
@@ -2408,19 +2417,19 @@ However, it requires two steps or a "JOIN" to retrieve related data from multipl
 
 For example, in the single association referencing approach, an Employee document can reference a Machine document using the mid field:
 
-db.employees.update({eid:"E1"},{$set:{mid:"M1"}})
+    db.employees.update({eid:"E1"},{$set:{mid:"M1"}})
 
 In this example, the mid field in the Employee document now references the M1 document in the Machine collection.
 
 To retrieve the names of employees working on a Dell machine, we can use a combination of the find method and a loop that retrieves the mid field from 
 the Machine collection and uses it to find the related employees in the Employee collection:
 
-var mcursor = db.machines.find({make: "dell"}, {_id:0, mid:1});
-while (mcursor.hasNext()) {
-  var nextMid = mcursor.next().mid;
-  var ecursor = db.employees.find({mid:nextMid}, {_id:0, eid:1, name:1});
-  while (ecursor.hasNext()) print(ecursor.next());
-}
+    var mcursor = db.machines.find({make: "dell"}, {_id:0, mid:1});
+    while (mcursor.hasNext()) {
+      var nextMid = mcursor.next().mid;
+      var ecursor = db.employees.find({mid:nextMid}, {_id:0, eid:1, name:1});
+      while (ecursor.hasNext()) print(ecursor.next());
+    }
 
 In this example, the loop retrieves the mid field from the Machine collection and uses it to find the related employees in the Employee collection. 
 The resulting output lists the eid and name fields for all employees who work on a Dell machine.
@@ -2443,17 +2452,17 @@ This method allows us to perform a left outer join between two collections and r
 
 For example, to find the names of employees working on a Dell machine using the $lookup method, we can use the following aggregation pipeline:
 
-db.machines.aggregate([
-  {$match : {make: "dell"}},
-  {$lookup: {
-    from: "employees",
-    localField: "mid",
-    foreignField: "mid",
-    as: "employees"
-  }},
-  {$unwind: {path: "$employees"}},
-  {$project: {_id:0, eid: "$employees.eid", name: "$employees.name"}}
-])
+    db.machines.aggregate([
+      {$match : {make: "dell"}},
+      {$lookup: {
+        from: "employees",
+        localField: "mid",
+        foreignField: "mid",
+        as: "employees"
+      }},
+      {$unwind: {path: "$employees"}},
+      {$project: {_id:0, eid: "$employees.eid", name: "$employees.name"}}
+    ])
 
 In this example, we first use the $match stage to filter the Machine collection by the make field. 
 We then use the $lookup stage to join the Machine collection with the Employee collection on the mid field, and return a new collection that includes the data from both collections. 
@@ -2466,8 +2475,8 @@ MongoDB does not provide built-in referential integrity, so the application must
 In the multiple association referencing approach, where a Machine document can reference multiple Employee documents, we can use an array of references to store the IDs of the related Employee documents. 
 We can use the $push operator to append new eid values to the eids array in the macs_ME collection:
 
-db.macs_ME.update({mid:"M1"},{$push: {eids:"E1"}})
-db.macs_ME.update({mid:"M1"},{$push: {eids:"E2"}})
+    db.macs_ME.update({mid:"M1"},{$push: {eids:"E1"}})
+    db.macs_ME.update({mid:"M1"},{$push: {eids:"E2"}})
 
 In this example, the eids field in the macs_ME document with mid equal to M1 now contains the eid values "E1" and "E2".
 
