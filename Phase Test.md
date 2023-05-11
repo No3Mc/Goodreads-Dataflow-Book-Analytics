@@ -232,13 +232,20 @@ User profiles and preferences
 Log data such as server logs, error logs, and application logs
 Real-time data such as stock prices, weather data, and traffic data.
 
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/2aa5a753-5ecb-4ba3-8636-05e47e154993)
+
+
 There are several types of databases, including:
 
 Relational databases:
 
-0Relational databases store data in tables with rows and columns, and use SQL (Structured Query Language) to access and manipulate the data. 
+Relational databases store data in tables with rows and columns, and use SQL (Structured Query Language) to access and manipulate the data. 
 Relational databases are widely used in business applications, such as accounting, inventory management, and customer relationship management (CRM) systems. 
 Examples of relational databases include MySQL, Oracle, and Microsoft SQL Server.
+
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/6fd868bc-3625-47bf-87cc-4210d9f5f4de)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/51b310b4-a037-4cec-a032-e5a187529d4a)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a43ca6ea-b478-4c9c-afab-ba6e72a5ceab)
 
 NoSQL databases:
 
@@ -246,11 +253,20 @@ NoSQL databases use a non-tabular data model, which can include key-value pairs,
 They are designed for handling large volumes of unstructured data, such as social media feeds or IoT sensor data. 
 Examples of NoSQL databases include MongoDB, Cassandra, and Couchbase.
 
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/422f861d-0e8d-44da-8beb-fa8c93e68b93)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/0472b3bb-94d2-42cc-addf-6b4565907023)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/41f8e742-add9-4349-903d-0d05cc604e71)
+
 Object-oriented databases:
 
 Object-oriented databases store data in objects, which are instances of classes that define the data structure and behavior. 
 Object-oriented databases are well-suited for complex data structures with complex relationships and dependencies, such as software applications. 
 Examples of object-oriented databases include db4o and ObjectStore.
+
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/06abd1fa-553e-4f60-8d24-f22d737df20e)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/95519ee4-a566-4fd3-a428-0607997727fd)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a33529b1-38c4-45e7-9f8e-644539be170d)
+
 
 Hierarchical databases:
 
@@ -258,17 +274,32 @@ Hierarchical databases organize data in a tree-like structure, with each record 
 Hierarchical databases are commonly used in mainframe environments for managing large volumes of data. 
 Examples of hierarchical databases include IBM's Information Management System (IMS) and the Windows Registry.
 
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/1fba8597-b839-47eb-a676-34a32fba1225)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/2fdcde88-befc-4a17-badb-300b6a1b6a3e)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/dff851d8-e0d8-403c-9c6f-ed9716789a71)
+
+
 Graph databases:
 
 Graph databases store data in nodes and edges, which represent entities and relationships between them. 
 Graph databases are well-suited for handling complex and interconnected data, such as social networks, recommendation systems, and fraud detection. 
 Examples of graph databases include Neo4j and OrientDB.
 
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/66759598-5686-43aa-8c64-163eb223ebd7)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/407dad7b-f512-4e98-8160-dc9d812a88cf)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a697d61a-53f0-4754-b5ef-88982830a865)
+
+
 Column-family databases:
 
 Column-family databases organize data in column families, which are groups of columns that are accessed together. 
 They are designed for handling large amounts of structured and semi-structured data, such as log data, sensor data, and e-commerce transactions. 
 Examples of column-family databases include Apache Cassandra and HBase.
+
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a35140fb-8db2-4427-bdc2-097a40b276cf)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/e0739e42-2bad-4ad4-ad47-6dae8a231378)
+![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/b5c944ce-adcd-468c-b51b-0d8ef31ea6b5)
+
 
 Each type of database has its own strengths and weaknesses, and is best suited for particular use cases. 
 Choosing the right type of database for your application depends on factors such as the nature of your data, the volume of data, and the performance and scalability requirements of your application.
