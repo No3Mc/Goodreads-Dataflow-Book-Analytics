@@ -26,6 +26,7 @@ Types of NoSQL databases:
 NoSQL (Not Only SQL) databases are non-relational databases that offer flexible and scalable data storage solutions. There are several types of NoSQL databases, each with its own unique features and strengths. Let's explore these types and provide sample documents to help you understand them better:
 
 Document databases:
+
 Document databases store data in documents, usually in JSON or XML format. They offer flexible schema design, allowing each document to have its own structure. Here's an example of a document stored in a document database (MongoDB):
 
     {
@@ -42,6 +43,7 @@ Document databases store data in documents, usually in JSON or XML format. They 
     }
 
 Key-value stores:
+
 Key-value stores store data as key-value pairs, where keys are used for fast data retrieval. They are simple and efficient for scenarios that require high-speed access. Here's an example of a key-value pair stored in a key-value store (Redis):
 
     Key-value store: Redis
