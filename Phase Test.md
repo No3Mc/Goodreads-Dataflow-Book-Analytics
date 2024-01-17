@@ -15,17 +15,17 @@ It stores data in flexible, JSON-like documents that can have varying structures
 Cassandra is another popular NoSQL database, based on a column-oriented data model, which provides a high degree of scalability and fault-tolerance. 
 It is commonly used in large-scale distributed systems and has been adopted by companies like Apple, Netflix, and eBay.
 
-Types of NoSQL databases:
+**Types of NoSQL databases:**
 
 NoSQL (Not Only SQL) databases are non-relational databases that offer flexible and scalable data storage solutions. 
 There are several types of NoSQL databases, each with its own unique features and strengths. Here are some of the most common types of NoSQL databases:
 
 
-Types of NoSQL databases:
+**Types of NoSQL databases:**
 
 NoSQL (Not Only SQL) databases are non-relational databases that offer flexible and scalable data storage solutions. There are several types of NoSQL databases, each with its own unique features and strengths. Let's explore these types and provide sample documents to help you understand them better:
 
-Document databases:
+**Document databases:**
 
 Document databases store data in documents, usually in JSON or XML format. They offer flexible schema design, allowing each document to have its own structure. Here's an example of a document stored in a document database (MongoDB):
 
@@ -42,7 +42,7 @@ Document databases store data in documents, usually in JSON or XML format. They 
       }
     }
 
-Key-value stores:
+**Key-value stores:**
 
 Key-value stores store data as key-value pairs, where keys are used for fast data retrieval. They are simple and efficient for scenarios that require high-speed access. Here's an example of a key-value pair stored in a key-value store (Redis):
 
@@ -92,7 +92,7 @@ Key-value stores store data as key-value pairs, where keys are used for fast dat
     }
 
 
-Column-family stores:
+**Column-family stores:**
 Column-family stores organize data in column families, where each column family can have different columns. They are suitable for storing large amounts of structured data. Here's an example of data stored in a column-family store (Apache Cassandra):
 
     Column Family: "users"
@@ -109,7 +109,7 @@ Column-family stores organize data in column families, where each column family 
       "age": 35
       "email": "janesmith@example.com"
 
-Graph databases:
+**Graph databases:**
 Graph databases store data in nodes and edges, representing entities and relationships between them. They are optimized for complex relationships and traversals. Here's an example of data stored in a graph database (Neo4j):
 
     Node: Person
@@ -127,7 +127,7 @@ Graph databases store data in nodes and edges, representing entities and relatio
     Properties:
       "since": "2020"
 
-Object-oriented databases:
+**Object-oriented databases:**
 Object-oriented databases store data in objects, which can contain attributes and methods. They are suitable for object-oriented programming paradigms. Here's an example of an object stored in an object-oriented database (db4o):
 
     Class: Person
@@ -141,14 +141,14 @@ Object-oriented databases store data in objects, which can contain attributes an
 
 
 
-Examples and applications:
+**Examples and applications:**
 
 NoSQL (Not Only SQL) is a type of database management system that does not use the traditional SQL (Structured Query Language) language for manipulating data. 
 Instead, it provides a non-relational data model, which allows for scalability, flexibility, and high performance.
 
-Examples and applications of NoSQL:
+**Examples and applications of NoSQL:**
 
-Document Databases: 
+**Document Databases: **
 
 These databases store data in a document format, such as JSON or BSON. 
 
@@ -156,62 +156,62 @@ Examples include MongoDB and Couchbase.
 
 Document databases are ideal for storing unstructured or semi-structured data, such as blogs, articles, and product catalogs.
 
-Key-value Databases: 
+**Key-value Databases: **
 
 These databases store data in a simple key-value format, where each key corresponds to a value. 
 
 Examples include Redis and Amazon DynamoDB. Key-value databases are ideal for storing data that needs to be retrieved quickly, such as user profiles, session data, and product recommendations.
 
-Column-family Databases: 
+**Column-family Databases: **
 
 These databases store data in column families, which are groups of related columns. 
 
 Examples include Apache Cassandra and HBase. Column-family databases are ideal for storing large amounts of structured or semi-structured data, such as log files, sensor data, and financial transactions.
 
-Graph Databases: 
+**Graph Databases:** 
 
 These databases store data in nodes and edges, which represent entities and their relationships. 
 
 Examples include Neo4j and OrientDB. Graph databases are ideal for storing and querying complex data relationships, such as social networks, recommendation engines, and fraud detection systems.
 
-Time-series Databases: 
+**Time-series Databases: **
 
 These databases store data that changes over time, such as sensor data or stock prices. 
 
 Examples include InfluxDB and TimescaleDB. Time-series databases are ideal for storing and analyzing large amounts of time-stamped data, such as IoT devices, network logs, and financial data.
 
-NoSQL databases have many applications, including:
+**NoSQL databases have many applications, including:**
 
-Big Data Analytics: 
+**Big Data Analytics: **
 
 NoSQL databases can handle large amounts of unstructured data, making them ideal for big data analytics applications such as data warehousing, data mining, and machine learning.
 
-Web Applications: 
+**Web Applications: **
 
 NoSQL databases can store and retrieve data quickly, making them ideal for web applications that require fast response times and real-time data updates.
 
-Mobile Applications: 
+**Mobile Applications: **
 
 NoSQL databases can be used to store data for mobile applications, such as user profiles, messaging data, and location data.
 
-Content Management Systems: 
+**Content Management Systems: **
 
 NoSQL databases can store and manage large amounts of unstructured data, such as blogs, articles, and media files, making them ideal for content management systems.
 
-E-commerce Applications: 
+**E-commerce Applications: **
 
 NoSQL databases can be used to store and manage product catalogs, customer profiles, and order data, making them ideal for e-commerce applications.
 
-What does NoSQL mean?
+**What does NoSQL mean?**
 
 NoSQL is a term used to describe non-relational databases that store and manage data in a non-tabular format. 
 Unlike traditional relational databases, NoSQL databases are not based on the SQL language, which is used to manipulate data in relational databases.
 
 NoSQL databases are designed to handle unstructured, semi-structured, and structured data, making them a popular choice for big data and real-time web applications. They can be horizontally scaled across multiple servers, providing high availability and scalability.
 
-Here are some examples of popular NoSQL databases:
+**Here are some examples of popular NoSQL databases:**
 
-MongoDB: 
+**MongoDB: **
 
 MongoDB is a popular NoSQL database that uses a document-based data model. It is known for its flexibility, scalability, and ability to handle complex data structures.
 
@@ -223,40 +223,40 @@ Couchbase: Couchbase is a NoSQL database that uses a key-value data model.
 
 It is known for its high performance, scalability, and ability to handle large amounts of data.
 
-Redis: 
+**Redis: **
 
 Redis is an in-memory NoSQL database that is designed for high-speed data access. It is used for real-time applications like chat, gaming, and advertising.
 
-Amazon DynamoDB: 
+**Amazon DynamoDB: **
 
 Amazon DynamoDB is a NoSQL database service offered by Amazon Web Services (AWS). It uses a key-value data model and is known for its scalability and high availability.
 
 
-MongoDB: 
+**MongoDB: **
 
 MongoDB is used by a variety of companies, including Forbes, Bosch, and The Weather Channel. 
 
 The platform is also used by healthcare providers, such as the healthcare startup Vida Health, to manage and store large amounts of patient data.
 
-Cassandra: 
+**Cassandra: **
 
 Cassandra is used by companies such as Netflix, Apple, and eBay. 
 
 The database is particularly useful for companies that need to handle large amounts of data in real-time, such as social media platforms or online retailers.
 
-Couchbase: 
+**Couchbase: **
 
 Couchbase is used by companies like Marriott, Verizon, and PayPal. 
 
 The platform is particularly useful for companies that need to handle large amounts of user-generated content or data, such as social media platforms or mobile app developers.
 
-Redis: 
+**Redis: **
 
 Redis is used by companies like Twitter, Craigslist, and GitHub. 
 
 The database is particularly useful for companies that need to handle real-time data, such as chat applications or gaming platforms.
 
-Amazon DynamoDB: 
+**Amazon DynamoDB: **
 
 Amazon DynamoDB is used by companies like Airbnb, Samsung, and The Pokémon Company. 
 
@@ -278,9 +278,9 @@ which may be better suited for specific use cases, such as handling unstructured
 So, while SQL may still be valuable in a non-relational database, it's not the only tool in the toolbox, and other options should be explored for optimal results.
 
 
-Examples
+**Examples**
 
-SQL:
+**SQL:**
 
 Let's say you have a company that stores employee data, and you want to create a database to manage this data. Here's an example of how you could represent this data in a SQL database:
 
@@ -303,7 +303,7 @@ Insertion
 
 
 
-NoSQL:
+**NoSQL:**
 
 Here's an example of how the same employee data could be represented in a NoSQL database, specifically a document-based database like MongoDB:
 
@@ -356,7 +356,7 @@ Insertion
 
 SQL and NoSQL databases are used for different purposes and have different data models. Here are some examples of data that are suitable for insertion in SQL and NoSQL databases:
 
-SQL:
+**SQL:**
 
 Transactional data such as sales orders, invoices, and payments
 
@@ -369,7 +369,7 @@ Employee data such as personal information, salaries, and benefits
 Customer data such as contact information, purchase history, and preferences
 
 
-NoSQL:
+**NoSQL:**
 
 
 Social media data such as tweets, posts, and comments
@@ -387,7 +387,7 @@ Real-time data such as stock prices, weather data, and traffic data.
 
 There are several types of databases, including:
 
-Relational databases:
+**Relational databases:**
 
 Relational databases store data in tables with rows and columns, and use SQL (Structured Query Language) to access and manipulate the data. 
 
@@ -401,7 +401,7 @@ Examples of relational databases include MySQL, Oracle, and Microsoft SQL Server
 
 Oracle, MySQL, IBM DB2 etc. 
 
-NoSQL databases:
+**NoSQL databases:**
 
 NoSQL databases use a non-tabular data model, which can include key-value pairs, document-oriented data, or graph data. 
 They are designed for handling large volumes of unstructured data, such as social media feeds or IoT sensor data. 
@@ -412,7 +412,7 @@ Examples of NoSQL databases include MongoDB, Cassandra, and Couchbase.
 ![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/0472b3bb-94d2-42cc-addf-6b4565907023)
 ![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/41f8e742-add9-4349-903d-0d05cc604e71)
 
-Object-oriented databases:
+**Object-oriented databases:**
 
 Object-oriented databases store data in objects, which are instances of classes that define the data structure and behavior. 
 Object-oriented databases are well-suited for complex data structures with complex relationships and dependencies, such as software applications. 
@@ -424,7 +424,7 @@ Examples of object-oriented databases include db4o and ObjectStore.
 ![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a33529b1-38c4-45e7-9f8e-644539be170d)
 
 
-Hierarchical databases:
+**Hierarchical databases:**
 
 Hierarchical databases organize data in a tree-like structure, with each record having one parent record and zero or more child records. 
 Hierarchical databases are commonly used in mainframe environments for managing large volumes of data. 
@@ -436,7 +436,7 @@ Examples of hierarchical databases include IBM's Information Management System (
 ![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/dff851d8-e0d8-403c-9c6f-ed9716789a71)
 
 
-Graph databases:
+**Graph databases:**
 
 Graph databases store data in nodes and edges, which represent entities and relationships between them. 
 Graph databases are well-suited for handling complex and interconnected data, such as social networks, recommendation systems, and fraud detection. 
@@ -448,7 +448,7 @@ Examples of graph databases include Neo4j and OrientDB.
 ![image](https://github.com/No3Mc/NOSQL-DMnP/assets/41834061/a697d61a-53f0-4754-b5ef-88982830a865)
 
 
-Column-family databases:
+**Column-family databases:**
 
 Column-family databases organize data in column families, which are groups of columns that are accessed together. 
 They are designed for handling large amounts of structured and semi-structured data, such as log data, sensor data, and e-commerce transactions. 
@@ -464,35 +464,35 @@ Each type of database has its own strengths and weaknesses, and is best suited f
 Choosing the right type of database for your application depends on factors such as the nature of your data, the volume of data, and the performance and scalability requirements of your application.
 
 
-Relational Databases -
+**Relational Databases -**
 
 Relational databases are used to store and manage data in a structured way, based on the relationship between different data elements. 
 They are commonly used for managing large amounts of data in businesses and organizations, such as customer information, sales data, and inventory management. 
 
 Examples include MySQL, Oracle, and Microsoft SQL Server.
 
-NoSQL Databases - 
+**NoSQL Databases - **
 
 NoSQL databases are used to store and manage unstructured and semi-structured data, such as social media posts, photos, and videos. 
 They are commonly used for big data and real-time web applications, where scalability, performance, and flexibility are important. 
 
 Examples include MongoDB, Cassandra, and Redis.
 
-Object-Oriented Databases - 
+**Object-Oriented Databases - **
 
 Object-oriented databases are used to store and manage data in a way that is more natural and intuitive for developers, based on objects and classes. 
 They are commonly used for complex applications that require a high degree of flexibility and extensibility, such as multimedia, scientific, and engineering applications. 
 
 Examples include ObjectDB and db4o.
 
-Graph Databases - 
+**Graph Databases - **
 
 Graph databases are used to store and manage data that is highly interconnected, such as social networks, recommendations engines, and knowledge graphs. 
 They are commonly used for applications that require advanced querying and data analysis, such as fraud detection, personalized marketing, and network analysis. 
 
 Examples include Neo4j, OrientDB, and ArangoDB.
 
-Cloud Databases - 
+**Cloud Databases - **
 
 Cloud databases are used to store and manage data in the cloud, providing scalability, reliability, and cost-effectiveness. 
 They are commonly used for web and mobile applications, where data is distributed across multiple servers and locations. 
@@ -500,14 +500,14 @@ They are commonly used for web and mobile applications, where data is distribute
 Examples include Amazon Web Services (AWS) DynamoDB, Google Cloud Datastore, and Microsoft Azure Cosmos DB.
 
 
-Benefits of relational databases:
+**Benefits of relational databases:**
 
 Relational databases are based on the relational model, which organizes data into tables consisting of rows and columns, and establishes relationships between tables through keys. 
 
 Some benefits of relational databases are:
 
 
-Mature and Robust: 
+**Mature and Robust: **
 
 Relational databases have been around for several decades and have gone through numerous iterations, which has resulted in a mature and robust technology that can handle large amounts of data with high performance and reliability.
 
@@ -515,7 +515,7 @@ Supported well by most programming languages:
 
 Relational databases are well supported by most programming languages, making it easier to integrate them into existing applications or develop new ones.
 
-Large knowledge and skill base: 
+**Large knowledge and skill base: **
 
 Due to their popularity and longevity, there is a large knowledge and skill base around relational databases. 
 This means that developers can find plenty of resources, tutorials, and expertise to help them work with relational databases.
@@ -528,18 +528,18 @@ These mechanisms ensure that data is always accurate, consistent, and reliable, 
 Overall, relational databases provide a solid foundation for managing large amounts of data in a reliable and efficient manner.Problems with relational model:
 Despite its many benefits, the relational model has some limitations and challenges, such as:
 
-Problems with RDB: 
+**Problems with RDB: **
 
 RDB stands for Relational Database Management System. It is a type of database system that uses a table-based approach to store data. 
 However, RDBMS can have several limitations and problems such as scalability issues, difficulty in managing complex relationships between data, and inflexible data structures.
 
-Object-Relational Impedance Mismatch: 
+**Object-Relational Impedance Mismatch: **
 
 Object-relational impedance mismatch is a term used to describe the difficulties in mapping data between an object-oriented programming language (OOP) and a relational database management system (RDBMS). 
 This mismatch can lead to problems such as difficulties in representing complex relationships between data, difficulty in translating between the different data types used in OOP and RDBMS, 
 and a lack of support for inheritance in RDBMS.
 
-Applications written in Object-Oriented Programming Language: 
+**Applications written in Object-Oriented Programming Language: **
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects to represent and manipulate data. 
 Applications written in OOP languages such as Java, C++, or Python may have difficulties when interacting with RDBMS due to the differences in how data is represented.
@@ -552,48 +552,48 @@ For example, OOP focuses on the behavior of objects, while RDBMS focuses on the 
 
 This fundamental difference can make it difficult to map OOP concepts to RDBMS structures.
 
-Shared application database: 
+**Shared application database: **
 
 A shared application database is a database that is used by multiple applications. 
 RDBMS is often used as a shared application database as it allows many applications to access the same data. 
 However, all applications must use the same relational model to access the data, which can lead to issues with object-relational impedance mismatch.
 
-Cluster computing:
+**Cluster computing:**
 
 Cluster computing is a type of computing where a group of interconnected computers work together as a single system to perform a task. 
 The computers in a cluster communicate with each other to complete the work, dividing the task among themselves to complete it more quickly and efficiently. 
 Cluster computing is commonly used in scientific research, data analysis, and high-performance computing.
 
-Example: 
+**Example: **
 
 A company uses cluster computing to process a large amount of data in a short amount of time. 
 The company has a cluster of 20 computers that work together to analyze customer data, identify trends, and make recommendations for improving sales.
 
-Problems with RDB:
+**Problems with RDB:**
 
 Relational database management systems (RDBMS) have some limitations and problems that can make them unsuitable for certain applications.
 
-Example: 
+**Example:** 
 
 A company has a large amount of unstructured data, such as social media posts and customer reviews, that cannot be easily organized into a traditional RDBMS. 
 This data is better suited for a NoSQL database, which can handle unstructured data more efficiently.
 
-RDB not designed to run over cluster:
+**RDB not designed to run over cluster:**
 
 RDBMS are typically designed to run on a single computer or server, and are not well-suited for distributed computing environments such as clusters.
 
-Example: 
+**Example: **
 
 A company has a large dataset that it wants to analyze using a cluster of computers. 
 However, its RDBMS is not designed to work in a distributed environment, so it cannot take full advantage of the cluster's processing power.
 
-Integrity problems if tables spread across cluster:
+**Integrity problems if tables spread across cluster:**
 
 If tables in an RDBMS are spread across multiple computers in a cluster, maintaining data integrity can be difficult. 
 
 For example, if a database transaction involves updating multiple tables on different nodes, it may be difficult to ensure that the transaction is atomic and consistent.
 
-Example: 
+**Example: **
 
 A company uses a cluster of computers to store and process its customer data. 
 However, if the data is spread across multiple nodes, it may be difficult to ensure that updates to the data are synchronized and consistent.
@@ -601,12 +601,13 @@ However, if the data is spread across multiple nodes, it may be difficult to ens
 Join may be needed across multiple nodes of cluster:
 
 If tables in an RDBMS are spread across multiple computers in a cluster, it may be necessary to perform joins across multiple nodes to retrieve the data.
-Example: 
+
+**Example:** 
 
 A company uses a cluster of computers to store its sales data. 
 To analyze the data, it needs to perform joins across multiple nodes to retrieve information such as product sales by region.
 
-Traditional machine licenses too costly:
+**Traditional machine licenses too costly:**
 
 Traditional software licenses for RDBMS can be expensive, especially if a large number of machines are required to run the database.
 Example: 
@@ -614,18 +615,18 @@ Example:
 A company needs to purchase licenses for a large number of machines to run its RDBMS. 
 The cost of the licenses is prohibitively expensive, so the company needs to find a more cost-effective solution.
 
-Some collections of data do not fit well into relational model:
+**Some collections of data do not fit well into relational model:**
 Some types of data, such as unstructured or semi-structured data, do not fit well into the traditional relational model used by RDBMS.
 Example: 
 
 A company has a large amount of social media data that it wants to analyze. 
 However, the data is unstructured and cannot be easily organized into a traditional RDBMS.
 
-Pre-defined schema highly structured and difficult to change later:
+**Pre-defined schema highly structured and difficult to change later:**
 
 RDBMS use a predefined schema to structure data, which can be difficult to change later if the data requirements change.
 
-Example: 
+**Example: **
 
 A company has an RDBMS that is structured based on its current data requirements. 
 However, if the company's data requirements change in the future, it may be difficult to modify the schema to accommodate the new data.
@@ -636,34 +637,34 @@ Normalization is a process used to structure data in an RDBMS, but it can result
 
 For example, if a database is normalized to a high degree, it may require numerous joins to retrieve even simple data sets, which can impact performance and make the database difficult to manage.
 
-Availability and low latency could be more important than absolute integrity:
+**Availability and low latency could be more important than absolute integrity:**
 
 In some applications, availability and low latency are more important than absolute data integrity. 
 For example, in a distributed computing environment, it may be more important to have data available and accessible than to ensure that the data is perfectly consistent across all nodes.
 
-Example: 
+**Example: **
 
 A company uses a distributed computing environment to process transactions in real time. 
 In this case, it may be more important to ensure that the system is available and responsive than to ensure that data is perfectly consistent across all nodes. 
 The system may be designed to tolerate some level of inconsistency to ensure that transactions can be processed quickly and efficiently.
 
-Benefits of NoSQL DBs:
+**Benefits of NoSQL DBs:**
 
 NoSQL databases offer several benefits over traditional relational databases, including:
 
-Scalability: 
+**Scalability: **
 
 NoSQL databases are designed to handle large amounts of data and scale horizontally, which means adding more servers to the database to handle more traffic or data.
 
-Flexibility: 
+**Flexibility: **
 
 NoSQL databases are schema-less and can handle different data types and structures, making them ideal for storing unstructured or semi-structured data.
 
-Performance: 
+**Performance: **
 
 NoSQL databases can perform faster than traditional relational databases for certain types of queries, especially when dealing with large amounts of data.
 
-Cost-effectiveness: 
+**Cost-effectiveness: **
 
 NoSQL databases can be more cost-effective to operate and maintain compared to traditional relational databases.
 
@@ -673,42 +674,42 @@ Service-oriented architectures (SOA) are a way of designing software application
 These components may use different programming languages, platforms, and databases, which can make it challenging to share data between them. 
 XML and JSON are two commonly used data formats for exchanging information between different systems in a service-oriented architecture.
 
-Data stored in these formats avoid impedance mismatch:
+**Data stored in these formats avoid impedance mismatch:**
 
 Impedance mismatch refers to the difficulties that arise when trying to map data between different software components or systems that use different data models or formats. 
 Using XML or JSON can help avoid impedance mismatch by providing a standardized way of exchanging data that can be easily parsed and understood by different systems.
 
-NoSQL is schema-less:
+**NoSQL is schema-less:**
 
 Unlike traditional relational databases that require a predefined schema, NoSQL databases are schema-less, which means they can handle different data structures and types without the need for a predefined schema.
 
-Different products possess different fields:
+**Different products possess different fields:**
 
 NoSQL databases can handle different data structures and types, and different products may have different fields or attributes. 
 For example, a product in an e-commerce application may have different attributes than a product in a financial application.
 
-Products can contain a different number of fields:
+**Products can contain a different number of fields:**
 
 NoSQL databases can handle different numbers of fields or attributes for different products. 
 For example, one product may have 10 attributes while another product may have 20 attributes.
 
-A new product may have new fields not yet in the database:
+**A new product may have new fields not yet in the database:**
 
 Since NoSQL databases are schema-less, new fields or attributes can be added to a product without needing to modify the database schema or structure.
 
-The same field may appear in another product with a different datatype:
+**The same field may appear in another product with a different datatype:**
 
 Different products may have the same field or attribute, but with different data types. 
 
 For example, a "price" field in one product may be stored as a decimal while in another product it may be stored as an integer.
 
-NoSQL aggregate model:
+**NoSQL aggregate model:**
 
 NoSQL databases can handle aggregate data models where a field can contain multiple values. 
 
 For example, a product may have multiple images, reviews, or tags.
 
-Products can embed other products (as accessories):
+**Products can embed other products (as accessories):**
 
 NoSQL databases can handle nested or embedded data structures, which means a product can contain other products as accessories or related items. 
 
@@ -718,7 +719,7 @@ Products could embed other data entities such as reviewers:
 
 NoSQL databases can handle nested or embedded data structures, which means a product can contain other data entities such as reviewers or comments.
 
-Products can contain redundant data:
+**Products can contain redundant data:**
 
 NoSQL databases can handle redundant data, which means the same data can be stored in multiple places in the database. 
 
